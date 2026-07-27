@@ -44,7 +44,10 @@ TENDER_URL = os.getenv("SAP_TENDER_URL", "").strip()    # optional direct URL to
 # POWL query tab to select before scraping (e.g. "All", "Published").
 # The portal remembers the last-used query per user, which is likely why a
 # previous run saw only one row — a filtered "my responses" style view.
-POWL_QUERY = os.getenv("SAP_POWL_QUERY", "All").strip()
+# "All" ballooned to 10,000+ rows system-wide (2026-07-27) and never finishes
+# refreshing before our wait timeout, silently yielding 0 rows. "Published"
+# loads near-instantly and is exactly the set of currently-open tenders we want.
+POWL_QUERY = os.getenv("SAP_POWL_QUERY", "Published").strip()
 
 # Documents are phase 2 — keep the listing scrape fast and decoupled by default.
 SCRAPE_DOCUMENTS = os.getenv("SCRAPE_DOCUMENTS", "false").strip().lower() in ("1", "true", "yes")
@@ -969,7 +972,12 @@ def merge_tenders(scraped: list[dict], source: str) -> list[dict]:
       signal.
     - keeps other sources' tenders untouched
     Within the source, the scraped list replaces the old list (tenders that
-    left the portal listing drop out — same semantics as before).
+    left the portal listing drop out — same semantics as before) — UNLESS the
+    scrape came back empty while the source previously had entries. The SAP
+    POWL UI has repeatedly returned 0 rows on a transiently-slow refresh or a
+    session lock (not a real "zero tenders" state — see 2026-07-16/07-27
+    incidents), so an empty result is treated as a failed scrape and the old
+    entries for that source are kept rather than wiped.
     """
     from datetime import date
 
@@ -982,6 +990,15 @@ def merge_tenders(scraped: list[dict], source: str) -> list[dict]:
 
     old_by_ref = {t.get("reference_number"): t for t in existing
                   if t.get("source", SOURCE_PDO) == source}
+
+    if not scraped and old_by_ref:
+        log.warning(
+            "Scrape for %s returned 0 tenders but %d existed — treating as a "
+            "failed scrape and keeping the existing entries untouched.",
+            source, len(old_by_ref),
+        )
+        return existing
+
     merged = [t for t in existing if t.get("source", SOURCE_PDO) != source]
 
     for t in scraped:
