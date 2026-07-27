@@ -1,0 +1,15 @@
+# Credentials & session — never commit
+password.env.txt
+session_state.json
+tawreed_session.json
+
+# Local Claude Code settings — machine-specific
+.claude/settings.local.json
+
+# Scraper working files
+tenders_partial.json
+debug/
+documents/
+*.log
+last_run.txt
+__pycache__/

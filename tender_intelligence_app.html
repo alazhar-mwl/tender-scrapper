@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TenderIQ — PDO Tender Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<style>
+:root {
+  /* Light theme — Claude landing-page palette (warm ivory + coral) */
+  --bg:     #f0eee6;
+  --bg2:    #faf9f5;
+  --bg3:    #ffffff;
+  --bg4:    #eceada;
+  --bg5:    #e0dccb;
+  --border: rgba(31,30,29,0.09);
+  --border2:rgba(31,30,29,0.16);
+  --text:   #1f1e1d;
+  --text2:  #5e5b53;
+  --text3:  #8f8b80;
+  --accent: #d97757;
+  --accent2:#c96442;
+  --green:  #188a50;
+  --green2: #0f6b3e;
+  --orange: #b45309;
+  --orange2:#92400e;
+  --red:    #dc2626;
+  --red2:   #b91c1c;
+  --purple: #7c5cbf;
+  --radius: 12px;
+  --radius2:8px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html,body{
+  height:100%;
+  font-family:'Inter',-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow:hidden;
+}
+
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--bg5);border-radius:2px}
+
+/* ── Header ── */
+.header{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:0 24px;
+  height:58px;
+  border-bottom:1px solid var(--border);
+  background:var(--bg2);
+  flex-shrink:0;
+  position:relative;
+  z-index:10;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:-0.4px;
+  color:var(--text);
+  white-space:nowrap;
+}
+
+.logo-mark{
+  width:30px;height:30px;
+  background:linear-gradient(135deg,#d97757,#bd5d3a);
+  border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;
+  box-shadow:0 2px 8px rgba(217,119,87,0.35);
+}
+
+.portal-tag{
+  font-size:11px;font-weight:500;
+  color:var(--text3);
+  background:var(--bg4);
+  border:1px solid var(--border);
+  padding:2px 9px;border-radius:20px;
+}
+
+.header-pills{
+  display:flex;gap:2px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:3px;
+  margin-left:4px;
+}
+
+.hpill{
+  padding:4px 14px;
+  border-radius:7px;
+  font-size:12px;
+  color:var(--text3);
+  cursor:pointer;
+  transition:all 0.15s;
+  white-space:nowrap;
+  background:transparent;
+  border:none;
+  font-family:inherit;
+}
+.hpill b{margin-right:4px;font-weight:600}
+.hpill:hover{color:var(--text2);background:var(--bg4)}
+.hpill.active{background:var(--bg5);color:var(--text)}
+
+.header-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+
+.last-sync{font-size:11px;color:var(--text3)}
+
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;font-weight:500;font-family:inherit;
+  padding:7px 14px;
+  border-radius:var(--radius2);
+  border:1px solid var(--border2);
+  background:var(--bg3);
+  color:var(--text2);
+  cursor:pointer;
+  transition:all 0.15s;
+  white-space:nowrap;
+}
+.btn:hover{background:var(--bg4);color:var(--text)}
+
+.btn-accent{
+  background:var(--accent);
+  color:#fff;
+  border-color:transparent;
+  box-shadow:0 2px 10px rgba(217,119,87,0.3);
+}
+.btn-accent:hover{background:var(--accent2);box-shadow:0 3px 14px rgba(217,119,87,0.4);color:#fff}
+
+/* ── Layout ── */
+.body{display:flex;flex:1;overflow:hidden;height:calc(100vh - 58px)}
+
+/* ── Left panel ── */
+.left{
+  width:360px;flex-shrink:0;
+  display:flex;flex-direction:column;
+  border-right:1px solid var(--border);
+  background:var(--bg2);
+}
+
+.search-wrap{
+  padding:12px 14px;
+  border-bottom:1px solid var(--border);
+}
+.search-inner{position:relative}
+.search-inner i{
+  position:absolute;left:10px;top:50%;
+  transform:translateY(-50%);
+  color:var(--text3);font-size:14px;
+  pointer-events:none;
+}
+.search-input{
+  width:100%;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:var(--radius2);
+  padding:8px 12px 8px 32px;
+  font-size:13px;color:var(--text);
+  font-family:inherit;outline:none;
+  transition:border-color 0.15s;
+}
+.search-input::placeholder{color:var(--text3)}
+.search-input:focus{border-color:var(--accent)}
+
+.filter-row{
+  display:flex;align-items:center;gap:4px;
+  padding:8px 14px;
+  border-bottom:1px solid var(--border);
+  background:var(--bg);
+}
+.fchip{
+  font-size:11px;font-weight:500;font-family:inherit;
+  padding:4px 8px;border-radius:6px;
+  border:1px solid transparent;
+  background:transparent;color:var(--text3);
+  cursor:pointer;transition:all 0.15s;
+}
+.fchip:hover{color:var(--text2);background:var(--bg3)}
+.fchip.active{background:var(--accent);color:#fff;border-color:transparent}
+
+.sort-sel{
+  margin-left:auto;
+  font-size:11px;background:transparent;
+  border:none;color:var(--text3);
+  font-family:inherit;cursor:pointer;outline:none;
+}
+.sort-sel option{background:var(--bg3);color:var(--text)}
+
+.list{flex:1;overflow-y:auto}
+
+/* ── Tender card ── */
+.tcard{
+  padding:14px 16px;
+  border-bottom:1px solid var(--border);
+  cursor:pointer;
+  transition:background 0.1s;
+  position:relative;
+}
+.tcard:hover{background:var(--bg3)}
+.tcard.selected{
+  background:rgba(217,119,87,0.10);
+  box-shadow:inset 2px 0 0 var(--accent);
+}
+.tcard.tackled{opacity:0.4}
+
+.tc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:8px}
+.tc-title{font-size:13px;font-weight:500;color:var(--text);line-height:1.45;flex:1}
+
+.score-pill{
+  font-size:10px;font-weight:700;
+  padding:2px 8px;border-radius:20px;
+  flex-shrink:0;white-space:nowrap;
+}
+.sh{background:rgba(24,138,80,0.14);color:var(--green2)}
+.sm{background:rgba(180,83,9,0.14);color:var(--orange2)}
+.sl{background:rgba(220,38,38,0.12);color:var(--red2)}
+
+.tc-meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.mtag{display:flex;align-items:center;gap:3px;font-size:11px;color:var(--text3)}
+.mtag i{font-size:11px}
+.mtag.urgent{color:var(--orange2)}
+.mtag.danger{color:var(--red2)}
+
+.tc-foot{display:flex;align-items:center;justify-content:space-between}
+
+.spill{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:0.05em;
+  padding:2px 8px;border-radius:4px;
+}
+.sp-new{background:rgba(217,119,87,0.14);color:var(--accent2)}
+.sp-tackled{background:rgba(24,138,80,0.12);color:var(--green2)}
+.sp-skipped{background:rgba(31,30,29,0.06);color:var(--text3)}
+.sp-scoring{background:rgba(180,83,9,0.12);color:var(--orange2)}
+
+.pulse{
+  width:5px;height:5px;border-radius:50%;
+  background:var(--orange2);
+  animation:pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.8)}}
+
+.ref-mono{
+  font-size:10px;font-family:'SF Mono','Fira Code',monospace;
+  color:var(--text3);background:var(--bg4);
+  padding:1px 6px;border-radius:4px;
+}
+
+.empty-list{
+  padding:52px 24px;text-align:center;
+  color:var(--text3);font-size:13px;line-height:1.8;
+}
+
+/* ── Right panel ── */
+.right{flex:1;display:flex;flex-direction:column;overflow:hidden;background:var(--bg)}
+
+.empty-state{
+  flex:1;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:14px;color:var(--text3);
+}
+.empty-icon{
+  width:68px;height:68px;
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:18px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:30px;
+}
+
+/* ── Detail ── */
+.detail-scroll{flex:1;overflow-y:auto;padding:28px 36px}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.animate{animation:fadeUp 0.22s ease forwards}
+
+.eyebrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.etag{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:11px;font-weight:500;color:var(--text3);
+  background:var(--bg2);border:1px solid var(--border);
+  padding:3px 10px;border-radius:6px;
+}
+.etag i{font-size:11px}
+
+.detail-title{
+  font-size:21px;font-weight:600;
+  color:var(--text);line-height:1.35;
+  letter-spacing:-0.3px;margin-bottom:20px;
+}
+
+.meta-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(148px,1fr));
+  gap:10px;margin-bottom:24px;
+}
+.mcard{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:var(--radius2);
+  padding:12px 14px;
+}
+.mcard-lbl{
+  font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:0.07em;
+  color:var(--text3);margin-bottom:5px;
+}
+.mcard-val{font-size:14px;font-weight:500;color:var(--text)}
+.mcard-val.urgent{color:var(--orange2)}
+.mcard-val.danger{color:var(--red2)}
+
+/* AI score card */
+.ai-card{
+  background:linear-gradient(135deg,rgba(217,119,87,0.08),rgba(124,92,191,0.06));
+  border:1px solid rgba(217,119,87,0.22);
+  border-radius:var(--radius);
+  padding:20px;margin-bottom:22px;
+}
+.ai-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.ai-lbl{
+  display:flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:600;color:var(--accent2);
+}
+.score-big{display:flex;align-items:baseline;gap:3px}
+.score-num{font-size:38px;font-weight:700;line-height:1}
+.score-den{font-size:14px;color:var(--text3)}
+
+.bar-bg{height:6px;background:var(--bg4);border-radius:3px;overflow:hidden;margin-bottom:16px}
+.bar-fill{height:100%;border-radius:3px;transition:width 0.9s cubic-bezier(0.4,0,0.2,1)}
+
+.reasoning{display:flex;flex-direction:column;gap:9px}
+.rrow{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--text2)}
+.ricon{
+  width:18px;height:18px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;font-weight:700;flex-shrink:0;margin-top:1px;
+}
+.rpos{background:rgba(24,138,80,0.14);color:var(--green2)}
+.rneg{background:rgba(220,38,38,0.12);color:var(--red2)}
+
+.section{margin-bottom:24px}
+.slabel{
+  font-size:10px;font-weight:700;
+  text-transform:uppercase;letter-spacing:0.08em;
+  color:var(--text3);margin-bottom:10px;
+}
+.sbody{font-size:14px;color:var(--text2);line-height:1.8;white-space:pre-line}
+
+/* Action bar */
+.action-bar{
+  padding:14px 36px;
+  border-top:1px solid var(--border);
+  background:var(--bg2);
+  display:flex;gap:10px;align-items:center;
+  flex-shrink:0;
+}
+.btn-tackle{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:600;font-family:inherit;
+  padding:10px 22px;border-radius:var(--radius2);
+  border:none;
+  background:linear-gradient(135deg,#188a50,#0f6b3e);
+  color:#fff;cursor:pointer;
+  transition:all 0.15s;
+  box-shadow:0 2px 10px rgba(24,138,80,0.25);
+}
+.btn-tackle:hover{box-shadow:0 3px 14px rgba(24,138,80,0.4);transform:translateY(-1px)}
+
+.btn-outline{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13px;font-weight:500;font-family:inherit;
+  padding:10px 18px;border-radius:var(--radius2);
+  border:1px solid var(--border2);background:transparent;
+  color:var(--text2);cursor:pointer;transition:all 0.15s;
+}
+.btn-outline:hover{background:var(--bg3);color:var(--text)}
+
+.btn-ai{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13px;font-weight:500;font-family:inherit;
+  padding:10px 18px;border-radius:var(--radius2);
+  border:1px solid rgba(217,119,87,0.35);
+  background:rgba(217,119,87,0.08);
+  color:var(--accent2);cursor:pointer;
+  transition:all 0.15s;margin-left:auto;
+}
+.btn-ai:hover{background:rgba(217,119,87,0.14);border-color:var(--accent)}
+.btn-ai:disabled{opacity:0.45;pointer-events:none}
+
+/* Shimmer loader */
+.shimmer{
+  background:linear-gradient(90deg,var(--bg3) 25%,var(--bg4) 50%,var(--bg3) 75%);
+  background-size:200% 100%;
+  animation:shim 1.4s infinite;
+  border-radius:4px;
+}
+@keyframes shim{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* Modal */
+.overlay{
+  position:fixed;inset:0;
+  background:rgba(31,30,29,0.35);
+  backdrop-filter:blur(6px);
+  display:flex;align-items:center;justify-content:center;
+  z-index:200;
+  opacity:0;pointer-events:none;
+  transition:opacity 0.2s;
+}
+.overlay.open{opacity:1;pointer-events:all}
+.modal{
+  background:var(--bg2);
+  border:1px solid var(--border2);
+  border-radius:16px;
+  padding:24px;width:380px;
+  box-shadow:0 24px 48px rgba(31,30,29,0.18);
+  transform:translateY(10px);
+  transition:transform 0.2s;
+}
+.overlay.open .modal{transform:translateY(0)}
+
+.modal-hdr{
+  display:flex;justify-content:space-between;
+  align-items:center;margin-bottom:20px;
+}
+.modal-ttl{font-size:15px;font-weight:600}
+
+.portal-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 0;border-bottom:1px solid var(--border);
+}
+.portal-row:last-of-type{border-bottom:none}
+.p-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 8px rgba(217,119,87,0.5);
+}
+
+.prog-wrap{margin-top:16px;display:none}
+.prog-top{display:flex;justify-content:space-between;font-size:12px;color:var(--text2);margin-bottom:6px}
+.prog-bg{height:4px;background:var(--bg4);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--purple));border-radius:2px;transition:width 0.3s}
+</style>
+</head>
+<body style="display:flex;flex-direction:column;height:100vh">
+
+<!-- Header -->
+<header class="header">
+  <div class="logo">
+    <div class="logo-mark">⚡</div>
+    TenderIQ
+    <span class="portal-tag" id="portal-tag">PDO Portal</span>
+  </div>
+
+  <div class="header-pills">
+    <button class="hpill active" id="pill-all" onclick="setFilter('all',this)"><b id="s-total">0</b>Total</button>
+    <button class="hpill" id="pill-new" onclick="setFilter('new',this)" style="color:var(--accent2)"><b id="s-new" style="color:var(--accent2)">0</b>New</button>
+    <button class="hpill" id="pill-high" onclick="setFilter('high',this)" style="color:var(--green2)"><b id="s-high" style="color:var(--green2)">0</b>High match</button>
+    <button class="hpill" id="pill-soon" onclick="setFilter('soon',this)" style="color:var(--orange2)"><b id="s-soon" style="color:var(--orange2)">0</b>Closing soon</button>
+    <button class="hpill" id="pill-tackled" onclick="setFilter('tackled',this)"><b id="s-tackled">0</b>Tackled</button>
+  </div>
+
+  <div class="header-right">
+    <span class="last-sync" id="last-sync"></span>
+    <button class="btn" onclick="openModal()"><i class="ti ti-cloud-download"></i> Scrape now</button>
+    <button class="btn" onclick="loadTenders()"><i class="ti ti-refresh"></i> Refresh</button>
+    <button class="btn btn-accent" onclick="scoreAll()"><i class="ti ti-sparkles"></i> Score all</button>
+  </div>
+</header>
+
+<!-- Body -->
+<div class="body">
+
+  <!-- Left panel -->
+  <div class="left">
+    <div class="search-wrap">
+      <div class="search-inner">
+        <i class="ti ti-search"></i>
+        <input class="search-input" id="search-input" placeholder="Search tenders, RFx numbers…" oninput="renderList()">
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <button class="fchip active" onclick="setChip('all',this)">All</button>
+      <button class="fchip" onclick="setChip('new',this)">New</button>
+      <button class="fchip" onclick="setChip('tackled',this)">Tackled</button>
+      <button class="fchip" onclick="setChip('skipped',this)">Skipped</button>
+      <button class="fchip" onclick="setChip('src-pdo',this)">PDO</button>
+      <button class="fchip" onclick="setChip('src-oq',this)">OQ</button>
+      <select class="sort-sel" onchange="setSort(this.value)">
+        <option value="deadline">Deadline ↑</option>
+        <option value="score">AI Score ↓</option>
+        <option value="title">Title A–Z</option>
+      </select>
+    </div>
+
+    <div class="list" id="list">
+      <div class="empty-list">Loading tenders…</div>
+    </div>
+  </div>
+
+  <!-- Right panel -->
+  <div class="right" id="right">
+    <div class="empty-state">
+      <div class="empty-icon"><i class="ti ti-file-search"></i></div>
+      <div style="font-size:14px;font-weight:600;color:var(--text2)">Select a tender</div>
+      <div style="font-size:13px;max-width:220px;text-align:center;line-height:1.7">Pick any tender from the list to review details and run AI analysis</div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-hdr">
+      <div class="modal-ttl">Data Sources</div>
+      <button class="btn" onclick="closeModal()" style="padding:4px 9px;font-size:12px">✕</button>
+    </div>
+    <div id="modal-portals"></div>
+    <div class="prog-wrap" id="prog-wrap">
+      <div class="prog-top"><span id="prog-lbl">Connecting…</span><span id="prog-pct">0%</span></div>
+      <div class="prog-bg"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:20px">
+      <button class="btn btn-accent" style="flex:1" id="scrape-btn" onclick="startScrape()"><i class="ti ti-refresh"></i> Refresh data</button>
+      <button class="btn" onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const PORTALS=[
+  {id:'pdo',name:'PDO SRM Portal',url:'srm.pdo.co.om',enabled:true},
+  {id:'oq',name:'OQ Tawreed',url:'tawreed.oq.com',enabled:true},
+];
+
+/* ── Data mapping ── */
+function normDate(d){
+  if(!d)return'';
+  // PDO: "13.07.2026" — OQ: "16/07/2026 23:59" (trailing time, dropped here
+  // since the dashboard only needs day-level granularity for deadlines).
+  const m=d.match(/^(\d{2})[./](\d{2})[./](\d{4})(?:\s|$)/);
+  return m?`${m[3]}-${m[2]}-${m[1]}`:d;
+}
+
+function mapTender(t,i){
+  const source=t.source||'PDO SRM Portal';
+  return{
+    id:i+1,
+    title:t.title||`RFx ${t.reference_number||i+1}`,
+    portal:source.includes('Tawreed')?'oq':'pdo',
+    source,
+    value:t.estimated_value||'—',
+    deadline:normDate(t.closing_date||''),
+    sector:t.rfx_type||'—',
+    scope:t.scope_of_work||t.description||t.title||'—',
+    sowStatus:t.sow_extraction||'',
+    ref:t.reference_number||'',
+    link:t.link||'',
+    rfxStatus:t.status||'',
+    responseStatus:t.response_status||'',
+    documents:t.documents||[],
+    floated:normDate(t.first_seen||''),
+    purchaseRequired:!!t.purchase_required,
+    score:null,reasoning:null,status:'new',
+  };
+}
+
+/* ── State ── */
+let tenders=[];
+let selectedId=null;
+let filterState='all';
+let sortState='deadline';
+
+/* ── Load ── */
+async function loadTenders(){
+  document.getElementById('list').innerHTML='<div class="empty-list">Loading…</div>';
+  try{
+    const r=await fetch('tenders.json?t='+Date.now());
+    if(!r.ok)throw new Error(r.statusText);
+    const raw=await r.json();
+    tenders=raw.map(mapTender);
+    const now=new Date();
+    document.getElementById('last-sync').textContent=
+      'Last sync '+now.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+  }catch(e){
+    document.getElementById('list').innerHTML=
+      `<div class="empty-list">⚠ Could not load tenders.json<br><small style="opacity:.6">${e.message}</small></div>`;
+    return;
+  }
+  updateStats();renderList();
+}
+
+/* ── Stats ── */
+function daysUntil(d){
+  if(!d)return 999;
+  return Math.ceil((new Date(d)-new Date())/86400000);
+}
+function fmtDays(n){
+  if(n<=0)return'Expired';
+  if(n===1)return'1 day left';
+  return n+' days left';
+}
+
+function updateStats(){
+  const tot=tenders.length;
+  const newC=tenders.filter(t=>t.status==='new').length;
+  const high=tenders.filter(t=>t.score>=75).length;
+  const soon=tenders.filter(t=>daysUntil(t.deadline)<=14&&t.status!=='tackled').length;
+  const tack=tenders.filter(t=>t.status==='tackled').length;
+  set('s-total',tot);set('s-new',newC);set('s-high',high);
+  set('s-soon',soon);set('s-tackled',tack);
+
+  const sources=[...new Set(tenders.map(t=>t.portal))];
+  const tagEl=document.getElementById('portal-tag');
+  if(tagEl)tagEl.textContent=sources.length>1?`${sources.length} Portals`:(PORTALS.find(p=>p.id===sources[0])?.name||'Portal');
+}
+function set(id,v){const el=document.getElementById(id);if(el)el.textContent=v;}
+
+/* ── Filter / sort ── */
+function getFiltered(){
+  const q=(document.getElementById('search-input')?.value||'').toLowerCase();
+  let list=[...tenders];
+  if(filterState==='high')       list=list.filter(t=>t.score>=75);
+  else if(filterState==='soon')  list=list.filter(t=>daysUntil(t.deadline)<=14&&t.status!=='tackled');
+  else if(filterState==='src-pdo') list=list.filter(t=>t.portal==='pdo');
+  else if(filterState==='src-oq')  list=list.filter(t=>t.portal==='oq');
+  else if(filterState!=='all')   list=list.filter(t=>t.status===filterState);
+  if(q) list=list.filter(t=>
+    t.title.toLowerCase().includes(q)||
+    t.ref.toLowerCase().includes(q)||
+    t.sector.toLowerCase().includes(q)||
+    t.source.toLowerCase().includes(q)
+  );
+  if(sortState==='score')    list.sort((a,b)=>(b.score||0)-(a.score||0));
+  else if(sortState==='deadline') list.sort((a,b)=>daysUntil(a.deadline)-daysUntil(b.deadline));
+  else if(sortState==='title')    list.sort((a,b)=>a.title.localeCompare(b.title));
+  return list;
+}
+
+/* ── Render list ── */
+function scoreClass(s){return s>=75?'sh':s>=50?'sm':'sl'}
+function scoreColor(s){return s>=75?'#188a50':s>=50?'#b45309':'#dc2626'}
+
+function renderList(){
+  const col=document.getElementById('list');
+  const list=getFiltered();
+  if(!list.length){
+    col.innerHTML='<div class="empty-list">No tenders match your filter.<br><small style="opacity:.55">Try adjusting the search or filter</small></div>';
+    return;
+  }
+  col.innerHTML=list.map(t=>{
+    const d=daysUntil(t.deadline);
+    const urg=d<=3?'danger':d<=14?'urgent':'';
+    const spCls={new:'sp-new',tackled:'sp-tackled',skipped:'sp-skipped',scoring:'sp-scoring'}[t.status]||'sp-new';
+    const spLbl={new:'New',tackled:'Tackled',skipped:'Skipped',scoring:'Scoring…'}[t.status]||'New';
+    const scorePill=t.score!==null
+      ?`<span class="score-pill ${scoreClass(t.score)}">${t.score}</span>`
+      :t.status==='scoring'?`<span class="score-pill sm">…</span>`:'';
+    const pulse=d<=7&&t.status!=='tackled'?`<div class="pulse"></div>`:'';
+    return`<div class="tcard${selectedId===t.id?' selected':''}${t.status==='tackled'?' tackled':''}" onclick="selectTender(${t.id})">
+      <div class="tc-top">
+        <div class="tc-title">${t.title}</div>
+        ${scorePill}
+      </div>
+      <div class="tc-meta">
+        <span class="mtag"><i class="ti ti-building"></i>${t.portal==='oq'?'OQ':'PDO'}</span>
+        <span class="mtag"><i class="ti ti-tag"></i>${t.sector}</span>
+        <span class="mtag ${urg}"><i class="ti ti-calendar"></i>${fmtDays(d)}</span>
+        ${t.floated?`<span class="mtag"><i class="ti ti-calendar-plus"></i>floated ${t.floated}</span>`:''}
+        ${t.purchaseRequired?`<span class="mtag danger"><i class="ti ti-lock"></i>Purchase required</span>`:''}
+        ${t.ref?`<span class="mtag"><span class="ref-mono">${t.ref}</span></span>`:''}
+      </div>
+      <div class="tc-foot">
+        <span class="spill ${spCls}">${pulse}${spLbl}</span>
+        ${d<=7&&t.status!=='tackled'?`<span style="font-size:10px;color:var(--orange2)">closes ${t.deadline}</span>`:''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+/* ── Select / detail ── */
+function selectTender(id){
+  selectedId=id;
+  renderList();
+  renderDetail();
+}
+
+function renderDetail(){
+  const panel=document.getElementById('right');
+  const t=tenders.find(x=>x.id===selectedId);
+  if(!t){
+    panel.innerHTML=`<div class="empty-state"><div class="empty-icon"><i class="ti ti-file-search"></i></div>
+      <div style="font-size:14px;font-weight:600;color:var(--text2)">Select a tender</div>
+      <div style="font-size:13px;max-width:220px;text-align:center;line-height:1.7">Pick any tender from the list to review details and run AI analysis</div>
+    </div>`;
+    return;
+  }
+  const d=daysUntil(t.deadline);
+  const urg=d<=3?'danger':d<=14?'urgent':'';
+
+  const scoreBlock=t.score!==null?`
+    <div class="ai-card">
+      <div class="ai-header">
+        <div class="ai-lbl"><i class="ti ti-sparkles"></i>AI Match Score</div>
+        <div class="score-big">
+          <span class="score-num" style="color:${scoreColor(t.score)}">${t.score}</span>
+          <span class="score-den">/100</span>
+        </div>
+      </div>
+      <div class="bar-bg"><div class="bar-fill" style="width:${t.score}%;background:${scoreColor(t.score)}"></div></div>
+      <div class="reasoning">
+        ${(t.reasoning||[]).map(r=>`
+          <div class="rrow">
+            <div class="ricon ${r.positive?'rpos':'rneg'}">${r.positive?'✓':'✕'}</div>
+            <span>${r.text}</span>
+          </div>`).join('')}
+      </div>
+    </div>`
+  :t.status==='scoring'?`
+    <div class="ai-card">
+      <div class="ai-lbl" style="opacity:.65;margin-bottom:14px"><i class="ti ti-sparkles"></i>Analysing with AI…</div>
+      <div class="shimmer" style="height:6px;margin-bottom:14px"></div>
+      <div class="shimmer" style="height:12px;width:80%;margin-bottom:8px"></div>
+      <div class="shimmer" style="height:12px;width:65%;margin-bottom:8px"></div>
+      <div class="shimmer" style="height:12px;width:72%"></div>
+    </div>`:
+  ``;
+
+  panel.innerHTML=`
+    <div class="detail-scroll animate">
+      <div class="eyebrow">
+        <span class="etag"><i class="ti ti-building"></i>${t.source}</span>
+        <span class="etag"><i class="ti ti-tag"></i>${t.sector}</span>
+        ${t.ref?`<span class="etag" style="font-family:monospace;font-size:10px">${t.ref}</span>`:''}
+        ${t.rfxStatus?`<span class="etag">${t.rfxStatus}</span>`:''}
+      </div>
+      <div class="detail-title">${t.title}</div>
+      <div class="meta-grid">
+        <div class="mcard">
+          <div class="mcard-lbl">Date Floated</div>
+          <div class="mcard-val">${t.floated||'—'}</div>
+        </div>
+        <div class="mcard">
+          <div class="mcard-lbl">Closing Date</div>
+          <div class="mcard-val ${urg}">${t.deadline||'—'}</div>
+        </div>
+        <div class="mcard">
+          <div class="mcard-lbl">Days Remaining</div>
+          <div class="mcard-val ${urg}">${fmtDays(d)}</div>
+        </div>
+        <div class="mcard">
+          <div class="mcard-lbl">Estimated Value</div>
+          <div class="mcard-val">${t.value}</div>
+        </div>
+        ${t.responseStatus?`<div class="mcard">
+          <div class="mcard-lbl">Response Status</div>
+          <div class="mcard-val">${t.responseStatus}</div>
+        </div>`:''}
+        <div class="mcard">
+          <div class="mcard-lbl">Purchase Status</div>
+          <div class="mcard-val ${t.purchaseRequired?'danger':''}">${t.purchaseRequired?'Requires purchase':'Available (not purchased)'}</div>
+        </div>
+      </div>
+      ${scoreBlock}
+      ${t.scope&&t.scope!=='—'?`
+      <div class="section">
+        <div class="slabel">Scope of Work</div>
+        <div class="sbody">${t.scope}</div>
+      </div>`:''}
+
+      ${t.documents&&t.documents.length?`
+      <div class="section">
+        <div class="slabel">Documents (${t.documents.length})</div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          ${t.documents.map(d=>{
+            const fname=d.split('/').pop();
+            const ext=(fname.split('.').pop()||'').toLowerCase();
+            const icon=ext==='pdf'?'ti-file-type-pdf':ext.startsWith('xls')?'ti-file-type-xls':ext.startsWith('doc')?'ti-file-type-doc':'ti-file';
+            return `<a href="/${d}" target="_blank" style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius2);text-decoration:none;transition:border-color 0.15s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+              <i class="ti ${icon}" style="font-size:18px;color:var(--accent2);flex-shrink:0"></i>
+              <span style="font-size:13px;color:var(--text);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${fname}</span>
+              <i class="ti ti-download" style="font-size:13px;color:var(--text3)"></i>
+            </a>`;
+          }).join('')}
+        </div>
+      </div>`:`
+      <div class="section">
+        <div class="slabel">Documents</div>
+        <div style="font-size:13px;color:var(--text3);padding:10px 0">No documents downloaded yet. Run scrape to fetch attachments.</div>
+      </div>`}
+    </div>
+    <div class="action-bar">
+      ${t.status!=='tackled'
+        ?`<button class="btn-tackle" onclick="setStatus(${t.id},'tackled')"><i class="ti ti-check"></i>Mark as Tackled</button>`
+        :`<span style="font-size:13px;color:var(--green2);display:flex;align-items:center;gap:6px"><i class="ti ti-circle-check"></i>Tackled</span>`}
+      ${t.status!=='skipped'
+        ?`<button class="btn-outline" onclick="setStatus(${t.id},'skipped')"><i class="ti ti-x"></i>Skip</button>`
+        :`<button class="btn-outline" onclick="setStatus(${t.id},'new')"><i class="ti ti-arrow-back-up"></i>Restore</button>`}
+      ${t.score===null&&t.status!=='scoring'
+        ?`<button class="btn-ai" onclick="scoreOne(${t.id})"><i class="ti ti-sparkles"></i>Get AI Score</button>`
+        :''}
+    </div>`;
+}
+
+/* ── Status ── */
+function setStatus(id,status){
+  tenders=tenders.map(t=>t.id===id?{...t,status}:t);
+  updateStats();renderList();renderDetail();
+}
+
+/* ── Filters ── */
+function setChip(f,el){
+  filterState=f;
+  document.querySelectorAll('.fchip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  // sync header pills
+  document.querySelectorAll('.hpill').forEach(p=>p.classList.remove('active'));
+  const map={all:'pill-all',new:'pill-new',high:'pill-high',soon:'pill-soon',tackled:'pill-tackled'};
+  const pill=document.getElementById(map[f]);
+  if(pill)pill.classList.add('active');
+  renderList();
+}
+
+function setFilter(f,el){
+  filterState=f;
+  document.querySelectorAll('.hpill').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  // sync chips
+  document.querySelectorAll('.fchip').forEach(c=>c.classList.remove('active'));
+  const first=document.querySelector('.fchip');if(first&&f==='all')first.classList.add('active');
+  renderList();
+}
+
+function setSort(v){sortState=v;renderList();}
+
+/* ── AI scoring ── */
+async function scoreOne(id){
+  const t=tenders.find(x=>x.id===id);
+  if(!t||t.status==='scoring')return;
+  tenders=tenders.map(x=>x.id===id?{...x,status:'scoring'}:x);
+  renderList();renderDetail();
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        model:'claude-sonnet-4-6',
+        max_tokens:600,
+        system:`You are a BD analyst for Seven Seas Petroleum LLC, an oil & gas services firm in Oman. Score how well a PDO tender matches. Return ONLY JSON: {"score":<0-100>,"reasoning":[{"positive":<bool>,"text":"<max 12 words>"}]} with exactly 3 items.`,
+        messages:[{role:'user',content:`RFx: ${t.ref}\nTitle: ${t.title}\nType: ${t.sector}\nScope: ${t.scope}`}]
+      })
+    });
+    const data=await r.json();
+    const raw=data.content?.find(c=>c.type==='text')?.text||'{}';
+    const p=JSON.parse(raw.replace(/```json|```/g,'').trim());
+    tenders=tenders.map(x=>x.id===id?{...x,score:p.score,reasoning:p.reasoning,status:'new'}:x);
+  }catch(e){
+    tenders=tenders.map(x=>x.id===id?{...x,score:null,status:'new'}:x);
+  }
+  updateStats();renderList();if(selectedId===id)renderDetail();
+}
+
+async function scoreAll(){
+  const unscored=tenders.filter(t=>t.score===null&&t.status!=='scoring');
+  for(const t of unscored)await scoreOne(t.id);
+}
+
+/* ── Modal ── */
+function openModal(){
+  document.getElementById('overlay').classList.add('open');
+  document.getElementById('modal-portals').innerHTML=PORTALS.map(p=>`
+    <div class="portal-row">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="p-dot"></div>
+        <div>
+          <div style="font-size:13px;font-weight:500">${p.name}</div>
+          <div style="font-size:11px;color:var(--text3)">${p.url}</div>
+        </div>
+      </div>
+      <span style="font-size:11px;color:var(--green2);background:rgba(24,138,80,0.10);padding:2px 8px;border-radius:4px;font-weight:500">Active</span>
+    </div>`).join('');
+  document.getElementById('prog-wrap').style.display='none';
+}
+
+function closeModal(){document.getElementById('overlay').classList.remove('open')}
+
+async function startScrape(){
+  const btn=document.getElementById('scrape-btn');
+  const progWrap=document.getElementById('prog-wrap');
+  const fill=document.getElementById('prog-fill');
+  const pct=document.getElementById('prog-pct');
+  const lbl=document.getElementById('prog-lbl');
+
+  btn.disabled=true;
+  btn.innerHTML='<i class="ti ti-loader"></i> Starting…';
+  progWrap.style.display='block';
+  fill.style.width='0%';pct.textContent='0%';
+  lbl.textContent='Launching scraper…';
+
+  try{
+    const r=await fetch('/api/scrape',{method:'POST'});
+    const data=await r.json();
+    if(data.status==='running'){
+      lbl.textContent='Scraper already running…';
+    }
+  }catch(e){
+    lbl.textContent='Could not reach server.';
+    btn.disabled=false;btn.innerHTML='<i class="ti ti-refresh"></i> Refresh data';
+    return;
+  }
+
+  // Poll /api/status — scraper typically takes 30-90s
+  const steps=['Logging into PDO SRM…','Navigating to RFx list…','Waiting for table to load…','Extracting tenders…','Saving data…'];
+  let elapsed=0,stepIdx=0;
+  const iv=setInterval(async()=>{
+    elapsed+=3;
+    // Animate progress bar (non-linear — slows near 90% until done)
+    const fake=Math.min(90,Math.round(90*(1-Math.exp(-elapsed/60))));
+    fill.style.width=fake+'%';pct.textContent=fake+'%';
+    if(stepIdx<steps.length&&elapsed%(12)===0) lbl.textContent=steps[stepIdx++]||lbl.textContent;
+
+    try{
+      const s=await fetch('/api/status');
+      const d=await s.json();
+      if(d.status==='done'){
+        clearInterval(iv);
+        fill.style.width='100%';pct.textContent='100%';
+        lbl.textContent='Done — reloading data…';
+        btn.innerHTML='<i class="ti ti-check"></i> Complete';
+        setTimeout(()=>{closeModal();loadTenders();},800);
+      } else if(d.status==='error'){
+        clearInterval(iv);
+        lbl.textContent='Scraper exited with an error. Check scraper.log.';
+        btn.disabled=false;btn.innerHTML='<i class="ti ti-refresh"></i> Retry';
+      }
+    }catch(_){}
+  },3000);
+}
+
+loadTenders();
+</script>
+</body>
+</html>
