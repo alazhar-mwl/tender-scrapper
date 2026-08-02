@@ -16,7 +16,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"RTD,WIKA,TR40-RTD-DUPLEX+L200MM,SS316\" — PR Material Text: Resistance temperature element Type CABLE Application TEMPERATURE TRANSMITTER Design spec IEC 60751 ...\nItem01\"RTD,WIKA,TR40-RTD-DUPLEX+L200MM,SS316\" — PR Item Text: Resistance temperature element Type CABLE Application TEMPERATURE TRANSMITTER Design spec IEC 60751 ...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233597",
@@ -35,7 +38,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"VALVE,SOL,BIFOLD,FP03PM732NCV77A24D32\" — PR Material Text: Solenoid valve Type DIRECT AND INDIRECT ACTING Connection, electrical 1/2 in NPT M20 X 1.5 Power sup...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233595",
@@ -54,7 +60,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"DETECTOR,LEAK,CRC,10732-AB,12 x 500 ml\" — PR Material Text: Leak detectors Form LIQUID Type, container AEROSOL Description ECO LEAK FINDER FPS Form of supply 12...\nItem01\"DETECTOR,LEAK,CRC,10732-AB,12 x 500 ml\" — PR Item Text: Leak detectors Form LIQUID Type, container AEROSOL Description ECO LEAK FINDER FPS Form of supply 12...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233590",
@@ -73,7 +82,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"CONDITIONER,DIN RAIL,AMETEK,BK3301\" — PR Material Text: Instrument_systems Description DIN RAIL CONDITIONER Model number BK3301 Manufacturer AMETEK Manufact...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233589",
@@ -92,7 +104,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"DETECTOR,FLAME,FSENTRY,SS4-A2,IP66,24Vdc\" — PR Material Text: Flame detectors Classification, hazard areas CLASS I, DIV 1, 2 GROUP-B/C/D CLASS II, DIV 1, 2 GROUP-...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233587",
@@ -111,7 +126,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"PUMP,SCREW,SETTIMA,GR40 SMT8B,15TO80l/mi\" — PR Material Text: Pumps Type THREE SCREW PUMP Model 32-40-45 (AVAILABLE) Size GR40 Standard, flange IEC Mat, flange AL...\nItem01\"PUMP,SCREW,SETTIMA,GR40 SMT8B,15TO80l/mi\" — PR Item Text: Pumps Type THREE SCREW PUMP Model 32-40-45 (AVAILABLE) Size GR40 Standard, flange IEC Mat, flange AL...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233586",
@@ -130,7 +148,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"O-RING,LID,TEFLON,E8554103,ENARDO\" — PR Material Text: Spare_parts Part name O-RING,LID Material TEFLON / SILICONE Equipment name PRESSURE VACUUM RELIEF VA...\nItem02\"O-RING,SEAT,TEFLON,2020903,ENARDO\" — PR Material Text: Spare_parts Part name O-RING,SEAT Material TEFLON / SILICONE Equipment name PRESSURE VACUUM RELIEF V...\nItem03\"BODY GASKET,TEFLON,8550809,ENARDO\" — PR Material Text: Spare_parts Part name BODY GASKET Material TEFLON Equipment name PRESSURE VACUUM RELIEF VALVE Equipm...\nItem04\"SEAL,PALLET,8554811,ENARDO\" — PR Material Text: Spare_parts Part name SEAL,PALLET Material TEFLON Equipment name PRESSURE VACUUM RELIEF VALVE Equipm...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233585",
@@ -149,7 +170,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"SHAFT,005.655.372810600,WEIR-GAB\" — PR Material Text: Spare_parts Part name SHAFT Material ASTM B425 UNS N08825 Equipment name CENTRIFUGAL PUMP Equipment ...\nItem01\"SHAFT,005.655.372810600,WEIR-GAB\" — PR Item Text: SHAFT,005.655.372810600,WEIR-GAB ASTM B425 UNS N08825 Equipment name CENTRIFUGAL PUMP Equipment mode...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233580",
@@ -168,7 +192,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Tendering Header text: Rfx Type : Techno-Commercial Project Code and Name: MPP3.3 MPFM in MMB & MMC Stations Purchase Spec:...\nDocument Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"VPIMF,DN50,CL300,SBB,FL,316,316,-50°C\" — PR Material Text: Monoflange process to instrument valves Nominal size DN 50 NPS 2 Size, outlet/bleed DN 15 (BLEED) DN...\nItem01\"VPIMF,DN50,CL300,SBB,FL,316,316,-50°C\" — PR Item Text: For MPP3.3 MPFM in MMB Stations Project\nItem02\"VPIMF,DN50,CL300,SBB,FL,316,316,-50°C\" — PR Material Text: Monoflange process to instrument valves Nominal size DN 50 NPS 2 Size, outlet/bleed DN 15 (BLEED) DN...\nItem02\"VPIMF,DN50,CL300,SBB,FL,316,316,-50°C\" — PR Item Text: MPP3.3 MPFM in MMC Stations Project",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233577",
@@ -187,7 +214,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"TRANSMITTER,LVL,MAGNETRL,705510AC11X+072\" — PR Material Text: Level instrument transmitters Type, measuring GUIDED WAVE RADAR Model ECLIPSE 705 Communication prot...\nItem01\"TRANSMITTER,LVL,MAGNETRL,705510AC11X+072\" — PR Item Text: TRANSMITTER,LVL,MAGNETRL,705510AC11X+072suring GUIDED WAVE RADAR Model ECLIPSE 705 Communication pro...\nItem02\"TRGP,ABBINSTR,266HSHEKTB1E1+,0.54TO16kPa\" — PR Material Text: Electronic gauge pressure transmitters Signal, output 4 TO 20 mA Communication protocol (smart) HART...\nItem02\"TRGP,ABBINSTR,266HSHEKTB1E1+,0.54TO16kPa\" — PR Item Text: TRGP,ABBINSTR,266HSHEKTB1E1+,0.54TO16kPaSignal, output 4 TO 20 mA Communication protocol (smart) HAR...\nItem03\"POWER SUPPLY UNIT,PHOE-CON,2866776,24Vdc\" — PR Material Text: Power_supplies Voltage, input 85 TO 264 Vac Voltage, output 24 V Type QUINT-PS/1AC/24DC/20 Frequency...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233576",
@@ -206,7 +236,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"FLOWMETER,EM,ROSEMNT,8705DHB030+8732EMT+\" — PR Material Text: Flanged electromagnetic flowmeters Classification, hazard areas ATEX DUST ATEX FLAMEPROOF ATEX INCRE...\nItem01\"FLOWMETER,EM,ROSEMNT,8705DHB030+8732EMT+\" — PR Item Text: FLOWMETER,EM,ROSEMNT,8705DHB030+8732EMT+sification, hazard areas ATEXDUST ATEX FLAMEPROOF ATEX INCRE...\nItem02\"TRANSMITTER,ROSEMNT,8732EMT2A2K1DA1DA2M4\" — PR Material Text: Transmitters - Instrumentations Model 8732E Type MAGNETIC FLOWMETER Style STANDARD Mounting INTEGRAL...\nItem02\"TRANSMITTER,ROSEMNT,8732EMT2A2K1DA1DA2M4\" — PR Item Text: TRANSMITTER,ROSEMNT,8732EMT2A2K1DA1DA2M4 8732E Type MAGNETIC FLOWMETER Style STANDARD Mounting INTEG...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233575",
@@ -225,7 +258,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"SHELL,EPOXY FRP,4080213_3 POR+,BEKAERT\" — PR Material Text: Spare_parts Part name SHELL Material FILAMENT WOUND EPOXY FRP Equipment name PRESSURE VESSEL Additio...\nItem02\"ADAPTER,MEMBRANE,5080013,PROTEC\" — PR Material Text: Spare_parts Part name ADAPTER,MEMBRANE Dimensions 1.125 in Material PET Equipment name PRESSURE VESS...\nItem03\"ADAPTER,MEMBRANE,1.125in,5080049,BEKAERT\" — PR Material Text: Spare_parts Part name ADAPTER,MEMBRANE Size 1.125 in (INTERNAL CORE) Manufacturer NV BEKAERT Manufac...\nItem04\"PORT,PERMEAT,VICTUALIC,4080072-6,BEKAERT\" — PR Material Text: Spare_parts Part name PORT,PERMEAT,VICTUALIC Material STAINLESS STEEL 316 (FULL BAR) Size 1.1/2 in M...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233574",
@@ -244,7 +280,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"AUTOMATION DEVICE,HIMA,B 4237-2+H41Q-HRS\" — PR Material Text: Instrument installation accessories Height 5U Size 19 in Manufacturer HIMA PAUL HILDEBRANDT Manufact...\nItem01\"AUTOMATION DEVICE,HIMA,B 4237-2+H41Q-HRS\" — PR Item Text: AUTOMATION DEVICE,HIMA,B 4237-2+H41Q-HRSght 5U Size 19 in Manufacturer HIMA PAUL HILDEBRANDT Manufac...\nItem02\"SENSOR ASSY,5200-28-IT-AL,SIERRAMT\" — PR Material Text: Spare_parts Part name SENSOR ASSEMBLY Equipment name FLAMMABLE GAS DETECTOR Equipment model 5100-28-...\nItem02\"SENSOR ASSY,5200-28-IT-AL,SIERRAMT\" — PR Item Text: SENSOR ASSY,5200-28-IT-AL,SIERRAMT Equipment name FLAMMABLE GAS DETECTOR Equipment model 5100-28-IT-...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233573",
@@ -263,7 +302,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"DETECTOR,GAS,DRAGER,POLYTRON 8100\" — PR Material Text: Gas detectors Ambient temperature -40 TO +150 °F -40 TO +65 °C Classification, hazard areas ATEX, IE...\nItem01\"DETECTOR,GAS,DRAGER,POLYTRON 8100\" — PR Item Text: DETECTOR,GAS,DRAGER,POLYTRON 8100\nItem02\"DETECTOR,GAS,SIERRAMT,510028ITA20501000\" — PR Material Text: Gas detectors Ambient temperature 5 TO 60 °C 5 TO 82 °C Classification, hazard areas ATEX ZONE 1 GRO...\nItem02\"DETECTOR,GAS,SIERRAMT,510028ITA20501000\" — PR Item Text: DETECTOR,GAS,SIERRAMT,510028ITA20501000 Humidity 98% Ambient temperature 5 TO 60 °C 5 TO 82 °C Mount...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233572",
@@ -282,7 +324,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"LEAK DETECTOR,GROV-DE,GDUINCUS22071AHA05\" — PR Material Text: Leak detectors Range 40 TO 120 dB Model GDU-INCUS Type ACOUSTIC SONIC ULTRASONIC GAS Cable entry 2 x...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233571",
@@ -301,7 +346,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"VALVE ASSY,CA-ORBIT,2532H8L_DN200x150,RB\" — PR Material Text: Ball valves Nominal size DN 200 x DN 150 NPS 8 x 6 Design spec, pressure rating ASME CL 900 Design s...\nItem01\"VALVE ASSY,CA-ORBIT,2532H8L_DN200x150,RB\" — PR Item Text: Ball valves Nominal size DN 200 x DN 150 NPS 8 x 6 Design spec, pressure rating ASME CL 900 Design s...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233570",
@@ -320,7 +368,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"DETECTOR,GAS,DETCON,TP700,H2S,HART,Al\" — PR Material Text: Gas detectors Ambient temperature -40 TO +75 °C Classification, hazard areas ZONE 1, GROUP IIB+H2 (A...\nItem01\"DETECTOR,GAS,DETCON,TP700,H2S,HART,Al\" — PR Item Text: DETECTOR,GAS,DETCON,TP700,H2S,HART,Al TO +75 °C Classification, hazard areas ZONE 1, GROUP IIB+H2 (A...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233569",
@@ -339,7 +390,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"VALVE,CONTROL,SAMSON,3277-53151020.01\" — PR Material Text: Flanged control valve Manufacturer SAMSON Model 3510 Facing, flange RAISED FACE Pressure desig, end ...\nItem01\"VALVE,CONTROL,SAMSON,3277-53151020.01\" — PR Item Text: VALVE,CONTROL,SAMSON,3277-53151020.01 SON Model 3510 Facing, flange RAISED FACE Pressure desig, end ...\nItem02\"VALVE,CTRL,SAMSON,3510-7,NPS1\" — PR Material Text: Flanged control valve Model 3510 Type GLOBE Mat, body STAINLESS STEEL 316 Mat spec, body ASTM A182 U...\nItem02\"VALVE,CTRL,SAMSON,3510-7,NPS1\" — PR Item Text: VALVE,CTRL,SAMSON,3510-7,NPS1",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233568",
@@ -358,7 +412,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"VALVE ASSY,CA-ORBIT,2532H8L_DN200x150,RB\" — PR Material Text: Ball valves Nominal size DN 200 x DN 150 NPS 8 x 6 Design spec, pressure rating ASME CL 900 Design s...\nItem01\"VALVE ASSY,CA-ORBIT,2532H8L_DN200x150,RB\" — PR Item Text: Ball valves Nominal size DN 200 x DN 150 NPS 8 x 6 Design spec, pressure rating ASME CL 900 Design s...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233567",
@@ -377,7 +434,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"VALVE,CTRL,FISH-CO,EAS,CS,CL600,5.05,1in\" — PR Material Text: Flanged control valve Manufacturer FISHER CONTROLS Model EAS Type ANGLE Mat, body HIGH TEMPERATURE C...\nItem01\"VALVE,CTRL,FISH-CO,EAS,CS,CL600,5.05,1in\" — PR Item Text: VALVE,CTRL,FISH-CO,EAS,CS,CL600,5.05,1inHER CONTROLS Model EAS Type ANGLE Mat, body HIGH TEMPERATURE...\nItem02\"POSITIONER,VLV,FISH-CO,DVC6010H+,4TO20mA\" — PR Material Text: PARTS FOR CONTROL VALVES. RZD MANUFACTURER: FISHER CONTROLS UK MISCELLANEOUS INSTRUMENT/PARTS MODEL:...\nItem02\"POSITIONER,VLV,FISH-CO,DVC6010H+,4TO20mA\" — PR Item Text: POSITIONER,VLV,FISH-CO,DVC6010H+,4TO20mARER: FISHER CONTROLS UK MISCELLANEOUS INSTRUMENT/PARTS MODEL...\nItem03\"CARD,FIELDBUS,H1,EMER-PM,KJ3242X1-BA3\" — PR Material Text: Instrument_systems Type FIELDBUS CARD Type H1, SERIES 2 Local bus power rating 12 Vdc AT 300 mA Fiel...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233566",
@@ -396,7 +456,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"DETECTOR,GAS,DRAGER,POLYTRON 8100\" — PR Material Text: Gas detectors Ambient temperature -40 TO +150 °F -40 TO +65 °C Classification, hazard areas ATEX, IE...\nItem01\"DETECTOR,GAS,DRAGER,POLYTRON 8100\" — PR Item Text: DETECTOR,GAS,DRAGER,POLYTRON 8100\nItem02\"DETECTOR,GAS,DRAGER,POLYTRON 8100\" — PR Material Text: Gas detectors Ambient temperature -40 TO +150 °F -40 TO +65 °C Classification, hazard areas ATEX, IE...\nItem02\"DETECTOR,GAS,DRAGER,POLYTRON 8100\" — PR Item Text: DETECTOR,GAS,DRAGER,POLYTRON 8100\nItem03\"DETECTOR,GAS,DRAGER,POLYTRON 8100\" — PR Material Text: Gas detectors Ambient temperature -40 TO +150 °F -40 TO +65 °C Classification, hazard areas ATEX, IE...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233565",
@@ -415,7 +478,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"LANTERN RING,TEFLON,23000327,PATERPMP\" — PR Material Text: Spare_parts Part name LANTERN RING Material TEFLON Manufacturer PATTERSON PUMP Manufacturer Part Num...\nItem01\"LANTERN RING,TEFLON,23000327,PATERPMP\" — PR Item Text: Spare_parts Part name LANTERN RING Material TEFLON Manufacturer PATTERSON PUMP Manufacturer Part Num...\nItem02\"BATTERY CHARGER ASSY,AS-2001,FIRETROL\" — PR Material Text: Spare_parts Part name BATTERY CHARGER ASSEMBLY Equipment name FIRE PUMP CONTROLLER Equipment model F...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233564",
@@ -434,7 +500,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"MONITOR,GAS,HONEYWLL,MICRO CLIP BWC2H\" — PR Material Text: Gas detectors Range 10 TO 15 ppm Type, gas H2S Manufacturer HONEYWELL Manufacturer Part Number MICRO...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233562",
@@ -453,7 +522,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"ACCELEROMETER,IMISENSO,EXVO622+,4MV/MM/S\" — PR Material Text: Vibration meters Description ACCELEROMETER Type VELOCITY SENSOR Brand name INDUSTRIAL ICP Constructi...\nItem01\"ACCELEROMETER,IMISENSO,EXVO622+,4MV/MM/S\" — PR Item Text: ACCELEROMETER,IMISENSO,EXVO622+,4MV/MM/SETER Type VELOCITY SENSOR Brand name INDUSTRIAL ICP Construc...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233561",
@@ -472,7 +544,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"TRGP,EMER-PM,3051TG5F2B21BE8M5Q4Q8S1D01+\" — PR Material Text: Electronic gauge pressure transmitters Manufacturer EMERSON PROCESS MANAGEMENT Model 3051T Communica...\nItem01\"TRGP,EMER-PM,3051TG5F2B21BE8M5Q4Q8S1D01+\" — PR Item Text: TRGP,EMER-PM,3051TG5F2B21BE8M5Q4Q8S1D01+Manufacturer EMERSON PROCESSMANAGEMENT Model 3051T Communica...\nItem02\"TRDP,YOKOGAWA,EJA530AEDH7N0+,0TO12000kPa\" — PR Material Text: Electronic gauge pressure transmitters Signal, output 4 T0 20 mA DC Communication protocol (smart) H...\nItem02\"TRDP,YOKOGAWA,EJA530AEDH7N0+,0TO12000kPa\" — PR Item Text: TRDP,YOKOGAWA,EJA530AEDH7N0+,0TO12000kPaSignal, output 4 T0 20 mA DC Communication protocol (smart) ...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "2000003541",
@@ -491,7 +566,10 @@
     "source": "PDO SRM Portal",
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Display RFx :\nOpen side panel\nPrint Preview\n \nTechnical RFx\nClose\nRegister\nQuestions and Answers ( 0 )\nExport\n \n\n\t\nRFx Number\n\t2000003541\nRFx Name\n\tC2100000569-Failure Analysis, Material T\nRFX Status\n\tPublished\nRFx Start Date\n\t\nSubmission Deadline\n\t09.08.2026 11:30:00 OMAN\nRemaining Time\n\t   6 Days 19:38:17\nRFx Owner\n\tPO6_PS400\nRFx Version Number\n\t       1\nRFx Version Type\n\tActive Version\n\n\n\t\nRFX Information\nItems\nNotes and Attachments\n\t\n\t\t\n\n\n\n\n\n\tNotes\t\t\n\n\n\n\nAdd\nClear\nFilter\nSettings\n\n\n \n\t\nAssigned To\n\t\nCategory\n\t\nText Preview\n\n\n \n\t\t\n \n\t\n \n\n\n\n\tAttachments\t\t\n\n\n\n\nAdd Attachment\nEdit Description\nVersioning\nDelete\nCreate Qualification Profile\nFilter\nSettings\n\n\n \n\t\nAssigned To\n\t\n\t\nCategory\n\t\n\t\nVersion\n\t\nProcessor\n\t\n\t\nChecked Out\n\t\n\t\nType\n\t\n\t\nSize (KB)\n\t\n\t\nChanged by\n\t\n\t\nChanged on\n\t\n\t\nDescription\n\t\n\t\nFile Name\n\t\n\n\n \n\tThe table does not contain any data\n\n\n\n\nEmphasizedPrevious ActionNext ActionPositive ActionNegative ActionTo open the menu, press F4.Press Enter to trigger an action and Arrow Down to open the menu.Split ButtonTo edit title, press F2 To lock title, press EnterTo open list, press F4. To select a different item, use up and down arrow keys.To select, press the spacebarTo deselect, press the spacebarTo enter, press the tab key. To navigate within a month, use the arrow keys.To edit the text, press F2. To save the text, press Enter. To cancel editing, press Escape.Press the left arrow key for the previous monthPress the right arrow key for the next monthPress the left arrow key for the previous month Press the up arrow key for the previous yearPress the right arrow key for the next month Press the down arrow key for the next yearTo select a day, press the spacebar. To move through the days, use the arrow keys. To go to the previous or next month, use Page Up/Down. To go to the previous or next year, use Shift+Page Up/Down.RequiredEmphasizedWarningInformationValue help availableTo search, press F4RequiredRead-OnlyItemDeletableeditableDisabledInvalidTo move through the items, use the left and right arrow keys.To move through the items, use the left and right arrow keys. To select items, use the spacebar.Collapse toolbarExpand toolbarTo invoke, press return key.To open the list of proposals, press ALT + arrow downTo edit title, press F2To lock title, press EnterTo open, press the spacebarTo move through the items, use the up and down arrow keys.To collapse, press the spacebarTo expand, press the spacebarTo move, hold shift and press the arrow keys.SelectedTo activate, press the spacebarNavigation listInput field for file uploadRead-OnlyPager ItemTo select, press the spacebarTo deselect, press CTRL and the spacebar.To deselect all, press CTRL and the spacebar.To select all, press the spacebarColumn for row selectionBreadcrumb navigation listSet the value using the arrow keysPress F4 to open the list and use the arrow keys to select a valueSearchCalculatorSpinnerDate SpinnerValue help availableDateHighlightedHotspot EmptyTo navigate to a content, press TabTo move to an item, press the arrow keysFilteredExpandedCollapsedInvalidMessage area contains messages. To toggle the focus, press Ctrl+Shift+Alt+M.CompletedTo expand, press plusTo collapse, press minus",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "Tender_36101",
@@ -533,7 +611,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tACCLRMTR;EX603C00;+/- 500 G\tACCELEROMETER; MEASUREMENT RANGE: +/- 500 G, SPECIFICATION: SENSITIVITY: 10 MV/G, FREQUENCY: 0.5 TO 10 KHZ; MANUFACTURER: IMI SENSORS, MANUFACTURER PART NO: EX603C00\tEA(each)\t2\n00020\tCOIL;495905C2;24V DC\tCOIL; VOLTAGE: 24 V DC; FFT: CERTIFICATE: LCIE 03 ATEX 6451 X - IECEX LCI 06.0004 X, TYPE OF PROTECTION: II 2 D - EX TB IIIC - 130 DG C, DEGREE OF PROTECTION: IP67, AMBIENT TEMPERATURE: -40 DEG C TO +80 DEG C, ELECTRICAL CONNECTION: PASSES BY THE BUILT-IN M20.5 X 1.5 CABLE GLAND.TAG NUMBER: 3SOV-50103-01; MANUFACTURER: PARKER HANNIFIN, MANUFACTURER PART NO: 495905C2\tEA(each)\t2\n00030\tKIT VLV REPR;DN150\tKIT, VALVE REPAIR; VALVE SIZE: DN150, COMPRISING: 1. SLEEVE (MATERIAL: NBR), 2. SHAFT SEAL O RING (MATERIAL: PERBUTAN),, APPLICATION: BUTTERFLY VALVE (TYPE: WAFER, PRESSURE RATING: PN10); EQUIPMENT MANUFACTURER: WAREX VALVE GMBH, EQUIPMENT MODEL NO: DKZ110, EQUIPMENT TAG NO: XV223C31, XV225A31, XV125A31\tSET\t2\n00040\tVALVE SLND;149108307,CNTRL,24V DC,9W\tVALVE, SOLENOID; TYPE: CONTROL, VOLTAGE RATING: 24 V DC, POWER RATING: 9 W, ENCLOSURE RATING: IP65; FFT: PRESSURE RATING: 350 LB; MANUFACTURER PART N",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37316",
@@ -554,7 +635,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nSOW\t100% Compliance of full scope of work\tYes/No Value\nMeeting Delivery Schedule\tProvide needed Service & submit reports in 2 Weeks\n\nNote : To maintain your response with number IN weeks\n\tText\nIndustry Experience and Expertise:\tThe auditing firm should demonstrate a strong track record in auditing performance metrics for refineries or related industries (e.g., petrochemicals, oil & gas, energy).\n\nNote : to attached supportive Docs along with the Technical Offer\tYes/No Value\nTechnical Competency and Methodology\tA detailed explanation of their audit methodology, including data verification, validation processes, and any specialized techniques they will use to evaluate the scorecard.\n\nNote : to attached supportive Docs along with the Technical Offer\tYes/No Value\nQualifications of the Audit Team:\tKey team members should have minimum 5 years of experience with balanced scorecard audits or refinery operations, especially in performance measurement and validation. CVs of the auditor should be provided.\n\nNote : to attached supportive Docs along with the Technical Offer\tYes/No Value\nAudit Report Quality and Communication Skills:\tThe firm should provide sample reports or demonstrate their ability to deliver clear, comprehensive, and actionable audit reports\n\nNote : to attached supportive Docs along with the Technical Offer\tYes/No Value\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nSOW\t100% Compliance of full scope of work\tYes/No Value\nMeeting Delivery Schedule\t\nProvide needed Service & submit reports in 2 Weeks\n\nNote : to Maintain your feedback with Number in Weeks\n\tText\nIndustry Experience and Expertise:\tThe auditing firm should demonstrate a strong track record in auditing performance metrics for refineries or related industries (e.g., petrochemicals, oil & gas, energy).\n\nNote : to attached supportive Docs along with the Technical Offer\tYes/No Value\nTechnical Competency and Methodology:\tA detailed explanation of their audit methodology, including data verification, validation processes, and any specialized techniques they will use to evaluate the scorecard.\n\nNote : to attached supportive Docs along with the Technical Offer\tYes/No Value\nQualifications of the Audit Team:\tKey team members should have minimum 5 years of experience with balanced scorecard audits or refinery operations, especially in performance measurement and validation. CVs of the auditor should be provided.\n\nNote : to attached supportive Docs along with the Technical Offer\tYes/No Value\nAudit Report Quality and Communication Skills:\tThe firm should provide sample reports or demonstrate their ability to deliver clear, comprehensive, and actionable audit reports\n\nNote : to attached supportive Docs along with the Technical Offer\tYes/No Value\nPenalties (Late Delivery ):\tspecified in the Purchase Order and without prejudice to OQ8’s other rights and remedies under the Purchase Order or at law, Seller shall become liable to pay OQ8 an amount equal to 0.3 % of the total Purchase Order Value as defined in the Purchase Order for every day or part thereof by which the Delivery Date specified in the Purchase Order is exceeded for any reason whatsoever, except for reasons attributable to failure of OQ8 to comply with the Purchase Order, up to a maximum of 10% of the total Purchase Order Value, or as\namended and specified in the Purchase Order.If part of the Goods are delivered or can be put into useful operation the amount specified above shall be reduced proportionally. The amount Seller is liable to pay to OQ8 hereunder shall become due immediately the Goods are not delivered on the Delivery Date specified in the Purchase Order, without any notice or judicial intervention being required, and may be recovered by deduction by OQ8 from Seller's invoices. In the event a delay is caused by the gross negligence or willful of Seller no limitation as set out herein shall apply\tYes/No Value\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37458",
@@ -575,7 +659,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tTHRMTR DIAL;0 TO 100DEG C,4IN,200MM,6MM\tTHERMOMETER, DIAL; TEMPERATURE RANGE: 0 TO 100 DEG C , DIAL SIZE: 4 IN, STEM LENGTH: 200 MM, SHEATH DIAMETER: 6 MM, CONNECTION TYPE: NPT, CONNECTION SIZE: 1/2 IN, MATERIAL: SS; FFT: W/THERMOWELL\tEA(each)\t2\n00020\tRELAY;ISO415R-24,ART:B71602000;24V DC\tRELAY; TYPE: INSULATION MONITORING DEVICE, COIL VOLTAGE: 24 V DC, CURRENT RATING: <10 A, CONTACT ARRANGEMENT: 1 ALARM RELAY, SELECTABLE N/O OR N/C, ACTION: INSULATION RESISTANCE MONITORING WITH AUTOMATIC SELF-TEST, ALARM ACTIVATION UPON THRESHOLD CROSSING, LINE VOLTAGE: MONITORED SYSTEM: 3(N)AC, AC, DC UP TO 400 V, TERMINAL TYPE: SCREW TERMINALS FOR L1, L2, E, KE, +, – , RELAY TERMINALS 11–12–14, MOUNTING METHOD: DIN‑RAIL MOUNTING (18 MM WIDTH); MANUFACTURER: BENDER, MANUFACTURER PART NO: ISO415R-24, MANUFACTURER: BENDER, ARTICLE NO: B71602000\tEA(each)\t4\n00030\tELECTRD;ST2011170101;IGNTN RD,PORCILIN\tELECTRODE; TYPE: IGNITION ROD, DIMENSIONS: 310.8 X 8 MM (LXDIA) MM, MATERIAL: PORCILIN, TEMPERATURE RANGE: 0-100 DEG C, APPLICATION: FLAME ROD ASSEMBLY, IGN BUR IGNITION BURNER, SPECIFICATION: GAS FIRED WATER BATH HEATER, OEM: METANOIMPIANTI ,",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_35342",
@@ -617,7 +704,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tFLSH LGHT;03315R-0200-245,YLLW,INDSTRL\tFLASHLIGHT; TYPE: LI-ION LED + RIGHT ANGLE, EXPLOSION PROOF RECHARGEABLE LED TORCH, INTRINSICALLY SAFE, LENS COLOR: YELLOW, APPLICATION: INDUSTRIAL; MANUFACTURER PART NO: 03315R-0200-245, MANUFACTURER: PELICAN, MODEL NO: PELI 3315R ATEX\tEA(each)\t5\n00020\tWRENCH ADJSTBL;1110015,M:111 150;6M\tWRENCH, ADJUSTABLE; LENGTH: 6 M; FFT: SCALE; MANUFACTURER: BETA TOOLS, MANUFACTURER PART NO: 1110015, MANUFACTURER: SNAP-ON, MODEL NO: 111 150\tEA(each)\t8\n00030\tKIT TOOL;002 181;MNTN TLS (181 PCS),GRY\tKIT, TOOL; COMPRISING: MAINTENANCE TOOLS (181 PIECES), SPECIFICATION: GREY; MANUFACTURER: USAG, MANUFACTURER PART NO: 002 181\tSET\t8\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tExpected Country of Origin\tMade in Oman Product\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37519",
@@ -638,7 +728,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tTXMTR LVL;700-1202-052\tTRANSMITTER, LEVEL; FFT: MODEL (V) UNIVERSAL V MEASUREMENT TYPE (P0) PRO MODEL: ADMITTANCE, 100 KHZ, 0 DEG PHASE, 1 - 45, 000 PF SPAN, DIGITAL PROTOCOLS (1) HART FUTURE USE (0) FUTURE USE APPROVALS (1) FM/FMC IS ELECTRICAL CONNECTION (0) 3/4 WITHOUT EXTERNAL GROUND, ALUMINUM SURGE NOISE (0) NO ADDITIONAL FILTERING REQUIRED INTEGRAL REMOTE (0) INTEGRAL CONFIGURATION DUAL SEAL (0) WITHOUT DUAL SEAL OPTION SENSING ELEMENT (258) 700-1202-052 SPECIAL SOFTWARE (0) NONE 700-1202-052-BFB-0450.0-050.0-XXXXX - RFA SENSOR SENSOR (258) 700-1202-052 316SS PEEK HIGH PRESSURE CENTER ROD STOP METAL WETTED PARTS (B) 316/316L SS MOUNTING (FB) 2 IN 150 LB RF 316/316L SS INSERTION LENGTH (0450.0) 450 MM COTE SHIELD LENGTH (050.0) 2 IN (50 MM); MANUFACTURER: AMETEK DREXELBROOK,\tEA(each)\t1\n00020\tADPTR COMM;USB SRL CONFIG ADPTR\tADAPTOR, COMMUNICATION; TYPE: USB SERIAL CONFIGURATION ADAPTER, APPLICATION: PROGRAMMING AND CONFIGURATION OF INTRINSICALLY SAFE ISOLATORS AND SIGNAL CONVERTERS, SPECIFICATION: FUNCTION: CONFIGURATION/PROGRAMMING INTERFACE, CONNECTION: USB TO MINI-USB. INCLUDES: USB CABLE. COMPATIBLE WITH: GM INTERN",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37447",
@@ -659,7 +752,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Zoom 75%\nZoom 50%\nZoom 25%\n   \nBuyer Organisation: OQ\nOverview\nTender Code\tTender_37447\nTitle\t6000060992 - Once Off Procurement for Supply of Material (Consumable items)\nDescription\tTender 37447 - 6000060992\n\nOnce Off Procurement for Supply of Material (Consumable items)\n\nNote:\nExact copying of Purchase Requisition (PR) description in the quotation is not acceptable. Bidders shall provide a complete and accurate technical description of the offered item, including the manufacturer's specification, model, part number (where applicable), and any relevant technical details that clearly demonstrate compliance with the requested requirements.\n\n\nTerms Of Acceptance: Inspection & Acceptance will be performed at Warehouse. It is mandatory to mention SAP codes in the quotation.\n\nStatus\tRunning\nTender Settings\nOnline Submission Required:\tYes\nSubmission Currency\tOMR\nClosing\t03/08/2026 23:59:00\nTime Limit for Expressing Interest\t03/08/2026 23:59:00\nAwarding Strategy\tBest Price\n\n\nAdditional Information\nSection\tSection Description\nTender Details\t\nTitle\tDescription\tValue Assigned by Buyer\nInvitation To Tender T1\tInvitation To Tender T1\t\n(no file attached)\n\nSupplier Agreement - Terms & Conditions\tTender Terms and Conditions File\t\n  Tawreed ePayment T_Cs_2021_v0.pdf\n119 KB\n\n\nAttachments\nPath\tDescription\tFolder Size\nroot (1)\t\t516 KB\nFilename\tDownloadable\tLast Modification Date\tDescription\tFile Size\nRFQ 6000060992.pdf\tYes\t26/07/2026\t\t516 KB\nEnvelopes\nQualification Envelope\tNo\nTechnical Envelope\tYes\nCommercial Envelope\tYes\nTechnical Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tCAP;MNKY,CTTN 100 PCT\tCAP; TYPE: MONKEY, MATERIAL: COTTON 100 PCT; FFT: W/MULTI LAYER CONSTRUCTION TO PROTECT THE HEAD AND NECK FROM SUN AND DUST. THE OUTER SHELL STITCHED W/COMFORTABLE FABRIC FOR ABSORBENCY W/VELCRO CLOSURES, CONVINENT FOR HELMET USE, FRC FLAME RETARDANT\tEA(each)\t1,000\n00020\tOIL;JENTERAM G46,DRM,209L\tOIL, INDUSTRIAL; BRAND NAME: JENTERAM G46, CONTAINER TYPE: DRUM, CONTAINER CAPACITY: 209 L; MANUFACTURER: PETRONAS\tDr(Drum)\t7\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "page-text"
   },
   {
     "reference_number": "Tender_37443",
@@ -680,7 +776,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Zoom 75%\nZoom 50%\nZoom 25%\n   \nBuyer Organisation: OQ\nOverview\nTender Code\tTender_37443\nTitle\t6000060987 - Once Off Procurement for Supply of Material (MODULE; TYPE: INTRON-D PLUS)\nDescription\tTender 37443 - 6000060987\n\nOnce Off Procurement for Supply of Material (MODULE; TYPE: INTRON-D PLUS)\n\nNote:\nVendor shall supply and deliver the CARDS/MODULES and carry out the programming and commissioning services of PAGA system at the OQ site.\n\n\nTerms Of Acceptance: Inspection & Acceptance will be performed at Warehouse. Supplier is required to submit Material Test Data. Inspection and Material Test Certificates are to be furnished. It is mandatory to mention SAP codes in the quotations as per the\nStatus\tRunning\nTender Settings\nOnline Submission Required:\tYes\nSubmission Currency\tOMR\nClosing\t03/08/2026 23:59:00\nTime Limit for Expressing Interest\t03/08/2026 23:59:00\nAwarding Strategy\tBest Price\n\n\nAdditional Information\nSection\tSection Description\nTender Details\t\nTitle\tDescription\tValue Assigned by Buyer\nInvitation To Tender T1\tInvitation To Tender T1\t\n(no file attached)\n\nSupplier Agreement - Terms & Conditions\tTender Terms and Conditions File\t\n  Tawreed ePayment T_Cs_2021_v0.pdf\n119 KB\n\n\nAttachments\nPath\tDescription\tFolder Size\nroot (5)\t\t5,738 KB\nFilename\tDownloadable\tLast Modification Date\tDescription\tFile Size\n20260727_144602.jpg\tYes\t30/07/2026\t\t1,504 KB\n20260727_144610.jpg\tYes\t30/07/2026\t\t1,785 KB\n20260727_144616.jpg\tYes\t30/07/2026\t\t1,873 KB\nIMG-20260729-WA0002.jpg\tYes\t30/07/2026\t\t63 KB\nRFQ 6000060987.pdf\tYes\t26/07/2026\t\t515 KB\nEnvelopes\nQualification Envelope\tNo\nTechnical Envelope\tYes\nCommercial Envelope\tYes\nTechnical Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tMODULE;1 DXC 04;INTRON-D PLS\tMODULE; TYPE: INTRON-D PLUS, APPLICATION: PA AND INTERPHONE SYSTEM; MANUFACTURER: INDUSTRONIC PAGING SYSTEM, MANUFACTURER PART NO: 1 DXC 04, EQUIPMENT MANUFACTURER: L&T, EQUIPMENT TAG NO: MSPP_PA_INTERCOM; DRAWING: V-G001-14Z0-5338, V-G001 -14Z0-5316, POSITION NUMBER: 1.00/2.00\tEA(each)\t3\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "page-text"
   },
   {
     "reference_number": "Tender_37373",
@@ -701,7 +800,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nCompliance with the scope of Supply.\tThe offered part number/model number should match with existing OQ8 description part number/model number.\nCertificate of Conformity (required only for Bearing, Gasket and/or Spare parts only)\nAll spares shall be packed and tagged\n\tYes/No Value\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nCompliance with the scope of Supply.\tThe offered part number/model number should match with existing OQ8 description part number/model number.\nCertificate of Conformity (required only for Bearing, Gasket and/or Spare parts only)\nAll spares shall be packed and tagged\n\tYes/No Value\nPenalties (Late Delivery):\tSpecified in the Purchase Order and without prejudice to OQ8’s other rights and remedies under the Purchase Order or at law, Seller shall become liable to pay OQ8 an amount equal to 0.3 % of the total Purchase Order Value as defined in the Purchase Order for every day or part thereof by which the Delivery Date specified in the Purchase Order is exceeded for any reason whatsoever, except for reasons attributable to failure of OQ8 to comply with the Purchase Order, up to a maximum of 10% of the total Purchase Order Value, or as\namended and specified in the Purchase Order. If part of the Goods are delivered or can be put into useful operation the amount specified above shall be reduced proportionally. The amount Seller is liable to pay to OQ8 hereunder shall become due immediately the Goods are not delivered on the Delivery Date specified in the Purchase Order, without any notice or judicial intervention being required, and may be recovered by deduction by OQ8 from Seller's invoices. In the event a delay is caused by the gross negligence or willful of Seller no limitation as set out herein shall apply\tYes/No Value\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our proc",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37623",
@@ -722,7 +824,10 @@
     "first_seen": "2026-08-02",
     "doc_fetch_done": true,
     "purchase_required": false,
-    "doc_fetch_note": ""
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tTRMNTR;FBT1-IS;FLDBS\tTERMINATOR; TYPE: FIELDBUS; FFT: APPLICATION: FIELD JUNCTION BOX SYSTEM.; MANUFACTURER: FISCO, MANUFACTURER PART NO: FBT1-IS\tEA(each)\t2\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37250",
@@ -739,7 +844,10 @@
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
     "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_note": "fetch failed — see scraper.log",
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_36930",
@@ -755,8 +863,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_36680",
@@ -772,8 +884,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_36487",
@@ -789,8 +905,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37621",
@@ -803,11 +923,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37621/description.txt",
+      "documents/Tender_37621/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tEXTNDR COMPR;M:ADDERLINK KVM-X-200\tEXTENDER, COMPUTER; MANUFACTURER: ADDER TECHNOLOGY, MODEL NO: ADDERLINK KVM-X-200\tEA(each)\t8\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_34805",
@@ -823,8 +950,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37413",
@@ -837,11 +968,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37413/description.txt"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nForm of Tender - Commercial\nQuestion\tDescription\tQuestion Type\nForm of Tender - Commercial\tKindly download the attached document, complete it and upload it again.\tAttachment\nOffer Validity\tKindly select your offer Validity\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nSigned and stamped Commercial offer\tKindly attach the Signed and stamped Commercial offer\tAttachment\nOffer Currency\nQuestion\tDescription\tQuestion Type\nCurrency\tKindly Select your Response Currency\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tSPRING;80369171,F/M:MS3-5\tSPRING; APPLICATION: SUCTION VALVE ASSY STG1, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80369171, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4527, REV Z1, POSITION NUMBER: 21\tEA(each)\t4\n00020\tBUSH VLV;80369172,F/M:MS3-5\tBUSH, VALVE; APPLICATION: SUCTION VALVE ASSY STG1, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80369172, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4527, REV Z1, POSITION NUMBER: 22\tEA(each)\t2\n00030\tNUT;80620935,F/M:MS3-5\tNUT; APPLICATION: SUCTION VALVE ASSY STG1, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80620935, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4527, REV Z1, POSITION NUMBER: 23\tEA(each)\t2\n00040\tWASHER;80369173,F/M:MS3-5\tWASHER; APPLICATION: SUCTION VALVE ASSY STG1, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80369173, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4527, REV Z1, POSITION NUMBER: 24\tEA(each)\t2\n00050\tBUSH VLV;80369174,F/M:MS3-5\tBUSH, VALVE; APPLICATION: SUCTION VALVE ASSY STG1, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80369174, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4527, REV Z1, POSITION NUMBER: 25\tEA(each)\t2\n00060\tSPRING;80374009,F/M:MS3-5\tSPRING; APPLICATION: SUCTION VALVE ASSY STG2, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80374009, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4444, REV Z1, POSITION NUMBER: 21\tEA(each)\t2\n00070\tBUSH VLV;80700832,F/M:MS3-5\tBUSH, VALVE; APPLICATION: SUCTION VALVE ASSY STG2, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80700832, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4444, REV Z1, POSITION NUMBER: 22\tEA(each)\t1\n00080\tNUT;80374086,F/M:MS3-5;A4-70\tNUT; MATERIAL GRADE: A4-70, APPLICATION: SUCTION VALVE ASSY STG2, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80374086, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4444, REV Z1, POSITION NUMBER: 23\tEA(each)\t2\n00090\tWASHER;80369159,F/M:MS3-5\tWASHER; APPLICATION: SUCTION VALVE ASSY STG2, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80369159, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4444, REV Z1, POSITION NUMBER: 24\tEA(each)\t2\n00100\tBUSH VLV;80700799,F/M:MS3-5\tBUSH, VALVE; APPLICATION: SUCTION VALVE ASSY STG2, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80700799, EQUIPMENT MODEL NO: MS3-5, EQUIPMENT SERIAL NO: K33090/10A,K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA,590PK-001-KB; DRAWING: DRP001-OUF-2037-SE-MR-0023-O94-0001-Z1-PG-2414/PG-2 414/AVA4444, REV Z1, POSITION NUMBER: 25\tEA(each)\t1\n00110\tRING;80802522,F/M:MS3-5;GDE\tRING; TYPE: GUIDE, APPLICATION: SUCTION VALVE ASSEMBLY STG3, COMPRESSOR; MANUFACTURER: SIAD MACCHINE IMPIANTI, MANUFACTURER PART NO: 80802522, EQUIPMENT MODEL NO: MS3-5, EQUIPM",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37412",
@@ -854,11 +991,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37412/description.txt",
+      "documents/Tender_37412/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tKIT REPR;RK CV60\tKIT, REPAIR; COMPRISING: 1. LOCATING PIN (2 X 15)- P/N 16951, 2. VALVE PLATE (60R)- P/N 1639035, 3. VALVE RING (94CD)- P/N 1767584, 4. SPRING PLATE (60R)- P/N 146724, 5. LENTOID SPRING (94CD)- P/N 23196, 6. VALVE RING (94CD)- P/N 22658, 7. JL-NUT (M8)- P/N 21764, 8. CIRCLIP (35 X 1.5)- P/N 22569, 9. GUIDE BUSH (DIA 17)- P/N 22252, APPLICATION: 5TH STAGE CONCENTRIC VALVE WITH UNLOADER; MANUFACTURER: HOERBIGER, MANUFACTURER PART NO: RK CV60, EQUIPMENT MODEL NO: 60RXK / 94CDK, EQUIPMENT SERIAL NO: K33090/10A, K33090/10B, EQUIPMENT TAG NO: 590PK-001-KA, 590PK-001-KB\tSET\t1\n00020\tKIT REPR;RK SV145\tKIT, REPAIR; COMPRISING: 1. LOCATING PIN (3 X 10)- P/N 21560, 2. LOCATING PIN (2.8 X 13)- P/N 21520, 3. LOCATING PIN ( 2.3 X 14)- P/N 22074, 4. VALVE PLATE (145 CHK)- P/N 40613, 5. SPRING (9/7)- P/N 21219, 6. JL-NUT (M16 X 1.5)- P/N 21183, 7. CIRCLIP (45 X 1.75)- P/N 22822, 8. GUIDE BUSH (DIA 26)- P/N 22218, APPLICATION: 2ND STAGE SUCTION VALVE WITH UNLOADER ASSEMBLY; MANUFACTURER: HOERBIGER, MANUFACTURER PART NO: RK SV145, EQUIPMENT MODEL NO: 145CROK, EQUIPMENT SERIAL NO: K33090/10A, K33090/10B, EQUIPMENT TAG NO: 590P",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_35567",
@@ -892,11 +1036,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37594/description.txt",
+      "documents/Tender_37594/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tG/BOX;M:IWD5R;160/1,MOV ACTTR\tGEARBOX; RATIO: 160/1, APPLICATION: MOV ACTUATOR, SPECIFICATION: DIRECTION TO CLOSE: C; FFT: MECHANICAL ADVANTAGE 65, BASE F16; MANUFACTURER: ROTORK, MODEL NO: IWD5R, EQUIPMENT TAG NO: 24-MOV -010\tEA(each)\t1\n00020\tG/BOX;M:IWD4;70/1,CW\tGEARBOX; RATIO: 70/1, DIRECTION OF ROTATION: CW, APPLICATION: MOTOR OPERATED VALVE (SIZE: 6 IN, 8 IN , PRESSURE RATING: 300 LB), SPECIFICATION: RATED TORQUE: 1871 NM, OPERATING TIME: 29 SEC; FFT: MECHANICAL ADVANTAGE: 23, ISO: F14; MANUFACTURER: ROTORK, MODEL NO: IWD4, EQUIPMENT TAG NO: 24-MOV -011, 24-MOV-111, 24-MOV-211, 24-MOV-311, 24-MOV-011 , 24-MOV-111, 24-MOV-211, 24-MOV-311\tEA(each)\t1\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37418",
@@ -912,8 +1063,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37277",
@@ -926,11 +1081,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37277/description.txt",
+      "documents/Tender_37277/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tALGNMT TOOL LSR;M:ROTALIGN ELITE EX\tALIGNMENT TOOL, LASER; TYPE: ADVANCED, SPECIFICATION: LASER MODEL: SENSALIGN 7 EX, TABLET MODEL: ROTALIGN ELITE EX TABLET; MANUFACTURER: FLUKE, MODEL NO: ROTALIGN ELITE EX\tSET\t1\n00020\tCABNT STRG;826.7598;TOOL TRLLY\tCABINET, STORAGE; DIMENSIONS: WD 788 X DP 496 X HT 976 MM, MATERIAL: HEAVY-DUTY STEEL(THK 0.9 MM), DRAWER QUANTITY: 7 LOCKABLE DRAWERS (5 X 75 MM, 2 X 150 MM), SPECIFICATION: TOOL TROLLEY; FFT: KS TOOLS RACINGLINE WORKSHOP TROLLEY (BLACK/RED) WITH 7 DRAWERS AND 598 PREMIUM TOOLS PART NO.: 826.7598, OEM: KS TOOLS WERKZEUGE – MASCHINEN GMBH (GERMANY); MANUFACTURER: KS TOOLS, MANUFACTURER PART NO: 826.7598\tEA(each)\t3\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tExpected Country of Origin\tMade in Oman Product\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37134",
@@ -964,11 +1126,19 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37060/description.txt",
+      "documents/Tender_37060/T1 - Invitation to Tender 37060.pdf",
+      "documents/Tender_37060/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work \nC5 \nSchedule of Rates \nC6 \nTechnical Specifications (Not Used) \nC7 \nICV Specification  \nC8 \nContract Procedures  \nC9 \nHSSE Specifications  \nC10 Data provided by Contractor  \nOnly section T1 is provided; the other documents will be issued via OQ8’s e-tendering portal at \nhttps://tawreed.oq.com/ (hereinafter referred to as ‘Tawreed’) to interested Tenderers that; \n• \npay the Tender fee and submit payment confirmation in Tawreed (if required), \n• \nsubmit the Tenderer Data Sheet attached under Appendix 1 in Tawreed,  \n• \nsubmit the Confidentiality Declaration attached under Appendix 2 in Tawreed. \nIn the preparation and submission of the Tender, Tenderer shall comply with the Tender \nDocuments. OQ8 reserves the right to disqualify the Tenderer if any of the requirements included \nin the Tender Documents are not met. \nYours faithfully, \nAsad Al Abri \nFor The Duqm Refinery and Petrochemicals Industries Company (OQ8). \nContract Engineer, \n \n\n37060  \nCall Off Contract for Supply of Services for Thermofisher Make radioactive equipment \n \nThis document is classified as \"Confidential\" information, Please share this information on a \"Need-to-Know\" basis. \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 2 of 11 \n \n \n \n \n \n \nDuqm Refinery and Petrochemical Industries \nCompany L.L.C (OQ8). \nTender Number: 37060 \nTender Title: Call Off Contract for Supply of Services for \nThermofisher Make radioactive equipment \nT1, Invitation To Tender \n \n\n37060  \nCall Off Contract for Supply of Services for Thermofisher Make radioactive equipment \n \nThis document is classified as \"Confidential\" information, Please share this information on a \"Need-to-Know\" basis. \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 3 of 11 \nContents \n1.0 \nTERMS OF TENDER AND TENDER OVERVIEW .......................................................................... 4 \n2.0 \nREQUIREMENTS TO COLLECT TENDER DOCUMENT ................................................................. 4 \n3.0 \nCONTACT POINT – CONTRACT ENGINEER ............................................................................ 5 \n4.0 \nTENDER COLLECTION .......................................................................................................... 5 \n5.0 \nTENDER BOND- NOT APPLICABLE ........................................................................................ 5 \n6.0 \nSITE VISIT/ BID CLARIFICATION MEETING [OPTIONAL] ........................................................... 5 \n7.0 \nOUTLINE TENDER PROCESS AND SUBMISSION OF TENDER ..................................................... 5 \n8.0 \nTENDER AWARD.................................................................................................................. 5 \n9.0 \nAPPENDIX 1 – TENDERER DETAILS FOR THIS TENDER ............................................................... 7 \n10.0 \nAPPENDIX 2 – CONFIDENTIALITY DECLARATION................................................................ 8 \n11.0 \nAPPENDIX 3 – ANTI BRIBERY & ANTI-CORRUPTION FORM ................................................. 10 \n12.0 \nAPPENDIX 4 – TENDER PROCESS OVERVIEW .................................................................... 11 \nTHE TENDER PROCESS SHALL BE CONDUCTED THROUGH TAWREED. .............................................. 11 \n \n \n \n\n37060  \nCall Off Contract for Supply of Services for Thermofisher Make radioactive equipment \n \nThis document is classified as \"Confidential\" information, Please share this information on a \"Need-to-Know\" basis. \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 4 of 11",
+    "sow_source": "T1 - Invitation to Tender 37060.pdf",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_36781",
@@ -981,11 +1151,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_36781/description.txt",
+      "documents/Tender_36781/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with OQ)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tIMPLR;AXL,O/T,CS ASTM A283 GR C\tIMPELLER; TYPE: AXIAL, OUTER, MATERIAL: CS ASTM A283 GR C, APPLICATION: EXHAUST FAN BLOWER; FFT: PAINT SPEC: COLOR-RAL 6024 (MED GREEN), BLOWER CAP: 1200 NM3/HR, SPEED: 2730 RPM, V-PULLEY FOR FAN (TYPE:5V2, DIA: 132 MM); EQUIPMENT MANUFACTURER: SHINDONG-A, EQUIPMENT MODEL NO: SDATF 460, EQUIPMENT SERIAL NO: SDA-020007-A, EQUIPMENT TAG NO: 570PK-024-K3A, 570PK-024-K3B, 570PK-024-K3C; DRAWING: S00267-MUJ140-01-J2DTD013-005, SPECIFICATION: DRP001-OUF-2037-SE-MR-0053-G31\tEA(each)\t1\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37331",
@@ -998,11 +1175,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37331/description.txt",
+      "documents/Tender_37331/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tJOINT;L-231-K,F/M:SBLA;SWVL,2IN,NBR\tJOINT; TYPE: SWIVEL, DIMENSIONS: 2 IN, MATERIAL: NBR; FFT: PACK 552, B 541; MANUFACTURER PART NO: L -231-K, EQUIPMENT MANUFACTURER: NIIGATA ENGINEERING CO LTD, EQUIPMENT MODEL NO: SBLA, EQUIPMENT SERIAL NO: B2053-1/2, EQUIPMENT TAG NO: Z-8551/52; DRAWING: 8410058009, POSITION NUMBER: 4\tEA(each)\t1\n00020\tJOINT;F/M:SBLA;SWVL,2IN;DWG:BA-541-E,2\tJOINT; TYPE: SWIVEL, DIMENSIONS: 2 IN; FFT: STYLE 40; MANUFACTURER: NIIGATA ENGINEERING CO LTD, EQUIPMENT MODEL NO: SBLA, EQUIPMENT SERIAL NO: B2053-1/2, EQUIPMENT TAG NO: Z-8551/52; DRAWING: BA -541-E, POSITION NUMBER: 2\tEA(each)\t1\n00030\tPLUG;20021661,F/M:SBLA,B 541;BALL RTNR\tPLUG; TYPE: BALL RETAINER, APPLICATION: CHICKSAN SWIVEL JOINT; FFT: W/DUST CAP, GREASE NIPPLE AND O RING; EQUIPMENT MANUFACTURER: NIIGATA ENGINEERING CO LTD, EQUIPMENT MODEL NO: SBLA, B 541, EQUIPMENT SERIAL NO: B2053-1/2, EQUIPMENT TAG NO: Z-8551, Z-8552; DRAWING: 8410058009\tEA(each)\t1\n00040\tORING;F/M:8013;RLY PNMTC,PSTNR,CNTRL VLV\tO RING; APPLICATION: RELAY PNEUMATIC, POSITIONER, CONTROL VALVE; FFT: GASKET/SEAL KIT; EQUIPMENT MANUFACTURER: NIIGATA MASONEILAN CO LTD, EQUIPMENT",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37596",
@@ -1015,11 +1199,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37596/description.txt",
+      "documents/Tender_37596/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tCONTCTR;REF:UV-64 HDP;VACM,110V DC,7.2KV\tCONTACTOR; TYPE: VACUUM, COIL VOLTAGE: 110 V DC, VOLTAGE RATING: 7.2 KV, CURRENT RATING: 450 A, ELECTRICAL POLE QUANTITY: 3P; FFT: FREQUENCY RATING: 50 HZ, CONTINUOUS, WITHOUT FUSE; MANUFACTURER: SEONDO ELECTRIC CO, REFERENCE NO: UV -64 HDP\tEA(each)\t1\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37284",
@@ -1035,8 +1226,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37536",
@@ -1049,11 +1244,19 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37536/description.txt",
+      "documents/Tender_37536/T1 - Invitation to Tender.pdf",
+      "documents/Tender_37536/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work \nC5 \nSchedule of Rates \nC6 \nTechnical Specifications (NOT USED) \nC7 \nICV Specification (NOT USED) \nC8 \nContract Procedures \nC9 \nHSSE Specifications \nC10 Data provided by Contractor  \nOnly section T1 is provided; the other documents will be issued via OQ8’s e-tendering portal at \nhttps://tawreed.oq.com/ (hereinafter referred to as ‘Tawreed’) to interested Tenderers that; \n• \npay the Tender fee and submit payment confirmation in Tawreed (if required), \n• \nsubmit the Tenderer Data Sheet attached under Appendix 1 in Tawreed,  \n• \nsubmit the Confidentiality Declaration attached under Appendix 2 in Tawreed. \nIn the preparation and submission of the Tender, Tenderer shall comply with the Tender \nDocuments. OQ8 reserves the right to disqualify the Tenderer if any of the requirements included \nin the Tender Documents are not met. \nYours faithfully, \nFor The Duqm Refinery and Petrochemicals Industries Company (OQ8). \nContract Engineer, Sulaiman Al Mutairfi \n\n37536  \n \nCall off Contract for Supplying Laptops and Related Accessories \n \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 2 of 10 \n \n \n \n \n \n \n \nDuqm Refinery and Petrochemical Industries \nCompany L.L.C (OQ8). \nTender Number: 37536 \n \nTender Title: Call off Contract for Supplying Laptops \nand Related Accessories \nT1, Invitation To Tender \n \n\n37536  \n \nCall off Contract for Supplying Laptops and Related Accessories \n \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 3 of 10 \nContents \n1.0 \nTERMS OF TENDER AND TENDER OVERVIEW .......................................................................... 4 \n2.0 \nREQUIREMENTS TO COLLECT TENDER DOCUMENT ................................................................. 4 \n3.0 \nCONTACT POINT – CONTRACT ENGINEER ............................................................................ 5 \n4.0 \nTENDER COLLECTION .......................................................................................................... 5 \n5.0 \nTENDER BOND- NOT APPLICABLE ........................................................................................ 5 \n6.0 \nSITE VISIT/ BID CLARIFICATION MEETING [OPTIONAL] ........................................................... 5 \n7.0 \nOUTLINE TENDER PROCESS AND SUBMISSION OF TENDER ..................................................... 5 \n8.0 \nTENDER AWARD.................................................................................................................. 5 \n9.0 \nAPPENDIX 1 – TENDERER DETAILS FOR THIS TENDER ............................................................... 7 \n10.0 \nAPPENDIX 2 – CONFIDENTIALITY DECLARATION................................................................ 8 \n11.0 \nAPPENDIX 3 – ANTI BRIBERY & ANTI-CORRUPTION FORM ................................................. 10 \n \n \n \n\n37536  \n \nCall off Contract for Supplying Laptops and Related Accessories \n \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 4 of 10",
+    "sow_source": "T1 - Invitation to Tender.pdf",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37552",
@@ -1066,11 +1269,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37552/description.txt",
+      "documents/Tender_37552/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nCompliance with the scope of Supply\tCompliance with the scope of Supply. The offered material specification must match with existing OQ8 description.\nAll spares shall be packed and tagged.\n\tYes/No Value\nCompliance\tCompliance to UN spec: UN1A2/Y150/S\tYes/No Value\nMeeting Delivery Schedule\tMeeting Delivery Schedule\nMaterial shall be Delivered maximum within 16-18 weeks\nImportant Note:- Vendor to take clearance of OQ8-TA team before dispatch of the drums to avoid idling and rusting of drums based on the delivery period.\n\tText\nPenalties\tPenalties (Late Delivery ): specified in the Purchase Order and without prejudice to OQ8’s other rights and remedies under the Purchase Order or at law, Seller shall become liable to pay OQ8 an amount equal to 0.3 % of the total Purchase Order Value as defined in the Purchase Order for every day or part thereof by which the Delivery Date specified in the Purchase Order is exceeded for any reason whatsoever, except for reasons attributable to failure of OQ8 to comply with the Purchase Order, up to a maximum of 10% of the total Purchase Order Value, or as amended and specified in the Purchase Order. If part of the Goods are delivered or can be put into useful operation the amount specified above shall be reduced proportionally. The amount Seller is liable to pay to OQ8 hereunder shall become due immediately the Goods are not delivered on the Delivery Date specified in the Purchase Order, without any notice or judicial intervention being required, and may be recovered by deduction by OQ8 from Seller's invoices. In the event a delay is caused by the gross negligence or willful of Seller no limitation as set out herein shall apply.\tYes/No Value\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nCompliance with the scope of Supply.\tCompliance with the scope of Supply. The offered material specification must match with existing OQ8 description.\nAll spares shall be packed and tagged.\n\tYes/No Value\nCompliance\tCompliance to UN spec: UN1A2/Y150/S\tYes/No Value\nMeeting Delivery Schedule\t\nMaterial shall be Delivered maximum within 16-18 weeks\nImportant Note:- Vendor to take clearance of OQ8-TA team before dispatch of the drums to avoid idling and rusting of drums based on the delivery period.\n\tText\nPenalties\tPenalties (Late Delivery ): specified in the Purchase Order and without prejudice to OQ8’s other rights and remedies under the Purchase Order or at law, Seller shall become liable to pay OQ8 an amount equal to 0.3 % of the total Purchase Order Value as defined in the Purchase Order for every day or part thereof by which the Delivery Date specified in the Purchase Order is exceeded for any reason whatsoever, except for reasons attributable to failure of OQ8 to comply with the Purchase Order, up to a maximum of 10% of the total Purchase Order Value, or as amended and specified in the Purchase Order. If part of the Goods are delivered or can be put into useful operation the amount specified above shall be reduced proportionally. The amount Seller is liable to pay to OQ8 hereunder shall become due immediately the Goods are not delivered on the Delivery Date specified in the Purchase Order, without any notice or judicial intervention being required, and may be recovered by deduction by OQ8 from Seller's invoices. In the event a delay is caused by the gross negligence or willful of Seller no limitation as set out herein shall apply.\tYes/No Value\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre yo",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37549",
@@ -1083,11 +1293,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37549/description.txt",
+      "documents/Tender_37549/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tLUBR;2-00464000;MLTI CBL TRANST\tLUBRICANT; APPLICATION: MULTI CABLE TRANSIT, STANDARD: IEC 60079-13; FFT: DIMENSION: 30 X 30 X 30 MM; MANUFACTURER: MCT BRATTBERG, MANUFACTURER PART NO: 2-00464000; DRAWING: PAGE NO: 317/323\tEA(each)\t2\n00020\tCOOLNT;GLASSY 80;LNG LIFE,LQD,DRM,208L\tCOOLANT; TYPE: LONG LIFE, PHYSICAL FORM: LIQUID, CONTAINER TYPE: DRUM, CONTAINER CAPACITY: 208 L, APPLICATION: EMERGENCY DIESEL GENERATOR; MANUFACTURER: MITSUBISHI HEAVY INDUSTRIES CORPORATION, MANUFACTURER PART NO: GLASSY 80\tEA(each)\t5\n00030\tGREASE;X6500-001,F/M:PYRT III\tGREASE, GENERAL PURPOSE; APPLICATION: COMPRESSOR, OIL PUMP TURBINE; MANUFACTURER: EBARA CORPORATION, MANUFACTURER PART NO: X6500-001, MANUFACTURER: ELLIOT EBARA TURBOMACHINERY CORPORATION, EQUIPMENT MODEL NO: PYRT III, EQUIPMENT SERIAL NO: R14T003516 F1403, CT68707; DRAWING: F402507MPL\tEA(each)\t1\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tExpected Country of Origin\tMade in Oman Product\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_35786",
@@ -1124,8 +1341,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37610",
@@ -1141,8 +1362,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37440",
@@ -1155,11 +1380,19 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37440/description.txt",
+      "documents/Tender_37440/T1 - Invitation to Tender.pdf",
+      "documents/Tender_37440/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work \nC5 \nSchedule of Rates \nC6 \nTechnical Specifications (NOT USED) \nC7 \nICV Specification (NOT USED) \nC8 \nContract Procedures \nC9 \nHSSE Specifications \nC10 Data provided by Contractor (NOT USED) \nOnly section T1 is provided; the other documents will be issued via OQ8’s e-tendering portal at \nhttps://tawreed.oq.com/ (hereinafter referred to as ‘Tawreed’) to interested Tenderers that; \n \npay the Tender fee and submit payment confirmation in Tawreed (if required), \n \nsubmit the Tenderer Data Sheet attached under Appendix 1 in Tawreed,  \n \nsubmit the Confidentiality Declaration attached under Appendix 2 in Tawreed. \nIn the preparation and submission of the Tender, Tenderer shall comply with the Tender \nDocuments. OQ8 reserves the right to disqualify the Tenderer if any of the requirements included \nin the Tender Documents are not met. \nYours faithfully, \nFor The Duqm Refinery and Petrochemicals Industries Company (OQ8). \nContract Engineer, Sultan Al Rawahi \n\n37440  \n \nCall off Contract for Supply of Inter Laboratory Correlation Sample Study for Petroleum Products \nto OQ8 Laboratory) \n \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 2 of 10 \n \n \n \n \n \n \n \nDuqm Refinery and Petrochemical Industries \nCompany L.L.C (OQ8). \nTender Number: 37440 \n \nTender Title: Call off Contract for Supply of Inter \nLaboratory Correlation Sample Study for Petroleum \nProducts to OQ8 Laboratory) \nT1, Invitation To Tender \n \n\n37440  \n \nCall off Contract for Supply of Inter Laboratory Correlation Sample Study for Petroleum Products \nto OQ8 Laboratory) \n \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 3 of 10 \nContents \n1.0 \nTERMS OF TENDER AND TENDER OVERVIEW .......................................................................... 4 \n2.0 \nREQUIREMENTS TO COLLECT TENDER DOCUMENT ................................................................. 4 \n3.0 \nCONTACT POINT – CONTRACT ENGINEER ............................................................................ 5 \n4.0 \nTENDER COLLECTION .......................................................................................................... 5 \n5.0 \nTENDER BOND- NOT APPLICABLE ........................................................................................ 5 \n6.0 \nSITE VISIT/ BID CLARIFICATION MEETING [OPTIONAL] ........................................................... 5 \n7.0 \nOUTLINE TENDER PROCESS AND SUBMISSION OF TENDER ..................................................... 5 \n8.0 \nTENDER AWARD.................................................................................................................. 5 \n9.0 \nAPPENDIX 1 – TENDERER DETAILS FOR THIS TENDER ............................................................... 7 \n10.0 \nAPPENDIX 2 – CONFIDENTIALITY DECLARATION................................................................ 8 \n11.0 \nAPPENDIX 3 – ANTI BRIBERY & ANTI-CORRUPTION FORM ................................................. 10 \n \n \n \n\n37440  \n \nCall off Contract for Supply of Inter Laboratory Correlation Sample Study for Petroleum Products \nto OQ8 Laboratory) \n \nT1 - Invitation to Tender, Rev 1 Mar 2022 \nPage 4 of 10",
+    "sow_source": "T1 - Invitation to Tender.pdf",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37619",
@@ -1172,11 +1405,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37619/description.txt",
+      "documents/Tender_37619/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Zoom 75%\nZoom 50%\nZoom 25%\n   \nBuyer Organisation: OQ\nOverview\nTender Code\tTender_37619\nTitle\t6000061156 - Once off procurement supply of RAM - DPC\nDescription\t\nStatus\tRunning\nTender Settings\nOnline Submission Required:\tYes\nSubmission Currency\tOMR\nClosing\t16/08/2026 15:00:00\nTime Limit for Expressing Interest\t16/08/2026 15:00:00\nAwarding Strategy\tBest Price\n\n\nAdditional Information\nSection\tSection Description\nTender Details\t\nTitle\tDescription\tValue Assigned by Buyer\nInvitation To Tender T1\tInvitation To Tender T1\t\n(no file attached)\n\nSupplier Agreement - Terms & Conditions\tTender Terms and Conditions File\t\n  Tawreed ePayment T_Cs_2021_v0.pdf\n119 KB\n\n\nAttachments\nPath\tDescription\tFolder Size\nroot (1)\t\t256 KB\nFilename\tDownloadable\tLast Modification Date\tDescription\tFile Size\nBidder Instruction manual.pdf\tYes\t02/08/2026\t\t256 KB\nEnvelopes\nQualification Envelope\tNo\nTechnical Envelope\tYes\nCommercial Envelope\tYes\nTechnical Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\n00010-RAM 32GB 2x32GB DDR5-5600MT/s ECC Module\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010.1\tRAM 32GB 2x32GB DDR5-5600MT/s ECC Module\t\tEA(each)\t2\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tService Duration (Days)\tService Location\tDelivery Date\n\t\t\t\t\t\nSection total included in total?\tYes\n00020-RAM 16GB 2x8GB DDR4 3200MT/s Dual Rank M\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00020.1\tRAM 16GB 2x8GB DDR4 3200MT/s Dual Rank M\t\tEA(each)\t5\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tService Duration (Days)\tService Location\tDelivery Date\n\t\t\t\t\t\nSection total included in total?\tYes\n00030-RAM 16GB 1X16GB DDR4 3200MT/s Dual Rank\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00030.1\tRAM 16GB 1X16GB DDR4 3200MT/s Dual Rank\t\tEA(each)\t6\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tService Duration (Days)\tService Location\tDelivery Date\n\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "page-text"
   },
   {
     "reference_number": "Tender_37502",
@@ -1192,8 +1432,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_34871",
@@ -1209,8 +1453,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37311",
@@ -1226,8 +1474,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37595",
@@ -1240,11 +1492,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1785667938317.6322-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37595/description.txt",
+      "documents/Tender_37595/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "purchase_required": false,
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tCSTBL MIX RFRCTRY;GNRL PATCH RPR\tCASTABLE MIX, REFRACTORY; APPLICATION: GENERAL PATCH REPAIR; FFT: FORMULA 5P, QTY: PACKING 24.9 KG, W/LIQUID ACTIVATOR, QTY: PACKING 3.6 KG; EQUIPMENT MANUFACTURER: THERMO BOND REFRACTORIES, EQUIPMENT TAG NO: R-2002\tM3(Cubic meter)\t4\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tDelivery Period (Days)\tDelivery Location\tDelivery Date\tMaterial\tPlant\n\t\t\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_36871",
@@ -1260,8 +1519,12 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37029",
@@ -1277,7 +1540,11 @@
     "documents": [],
     "source": "OQ Tawreed",
     "first_seen": "2026-08-02",
-    "doc_fetch_done": false,
-    "doc_fetch_note": "fetch failed — see scraper.log"
+    "doc_fetch_done": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details",
+    "purchase_required": true,
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   }
 ]
