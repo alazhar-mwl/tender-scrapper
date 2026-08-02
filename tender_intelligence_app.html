@@ -246,6 +246,7 @@ html,body{
 .sp-tackled{background:rgba(24,138,80,0.12);color:var(--green2)}
 .sp-skipped{background:rgba(31,30,29,0.06);color:var(--text3)}
 .sp-scoring{background:rgba(180,83,9,0.12);color:var(--orange2)}
+.sp-open{background:rgba(31,30,29,0.06);color:var(--text3)}
 
 .pulse{
   width:5px;height:5px;border-radius:50%;
@@ -614,10 +615,17 @@ function fmtDays(n){
   if(n===1)return'1 day left';
   return n+' days left';
 }
+const NEW_WINDOW_DAYS=3;
+function isNew(t){
+  if(t.status!=='new')return false;
+  if(!t.floated)return false;
+  const age=Math.floor((new Date()-new Date(t.floated))/86400000);
+  return age<=NEW_WINDOW_DAYS;
+}
 
 function updateStats(){
   const tot=tenders.length;
-  const newC=tenders.filter(t=>t.status==='new').length;
+  const newC=tenders.filter(isNew).length;
   const high=tenders.filter(t=>t.score>=75).length;
   const soon=tenders.filter(t=>daysUntil(t.deadline)<=14&&t.status!=='tackled').length;
   const tack=tenders.filter(t=>t.status==='tackled').length;
@@ -638,6 +646,7 @@ function getFiltered(){
   else if(filterState==='soon')  list=list.filter(t=>daysUntil(t.deadline)<=14&&t.status!=='tackled');
   else if(filterState==='src-pdo') list=list.filter(t=>t.portal==='pdo');
   else if(filterState==='src-oq')  list=list.filter(t=>t.portal==='oq');
+  else if(filterState==='new')   list=list.filter(isNew);
   else if(filterState!=='all')   list=list.filter(t=>t.status===filterState);
   if(q) list=list.filter(t=>
     t.title.toLowerCase().includes(q)||
@@ -665,8 +674,9 @@ function renderList(){
   col.innerHTML=list.map(t=>{
     const d=daysUntil(t.deadline);
     const urg=d<=3?'danger':d<=14?'urgent':'';
-    const spCls={new:'sp-new',tackled:'sp-tackled',skipped:'sp-skipped',scoring:'sp-scoring'}[t.status]||'sp-new';
-    const spLbl={new:'New',tackled:'Tackled',skipped:'Skipped',scoring:'Scoring…'}[t.status]||'New';
+    const showNew=isNew(t);
+    const spCls=showNew?'sp-new':({tackled:'sp-tackled',skipped:'sp-skipped',scoring:'sp-scoring'}[t.status]||'sp-open');
+    const spLbl=showNew?'New':({tackled:'Tackled',skipped:'Skipped',scoring:'Scoring…'}[t.status]||'Open');
     const scorePill=t.score!==null
       ?`<span class="score-pill ${scoreClass(t.score)}">${t.score}</span>`
       :t.status==='scoring'?`<span class="score-pill sm">…</span>`:'';
