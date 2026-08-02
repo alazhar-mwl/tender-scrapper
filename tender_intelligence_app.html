@@ -622,17 +622,27 @@ function isNew(t){
 function isExpired(t){
   return daysUntil(t.deadline)<=0;
 }
+// Expired tenders drop off the portal entirely once past their deadline —
+// unless the user explicitly tackled/skipped them, in which case they stay
+// visible under those filters as a historical record.
+function isHidden(t){
+  return isExpired(t)&&t.status!=='tackled'&&t.status!=='skipped';
+}
+function visibleTenders(){
+  return tenders.filter(t=>!isHidden(t));
+}
 
 function updateStats(){
-  const tot=tenders.length;
-  const newC=tenders.filter(isNew).length;
-  const high=tenders.filter(t=>t.score>=75).length;
-  const soon=tenders.filter(t=>daysUntil(t.deadline)>0&&daysUntil(t.deadline)<=14&&t.status!=='tackled').length;
-  const tack=tenders.filter(t=>t.status==='tackled').length;
+  const live=visibleTenders();
+  const tot=live.length;
+  const newC=live.filter(isNew).length;
+  const high=live.filter(t=>t.score>=75).length;
+  const soon=live.filter(t=>daysUntil(t.deadline)>0&&daysUntil(t.deadline)<=14&&t.status!=='tackled').length;
+  const tack=live.filter(t=>t.status==='tackled').length;
   set('s-total',tot);set('s-new',newC);set('s-high',high);
   set('s-soon',soon);set('s-tackled',tack);
 
-  const sources=[...new Set(tenders.map(t=>t.portal))];
+  const sources=[...new Set(live.map(t=>t.portal))];
   const tagEl=document.getElementById('portal-tag');
   if(tagEl)tagEl.textContent=sources.length>1?`${sources.length} Portals`:(PORTALS.find(p=>p.id===sources[0])?.name||'Portal');
 }
@@ -641,7 +651,7 @@ function set(id,v){const el=document.getElementById(id);if(el)el.textContent=v;}
 /* ── Filter / sort ── */
 function getFiltered(){
   const q=(document.getElementById('search-input')?.value||'').toLowerCase();
-  let list=[...tenders];
+  let list=visibleTenders();
   if(filterState==='high')       list=list.filter(t=>t.score>=75);
   else if(filterState==='soon')  list=list.filter(t=>daysUntil(t.deadline)>0&&daysUntil(t.deadline)<=14&&t.status!=='tackled');
   else if(filterState==='src-pdo') list=list.filter(t=>t.portal==='pdo');
