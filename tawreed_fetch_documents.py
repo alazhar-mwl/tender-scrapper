@@ -24,8 +24,9 @@ from playwright.async_api import Page, async_playwright
 from tawreed_scraper import (
     PORTAL_URL,
     STATE_FILE,
-    close_notice_popup,
     click_href,
+    click_pager_page,
+    close_notice_popup,
     ensure_logged_in,
     log,
     screenshot,
@@ -79,8 +80,23 @@ async def fetch_tender_documents(page: Page, ref: str) -> "list[str] | None | st
     row = page.locator(f"tr:has-text('{ref}')").first
     try:
         if not await row.count():
-            log.warning("  Row for %s not found on the list page", ref)
-            return None
+            # Not on page 1 — the public list can now span multiple pages
+            # (2026-08-02: 5 pages / 43 tenders), unlike when this flow was
+            # built against a list that was capped at ~10 rows by a portal
+            # pagination bug. Page through (same mechanism that already
+            # works in tawreed_scraper.py's listing scrape) before giving up.
+            found_on_page = False
+            for page_num in range(2, 8):
+                if not await click_pager_page(page, page_num):
+                    break
+                await asyncio.sleep(1)
+                row = page.locator(f"tr:has-text('{ref}')").first
+                if await row.count():
+                    found_on_page = True
+                    break
+            if not found_on_page:
+                log.warning("  Row for %s not found on any list page", ref)
+                return None
         # The title cell is the only real link in the row (JAGGAER's
         # javascript: contractPayment/... handler) — target it precisely
         # rather than the first <a>, in case the row grows other links later.
@@ -113,8 +129,17 @@ async def fetch_tender_documents(page: Page, ref: str) -> "list[str] | None | st
         log.error("  Never reached the detail page for %s (stuck at %s) — skipping.", ref, page.url[:80])
         return None
 
-    # Belt-and-suspenders: also confirm the ref text is on THIS (now-detail) page
-    verified = await page.evaluate("(ref) => document.body.innerText.includes(ref)", ref)
+    # document.body can be transiently null right after a URL change but before
+    # the new document finishes loading — wait for it rather than false-negative
+    # a "wrong tender" skip (crashed a full batch run 2026-08-02).
+    try:
+        await page.wait_for_load_state("domcontentloaded", timeout=5_000)
+    except Exception:
+        pass
+
+    # Belt-and-suspenders: also confirm the ref text is on THIS (now-detail) page.
+    verified = await page.evaluate(
+        "(ref) => !!document.body && document.body.innerText.includes(ref)", ref)
     if not verified:
         log.error("  Detail page does not show %s — wrong tender opened; skipping.", ref)
         return None
@@ -247,7 +272,15 @@ async def main() -> None:
 
             for tender in todo:
                 ref = tender["reference_number"]
-                docs = await fetch_tender_documents(page, ref)
+                try:
+                    docs = await fetch_tender_documents(page, ref)
+                except Exception as exc:
+                    # An unhandled error here used to crash the whole batch,
+                    # abandoning every remaining tender (2026-08-02: died after
+                    # 4/38 on a transient null document.body). One flaky page
+                    # is not worth losing the rest of the run.
+                    log.error("  Unexpected error fetching %s: %s — leaving pending.", ref, exc)
+                    docs = None
                 if docs is None:
                     tender["doc_fetch_done"] = False
                     tender["doc_fetch_note"] = "fetch failed — see scraper.log"

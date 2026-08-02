@@ -96,7 +96,14 @@ async def main() -> None:
 
                 for ref in refs_here:
                     tender = by_ref.pop(ref)
-                    docs = await fetch_rfx_documents(page, ref)
+                    try:
+                        docs = await fetch_rfx_documents(page, ref)
+                    except Exception as exc:
+                        # Don't let one flaky page state crash the whole batch
+                        # and abandon every remaining tender — see the same
+                        # fix in tawreed_fetch_documents.py (2026-08-02).
+                        log.error("  Unexpected error fetching %s: %s — leaving pending.", ref, exc)
+                        docs = None
                     if docs is None:
                         # wrong row opened / detail unavailable — leave pending
                         tender["doc_fetch_done"] = False
