@@ -18,6 +18,7 @@ BASE_DIR = Path(__file__).parent
 PORT = 8787
 
 _proc: subprocess.Popen | None = None
+_log_file = None
 _lock = threading.Lock()
 
 
@@ -29,14 +30,25 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self._cors(200)
 
     def do_POST(self):
-        global _proc
+        global _proc, _log_file
         if self.path == "/api/scrape":
             with _lock:
                 if _proc and _proc.poll() is None:
                     return self._json(200, {"status": "running"})
+                # Previously stdout/stderr went nowhere retrievable — the UI's
+                # own "check scraper.log" error message was pointing at a file
+                # that was never actually written to from this endpoint, so a
+                # failed scrape looked like it silently did nothing.
+                if _log_file:
+                    _log_file.close()
+                _log_file = open(BASE_DIR / "scraper.log", "a", encoding="utf-8")
+                _log_file.write(f"\n[web] --- scrape triggered from dashboard ---\n")
+                _log_file.flush()
                 _proc = subprocess.Popen(
                     ["python", str(BASE_DIR / "tender_scraper.py")],
                     cwd=str(BASE_DIR),
+                    stdout=_log_file,
+                    stderr=subprocess.STDOUT,
                 )
             self._json(200, {"status": "started"})
         else:
