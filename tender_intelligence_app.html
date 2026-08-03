@@ -573,7 +573,7 @@ function mapTender(t,i){
     documents:t.documents||[],
     floated:normDate(t.first_seen||''),
     purchaseRequired:!!t.purchase_required,
-    score:null,reasoning:null,status:'new',
+    score:null,reasoning:null,aiSummary:null,aiError:null,status:'new',
   };
 }
 
@@ -797,9 +797,18 @@ function renderDetail(){
         </div>
       </div>
       ${scoreBlock}
+      ${t.aiSummary?`
+      <div class="section">
+        <div class="slabel"><i class="ti ti-sparkles" style="color:var(--accent2)"></i> AI Summary — What's Required</div>
+        <div class="sbody">${t.aiSummary}</div>
+      </div>`:t.aiError?`
+      <div class="section">
+        <div class="slabel">AI Summary</div>
+        <div style="font-size:13px;color:var(--text3);padding:10px 0">Could not generate a summary: ${t.aiError}</div>
+      </div>`:''}
       ${t.scope&&t.scope!=='—'?`
       <div class="section">
-        <div class="slabel">Scope of Work</div>
+        <div class="slabel">Scope of Work${t.aiSummary?' (Raw)':''}</div>
         <div class="sbody">${t.scope}</div>
       </div>`:''}
 
@@ -875,22 +884,18 @@ async function scoreOne(id){
   tenders=tenders.map(x=>x.id===id?{...x,status:'scoring'}:x);
   renderList();renderDetail();
   try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{
+    // Calls our own server, not Anthropic directly — the API key lives in
+    // ai.env.txt server-side (see server.py's call_ai()), never in the browser.
+    const r=await fetch('/api/ai',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-6',
-        max_tokens:600,
-        system:`You are a BD analyst for Seven Seas Petroleum LLC, an oil & gas services firm in Oman. Score how well a PDO tender matches. Return ONLY JSON: {"score":<0-100>,"reasoning":[{"positive":<bool>,"text":"<max 12 words>"}]} with exactly 3 items.`,
-        messages:[{role:'user',content:`RFx: ${t.ref}\nTitle: ${t.title}\nType: ${t.sector}\nScope: ${t.scope}`}]
-      })
+      body:JSON.stringify({ref:t.ref,title:t.title,sector:t.sector,scope:t.scope})
     });
-    const data=await r.json();
-    const raw=data.content?.find(c=>c.type==='text')?.text||'{}';
-    const p=JSON.parse(raw.replace(/```json|```/g,'').trim());
-    tenders=tenders.map(x=>x.id===id?{...x,score:p.score,reasoning:p.reasoning,status:'new'}:x);
+    const p=await r.json();
+    if(!r.ok)throw new Error(p.error||r.statusText);
+    tenders=tenders.map(x=>x.id===id?{...x,score:p.score,reasoning:p.reasoning,aiSummary:p.summary,status:'new'}:x);
   }catch(e){
-    tenders=tenders.map(x=>x.id===id?{...x,score:null,status:'new'}:x);
+    tenders=tenders.map(x=>x.id===id?{...x,score:null,aiError:e.message,status:'new'}:x);
   }
   updateStats();renderList();if(selectedId===id)renderDetail();
 }

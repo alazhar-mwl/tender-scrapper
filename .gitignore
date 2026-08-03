@@ -1,5 +1,6 @@
 # Credentials & session — never commit
 password.env.txt
+ai.env.txt
 session_state.json
 tawreed_session.json
 
