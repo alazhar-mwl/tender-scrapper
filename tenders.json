@@ -1019,6 +1019,40 @@
     "category": "Manpower & Professional Services"
   },
   {
+    "reference_number": "4000233641",
+    "title": "SLM755",
+    "rfx_type": "RFx for Op. Proc.",
+    "status": "Published",
+    "start_date": "",
+    "closing_date": "11.08.2026",
+    "response_status": "No Bid Created",
+    "description": "",
+    "estimated_value": "",
+    "link": "",
+    "documents": [],
+    "source": "PDO SRM Portal",
+    "first_seen": "2026-08-04",
+    "category": "Other",
+    "active": false
+  },
+  {
+    "reference_number": "4000233671",
+    "title": "Amal West 2A3_GWR_TECH",
+    "rfx_type": "Technical RFx",
+    "status": "Published",
+    "start_date": "",
+    "closing_date": "18.08.2026",
+    "response_status": "No Bid Created",
+    "description": "",
+    "estimated_value": "",
+    "link": "",
+    "documents": [],
+    "source": "PDO SRM Portal",
+    "active": true,
+    "first_seen": "2026-08-04",
+    "last_seen": "2026-08-04"
+  },
+  {
     "reference_number": "4000233665",
     "title": "PDCPR006028 MSR INST FITTING ADAPTER",
     "rfx_type": "RFx for Op. Proc.",
@@ -1031,8 +1065,9 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Valves, Fittings & Mechanical Spares"
+    "last_seen": "2026-08-04"
   },
   {
     "reference_number": "4000233664",
@@ -1047,8 +1082,9 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Valves, Fittings & Mechanical Spares"
+    "last_seen": "2026-08-04"
   },
   {
     "reference_number": "4000233661",
@@ -1063,8 +1099,9 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Valves, Fittings & Mechanical Spares"
+    "last_seen": "2026-08-04"
   },
   {
     "reference_number": "4000233659",
@@ -1079,8 +1116,9 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Valves, Fittings & Mechanical Spares"
+    "last_seen": "2026-08-04"
   },
   {
     "reference_number": "4000233657",
@@ -1095,8 +1133,9 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Valves, Fittings & Mechanical Spares"
+    "last_seen": "2026-08-04"
   },
   {
     "reference_number": "4000233652",
@@ -1111,8 +1150,9 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Other"
+    "last_seen": "2026-08-04"
   },
   {
     "reference_number": "4000233646",
@@ -1127,8 +1167,9 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Other"
+    "last_seen": "2026-08-04"
   },
   {
     "reference_number": "4000233645",
@@ -1143,8 +1184,9 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Other"
+    "last_seen": "2026-08-04"
   },
   {
     "reference_number": "4000233642",
@@ -1159,23 +1201,8 @@
     "link": "",
     "documents": [],
     "source": "PDO SRM Portal",
+    "active": true,
     "first_seen": "2026-08-04",
-    "category": "Valves, Fittings & Mechanical Spares"
-  },
-  {
-    "reference_number": "4000233641",
-    "title": "SLM755",
-    "rfx_type": "RFx for Op. Proc.",
-    "status": "Published",
-    "start_date": "",
-    "closing_date": "11.08.2026",
-    "response_status": "No Bid Created",
-    "description": "",
-    "estimated_value": "",
-    "link": "",
-    "documents": [],
-    "source": "PDO SRM Portal",
-    "first_seen": "2026-08-04",
-    "category": "Other"
+    "last_seen": "2026-08-04"
   }
 ]

@@ -669,6 +669,8 @@ function mapTender(t,i){
     responseStatus:t.response_status||'',
     documents:t.documents||[],
     floated:normDate(t.first_seen||''),
+    // Older records predate the `active` field — treat missing as active.
+    active:t.active!==false,
     purchaseRequired:!!t.purchase_required,
     score:null,reasoning:null,aiSummary:null,aiError:null,status:'new',
   };
@@ -721,11 +723,15 @@ function isNew(t){
 function isExpired(t){
   return daysUntil(t.deadline)<=0;
 }
-// Expired tenders drop off the portal entirely once past their deadline —
+// Expired or withdrawn (active:false — dropped off the live portal listing,
+// e.g. cancelled before its deadline) tenders drop off the portal view —
 // unless the user explicitly tackled/skipped them, in which case they stay
-// visible under those filters as a historical record.
+// visible under those filters as a historical record. Note: the underlying
+// record is never deleted (see merge_tenders() in tender_scraper.py) — this
+// only controls what's hidden from view, so Market Intelligence can still
+// see the full history via `tenders` directly.
 function isHidden(t){
-  return isExpired(t)&&t.status!=='tackled'&&t.status!=='skipped';
+  return (isExpired(t)||!t.active)&&t.status!=='tackled'&&t.status!=='skipped';
 }
 function visibleTenders(){
   return tenders.filter(t=>!isHidden(t));

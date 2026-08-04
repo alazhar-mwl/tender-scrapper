@@ -971,13 +971,17 @@ def merge_tenders(scraped: list[dict], source: str) -> list[dict]:
       hand 2026-07-22), so "when we first noticed it" is the best available
       signal.
     - keeps other sources' tenders untouched
-    Within the source, the scraped list replaces the old list (tenders that
-    left the portal listing drop out — same semantics as before) — UNLESS the
-    scrape came back empty while the source previously had entries. The SAP
-    POWL UI has repeatedly returned 0 rows on a transiently-slow refresh or a
-    session lock (not a real "zero tenders" state — see 2026-07-16/07-27
-    incidents), so an empty result is treated as a failed scrape and the old
-    entries for that source are kept rather than wiped.
+    - NEVER deletes a tender that drops off the live portal listing — it's
+      kept permanently with `active` flipped to False (and `last_seen`
+      frozen at its last confirmed date), so Market Intelligence trends
+      accumulate real history instead of shrinking as tenders close. Only
+      tenders still present in `scraped` are `active: True`, with
+      `last_seen` bumped to today.
+    Within the source, empty `scraped` while the source previously had
+    entries is treated as a failed scrape (not a real "zero tenders" state)
+    and the old entries are returned untouched — the SAP POWL UI has
+    repeatedly returned 0 rows on a transiently-slow refresh or a session
+    lock (see 2026-07-16/07-27 incidents).
     """
     from datetime import date
 
@@ -999,17 +1003,31 @@ def merge_tenders(scraped: list[dict], source: str) -> list[dict]:
         )
         return existing
 
+    today = date.today().isoformat()
+    scraped_refs = {t.get("reference_number") for t in scraped}
+
+    # Tenders from other sources: untouched.
     merged = [t for t in existing if t.get("source", SOURCE_PDO) != source]
+
+    # This source's tenders that fell off the live listing: keep permanently,
+    # just mark inactive. This is the whole point of the change — Market
+    # Intelligence needs the full history, not just today's snapshot.
+    for t in existing:
+        if t.get("source", SOURCE_PDO) == source and t.get("reference_number") not in scraped_refs:
+            t["active"] = False
+            merged.append(t)
 
     for t in scraped:
         t["source"] = source
+        t["active"] = True
         old = old_by_ref.get(t.get("reference_number"))
         if old:
             for f in ENRICH_FIELDS:
                 if f in old and not t.get(f):
                     t[f] = old[f]
         if not t.get("first_seen"):
-            t["first_seen"] = date.today().isoformat()
+            t["first_seen"] = today
+        t["last_seen"] = today
         merged.append(t)
     return merged
 
