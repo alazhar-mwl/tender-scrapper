@@ -31,6 +31,19 @@
   --purple: #7c5cbf;
   --radius: 12px;
   --radius2:8px;
+
+  /* Categorical palette for Market Intelligence — validated (dataviz skill):
+     fixed order, never cycled; a 9th value always folds into "Other" (slot 8).
+     Keep this order in sync with CATEGORIES in classify_tenders.py. */
+  --cat1: #2a78d6; /* Instrumentation & Controls */
+  --cat2: #eb6834; /* Valves, Fittings & Mechanical Spares */
+  --cat3: #1baf7a; /* Electrical & Power Systems */
+  --cat4: #eda100; /* Manpower & Professional Services */
+  --cat5: #e87ba4; /* IT, Software & Digital Services */
+  --cat6: #008300; /* Civil, Construction & Facilities */
+  --cat7: #4a3aa7; /* Well Services, Drilling & Production Equipment */
+  --cat8: #e34948; /* Other */
+  --chart-surface: var(--bg2);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -358,6 +371,67 @@ html,body{
 }
 .sbody{font-size:14px;color:var(--text2);line-height:1.8;white-space:pre-line}
 
+/* ── Market Intelligence ── */
+.market-view{flex:1;overflow-y:auto;padding:28px 36px;display:none}
+.market-view.open{display:block}
+
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
+.kpi-tile{
+  background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px 18px;
+}
+.kpi-lbl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--text3);margin-bottom:8px}
+.kpi-val{font-size:26px;font-weight:600;color:var(--text);line-height:1}
+.kpi-sub{font-size:12px;color:var(--text3);margin-top:6px}
+
+.chart-card{
+  background:var(--chart-surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px 22px;margin-bottom:22px;
+}
+.chart-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px}
+.chart-sub{font-size:12px;color:var(--text3);margin-bottom:18px}
+
+.hbar-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;position:relative}
+.hbar-label{width:230px;flex-shrink:0;font-size:12px;color:var(--text2);text-align:right;line-height:1.3}
+.hbar-track{flex:1;height:24px;position:relative}
+.hbar-fill{
+  height:24px;border-radius:0 4px 4px 0;
+  display:flex;align-items:center;
+  transition:filter 0.1s;cursor:pointer;
+  outline:none;
+}
+.hbar-fill:hover,.hbar-fill:focus-visible{filter:brightness(1.08)}
+.hbar-fill:focus-visible{box-shadow:0 0 0 2px var(--bg2),0 0 0 4px var(--border2)}
+.hbar-val{
+  font-size:12px;font-weight:600;color:var(--text);
+  margin-left:8px;white-space:nowrap;
+}
+
+.legend-row{display:flex;flex-wrap:wrap;gap:14px 18px;margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text2)}
+.legend-swatch{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+
+.stack-chart{display:flex;align-items:flex-end;gap:18px;height:180px;padding:0 4px}
+.stack-col{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;max-width:90px}
+.stack-bars{flex:1;width:100%;display:flex;flex-direction:column-reverse;justify-content:flex-start;gap:2px;max-width:56px;margin:0 auto}
+.stack-seg{
+  width:100%;border-radius:2px;cursor:pointer;outline:none;
+  transition:filter 0.1s;min-height:3px;
+}
+.stack-seg:hover,.stack-seg:focus-visible{filter:brightness(1.08)}
+.stack-col-lbl{font-size:11px;color:var(--text3);margin-top:8px;text-align:center}
+.stack-col-total{font-size:11px;font-weight:600;color:var(--text2);margin-bottom:6px}
+
+.viz-tooltip{
+  position:fixed;z-index:200;pointer-events:none;
+  background:var(--text);color:#fff;
+  font-size:12px;line-height:1.5;
+  padding:8px 11px;border-radius:6px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.18);
+  max-width:220px;display:none;
+}
+.viz-tooltip b{font-weight:700}
+
 /* Action bar */
 .action-bar{
   padding:14px 36px;
@@ -473,14 +547,36 @@ html,body{
 
   <div class="header-right">
     <span class="last-sync" id="last-sync"></span>
+    <button class="btn" id="market-toggle-btn" onclick="toggleMarketView()"><i class="ti ti-chart-bar"></i> Market Intel</button>
     <button class="btn" onclick="openModal()"><i class="ti ti-cloud-download"></i> Scrape now</button>
     <button class="btn" onclick="loadTenders()"><i class="ti ti-refresh"></i> Refresh</button>
     <button class="btn btn-accent" onclick="scoreAll()"><i class="ti ti-sparkles"></i> Score all</button>
   </div>
 </header>
 
+<!-- Market Intelligence view -->
+<div class="market-view" id="market-view">
+  <div class="kpi-row" id="market-kpis"></div>
+  <div class="chart-card">
+    <div class="chart-title">Tender Volume by Category</div>
+    <div class="chart-sub">Currently open tenders, grouped by AI-classified commodity/service category</div>
+    <div id="market-breakdown"></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">Weekly Trend by Category</div>
+    <div class="chart-sub">Tenders first seen each week, stacked by category — shows which categories are picking up or slowing down</div>
+    <div id="market-trend"></div>
+  </div>
+  <div class="chart-card">
+    <div class="chart-title">Portal Split</div>
+    <div class="chart-sub">Currently open tenders by source portal</div>
+    <div id="market-portal"></div>
+  </div>
+</div>
+<div class="viz-tooltip" id="viz-tooltip"></div>
+
 <!-- Body -->
-<div class="body">
+<div class="body" id="body-view">
 
   <!-- Left panel -->
   <div class="left">
@@ -564,6 +660,7 @@ function mapTender(t,i){
     value:t.estimated_value||'—',
     deadline:normDate(t.closing_date||''),
     sector:t.rfx_type||'—',
+    category:t.category||'Other',
     scope:t.scope_of_work||t.description||t.title||'—',
     sowStatus:t.sow_extraction||'',
     ref:t.reference_number||'',
@@ -582,6 +679,7 @@ let tenders=[];
 let selectedId=null;
 let filterState='all';
 let sortState='deadline';
+let marketViewOpen=false;
 
 /* ── Load ── */
 async function loadTenders(){
@@ -600,6 +698,7 @@ async function loadTenders(){
     return;
   }
   updateStats();renderList();
+  if(marketViewOpen)renderMarketView();
 }
 
 /* ── Stats ── */
@@ -975,6 +1074,178 @@ async function startScrape(){
       }
     }catch(_){}
   },3000);
+}
+
+/* ── Market Intelligence ── */
+// Fixed order — keep in sync with CATEGORIES in classify_tenders.py and the
+// --cat1.. --cat8 CSS variables. Never cycled; a 9th category folds into "Other".
+const CATEGORIES=[
+  ['Instrumentation & Controls','var(--cat1)'],
+  ['Valves, Fittings & Mechanical Spares','var(--cat2)'],
+  ['Electrical & Power Systems','var(--cat3)'],
+  ['Manpower & Professional Services','var(--cat4)'],
+  ['IT, Software & Digital Services','var(--cat5)'],
+  ['Civil, Construction & Facilities','var(--cat6)'],
+  ['Well Services, Drilling & Production Equipment','var(--cat7)'],
+  ['Other','var(--cat8)'],
+];
+const CATEGORY_COLOR=Object.fromEntries(CATEGORIES);
+
+function toggleMarketView(){
+  marketViewOpen=!marketViewOpen;
+  document.getElementById('market-view').classList.toggle('open',marketViewOpen);
+  document.getElementById('body-view').style.display=marketViewOpen?'none':'flex';
+  document.getElementById('market-toggle-btn').classList.toggle('btn-accent',marketViewOpen);
+  if(marketViewOpen)renderMarketView();
+}
+
+function showTip(evt,html){
+  const tip=document.getElementById('viz-tooltip');
+  tip.innerHTML=html;
+  tip.style.display='block';
+  const x=Math.min(evt.clientX+14,window.innerWidth-240);
+  const y=Math.min(evt.clientY+14,window.innerHeight-90);
+  tip.style.left=x+'px';tip.style.top=y+'px';
+}
+function hideTip(){document.getElementById('viz-tooltip').style.display='none'}
+
+function weekStartKey(d){
+  const dt=new Date(d+'T00:00:00');
+  const day=(dt.getDay()+6)%7; // Monday=0..Sunday=6
+  dt.setDate(dt.getDate()-day);
+  return dt.toISOString().slice(0,10);
+}
+function weekLabel(key){
+  return new Date(key+'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
+}
+
+function renderMarketView(){
+  const live=visibleTenders();
+  renderMarketKPIs(live);
+  renderBreakdownChart(live);
+  renderTrendChart(tenders);   // full history, not just currently-open
+  renderPortalChart(live);
+}
+
+function renderMarketKPIs(live){
+  const byCat={};
+  live.forEach(t=>{byCat[t.category]=(byCat[t.category]||0)+1});
+  const top=Object.entries(byCat).sort((a,b)=>b[1]-a[1])[0];
+  const catsTracked=Object.keys(byCat).length;
+  const pdoCount=live.filter(t=>t.portal==='pdo').length;
+  const oqCount=live.filter(t=>t.portal==='oq').length;
+  document.getElementById('market-kpis').innerHTML=`
+    <div class="kpi-tile">
+      <div class="kpi-lbl">Open Tenders</div>
+      <div class="kpi-val">${live.length}</div>
+      <div class="kpi-sub">across ${catsTracked} categor${catsTracked===1?'y':'ies'}</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="kpi-lbl">Top Category</div>
+      <div class="kpi-val" style="font-size:16px;line-height:1.3">${top?top[0]:'—'}</div>
+      <div class="kpi-sub">${top?top[1]+' tender'+(top[1]===1?'':'s')+' — '+Math.round(top[1]/live.length*100)+'%':''}</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="kpi-lbl">PDO SRM Portal</div>
+      <div class="kpi-val">${pdoCount}</div>
+      <div class="kpi-sub">${live.length?Math.round(pdoCount/live.length*100):0}% of open tenders</div>
+    </div>
+    <div class="kpi-tile">
+      <div class="kpi-lbl">OQ Tawreed</div>
+      <div class="kpi-val">${oqCount}</div>
+      <div class="kpi-sub">${live.length?Math.round(oqCount/live.length*100):0}% of open tenders</div>
+    </div>`;
+}
+
+function renderBreakdownChart(live){
+  const el=document.getElementById('market-breakdown');
+  const byCat={};
+  live.forEach(t=>{byCat[t.category]=(byCat[t.category]||0)+1});
+  const rows=CATEGORIES.map(([name,color])=>[name,color,byCat[name]||0])
+    .filter(r=>r[2]>0)
+    .sort((a,b)=>b[2]-a[2]);
+  if(!rows.length){el.innerHTML='<div style="font-size:13px;color:var(--text3)">No categorized tenders yet — run classify_tenders.py.</div>';return;}
+  const max=Math.max(...rows.map(r=>r[2]));
+  el.innerHTML=rows.map(([name,color,count])=>{
+    const pct=Math.round(count/live.length*100);
+    const w=Math.max(4,Math.round(count/max*100));
+    return`<div class="hbar-row">
+      <div class="hbar-label">${name}</div>
+      <div class="hbar-track">
+        <div class="hbar-fill" tabindex="0" style="width:${w}%;background:${color}"
+          onmousemove="showTip(event,'<b>${name}</b><br>${count} tender${count===1?'':'s'} (${pct}%)')"
+          onmouseleave="hideTip()"
+          onfocus="showTip(event,'<b>${name}</b><br>${count} tender${count===1?'':'s'} (${pct}%)')"
+          onblur="hideTip()"></div>
+      </div>
+      <div class="hbar-val">${count}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderTrendChart(all){
+  const el=document.getElementById('market-trend');
+  const withDate=all.filter(t=>t.floated);
+  if(!withDate.length){el.innerHTML='<div style="font-size:13px;color:var(--text3)">No dated tenders yet.</div>';return;}
+  const weeks={};   // weekKey -> {catName: count}
+  withDate.forEach(t=>{
+    const wk=weekStartKey(t.floated);
+    weeks[wk]=weeks[wk]||{};
+    weeks[wk][t.category]=(weeks[wk][t.category]||0)+1;
+  });
+  const weekKeys=Object.keys(weeks).sort();
+  const totals=weekKeys.map(wk=>Object.values(weeks[wk]).reduce((a,b)=>a+b,0));
+  const maxTotal=Math.max(...totals);
+  const presentCats=CATEGORIES.filter(([name])=>weekKeys.some(wk=>weeks[wk][name]));
+
+  const cols=weekKeys.map((wk,i)=>{
+    const segs=CATEGORIES.filter(([name])=>weeks[wk][name]).map(([name,color])=>{
+      const count=weeks[wk][name];
+      const h=Math.max(6,Math.round(count/maxTotal*148));
+      return`<div class="stack-seg" tabindex="0" style="height:${h}px;background:${color}"
+        onmousemove="showTip(event,'<b>${name}</b><br>${count} tender${count===1?'':'s'} — week of ${weekLabel(wk)}')"
+        onmouseleave="hideTip()"
+        onfocus="showTip(event,'<b>${name}</b><br>${count} tender${count===1?'':'s'} — week of ${weekLabel(wk)}')"
+        onblur="hideTip()"></div>`;
+    }).join('');
+    return`<div class="stack-col">
+      <div class="stack-col-total">${totals[i]}</div>
+      <div class="stack-bars">${segs}</div>
+      <div class="stack-col-lbl">${weekLabel(wk)}</div>
+    </div>`;
+  }).join('');
+
+  const legend=presentCats.map(([name,color])=>
+    `<div class="legend-item"><span class="legend-swatch" style="background:${color}"></span>${name}</div>`
+  ).join('');
+
+  el.innerHTML=`<div class="stack-chart">${cols}</div><div class="legend-row">${legend}</div>`;
+}
+
+function renderPortalChart(live){
+  const el=document.getElementById('market-portal');
+  const pdoCount=live.filter(t=>t.portal==='pdo').length;
+  const oqCount=live.filter(t=>t.portal==='oq').length;
+  const rows=[['PDO SRM Portal','var(--accent)',pdoCount],['OQ Tawreed','var(--purple)',oqCount]]
+    .filter(r=>r[2]>0);
+  if(!rows.length){el.innerHTML='<div style="font-size:13px;color:var(--text3)">No open tenders.</div>';return;}
+  const max=Math.max(...rows.map(r=>r[2]));
+  const total=pdoCount+oqCount;
+  el.innerHTML=rows.map(([name,color,count])=>{
+    const pct=Math.round(count/total*100);
+    const w=Math.max(4,Math.round(count/max*100));
+    return`<div class="hbar-row">
+      <div class="hbar-label">${name}</div>
+      <div class="hbar-track">
+        <div class="hbar-fill" tabindex="0" style="width:${w}%;background:${color}"
+          onmousemove="showTip(event,'<b>${name}</b><br>${count} tender${count===1?'':'s'} (${pct}%)')"
+          onmouseleave="hideTip()"
+          onfocus="showTip(event,'<b>${name}</b><br>${count} tender${count===1?'':'s'} (${pct}%)')"
+          onblur="hideTip()"></div>
+      </div>
+      <div class="hbar-val">${count}</div>
+    </div>`;
+  }).join('');
 }
 
 loadTenders();

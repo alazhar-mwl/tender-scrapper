@@ -39,3 +39,7 @@ echo %TODAY%  [DONE] OQ Tawreed documents — exit code: %ERRORLEVEL% >> scraper
 echo %TODAY%  [START] SOW extraction (offline) >> scraper.log
 python extract_sow.py >> scraper.log 2>&1
 echo %TODAY%  [DONE] SOW extraction — exit code: %ERRORLEVEL% >> scraper.log
+
+echo %TODAY%  [START] Market-intel classification >> scraper.log
+python classify_tenders.py >> scraper.log 2>&1
+echo %TODAY%  [DONE] Market-intel classification — exit code: %ERRORLEVEL% >> scraper.log
