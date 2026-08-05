@@ -1109,6 +1109,12 @@ async def launch_context(pw):
             "--disable-blink-features=AutomationControlled",
             "--no-sandbox",
             "--disable-dev-shm-usage",
+            # Headless Chromium's GPU process can crash ("Page.goto: Page
+            # crashed") when launched under a Windows session with no active/
+            # unlocked desktop compositor — confirmed live 2026-08-05 running
+            # via Task Scheduler. These are the standard mitigation.
+            "--disable-gpu",
+            "--disable-software-rasterizer",
         ],
     )
     ctx = await browser.new_context(

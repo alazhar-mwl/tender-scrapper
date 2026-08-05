@@ -259,7 +259,14 @@ async def main() -> None:
              len(todo), ", ".join(t["reference_number"] for t in todo))
 
     async with async_playwright() as pw:
-        browser = await pw.chromium.launch(headless=True, args=["--no-sandbox"])
+        # --disable-gpu / --disable-software-rasterizer: headless Chromium's
+        # GPU process can crash ("Page.goto: Page crashed") under a Windows
+        # session with no active/unlocked desktop compositor — confirmed
+        # live 2026-08-05 running via Task Scheduler.
+        browser = await pw.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-gpu", "--disable-software-rasterizer"],
+        )
         ctx = await browser.new_context(
             viewport={"width": 1440, "height": 900},
             storage_state=str(STATE_FILE) if STATE_FILE.exists() else None,
