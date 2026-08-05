@@ -1101,7 +1101,11 @@ function toggleMarketView(){
   marketViewOpen=!marketViewOpen;
   document.getElementById('market-view').classList.toggle('open',marketViewOpen);
   document.getElementById('body-view').style.display=marketViewOpen?'none':'flex';
-  document.getElementById('market-toggle-btn').classList.toggle('btn-accent',marketViewOpen);
+  const btn=document.getElementById('market-toggle-btn');
+  btn.classList.toggle('btn-accent',marketViewOpen);
+  btn.innerHTML=marketViewOpen
+    ?'<i class="ti ti-arrow-left"></i> Back to Tenders'
+    :'<i class="ti ti-chart-bar"></i> Market Intel';
   if(marketViewOpen)renderMarketView();
 }
 
