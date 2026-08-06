@@ -952,11 +952,14 @@ async def _scroll_window(page: Page) -> bool | None:
 
 SOURCE_PDO = "PDO SRM Portal"
 
-# Fields written by later pipeline phases (fetch_documents.py, extract_sow.py)
-# that a fresh listing scrape must not wipe.
+# Fields written by later pipeline phases (fetch_documents.py, extract_sow.py,
+# classify_tenders.py) that a fresh listing scrape must not wipe. "category"
+# was missing until 2026-08-06 — every re-scrape was silently discarding
+# previously-computed categories, forcing tenders back to "Other" until the
+# next classify_tenders.py run happened to catch them again.
 ENRICH_FIELDS = ("documents", "doc_fetch_done", "doc_fetch_note",
                  "scope_of_work", "sow_source", "sow_extraction", "first_seen",
-                 "purchase_required")
+                 "purchase_required", "category")
 
 
 def merge_tenders(scraped: list[dict], source: str) -> list[dict]:

@@ -471,11 +471,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233777/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"FLOWMETER,EM,EMER-PM,8705NHA080DMW+8732E\" — PR Material Text: Flanged electromagnetic flowmeter Manufacturer EMERSON PROCESS MANAGEMENT Model 8705 Design spec, fl...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233776",
@@ -488,11 +496,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233776/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"VALVE,SOL,CAMOZZI,NA54N-15-02\" — PR Material Text: Solenoid valve Type 5 WAY, 2 POSITION SINGLE, SPRING RETURN Mat, body STAINLESS STEEL Type, construc...\nItem01\"VALVE,SOL,CAMOZZI,NA54N-15-02\" — PR Item Text: VALVE,SOL,CAMOZZI,NA54N-15-02\nItem02\"VALVE,PNEUMATIC,CV-4492.1,VENTIL\" — PR Material Text: Spare_parts Part name VALVE,PNEUMATIC Equipment name VALVE TEST BENCH Equipment model VC25SRV-FLII A...\nItem02\"VALVE,PNEUMATIC,CV-4492.1,VENTIL\" — PR Item Text: VALVE,PNEUMATIC,CV-4492.1,VENTIL Equipment name VALVE TEST BENCH Equipment model VC25SRV-FLII Additi...\nItem03\"VALVE,SOLENOID,SV-1389.1,VENTIL\" — PR Material Text: Spare_parts Part name VALVE,SOLENOID Dimensions 3/8 in BSP Equipment name TEST UNIT Equipment model ...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233775",
@@ -505,11 +521,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233775/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"PACKING,GLAND,VNB1021A-P4,KOSO\" — PR Material Text: Spare_parts Part name PACKING,GLAND Material SUPAGRAF Equipment name CONTROL VALVE Equipment model 5...\nItem02\"GASKET,SEAT,AL825+GPH,VNA0157A-KJ,KOSO\" — PR Material Text: Spare_parts Part name GASKET,SEAT Material ALLOY 825 + GRAPHITE Equipment name CONTROL VALVE Equipme...\nItem03\"GASKET,BONNET,AL825+GPH,VNA0158A-KJ,KOSO\" — PR Material Text: Spare_parts Part name GASKET,BONNET Material ALLOY 825 + GRAPHITE Equipment name CONTROL VALVE Equip...\nItem04\"SEAL,BALANCE,RTFE,AR103-P115-PU-9A,KOSO\" — PR Material Text: Spare_parts Part name SEAL,BALANCE Material RTFE Equipment name CONTROL VALVE Equipment model 501G P...\nItem05\"CAGE+GUIDE,AL825,5GC004FH09-BM,KOSO\" — PR Material Text: Spare_parts Part name CAGE AND GUIDE Material ALLOY 825 Equipment name CONTROL VALVE Equipment model...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233767",
@@ -522,11 +546,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233767/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Tendering Header text: A. PROJECT SPECIFIC DETAILS: Project Code and Name#: FCP-15008 Adding bypass isolation valve of the ...\nDocument Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"TUBE,INSTR,316,3/8in,16SWG,0.065in,SMLS\" — PR Material Text: Metallic instrument tube Service(s) IMPULSE LINE Mat, tube STAINLESS STEEL 316 Mat spec, tube ASTM A...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233763",
@@ -539,11 +571,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233763/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Tendering Header text: Dear S ir / Madam, You are invited to submit your techno-commercial offer in line with the SAP dis a...\nDocument Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"TRDP,FF,1/2INNPTM,9TO32VDC,0TO400KPA\" — PR Material Text: Electronic d/p transmitters Connection, process 1/2 in NPT MALE BOTTOM Connection, electrical 2 x M2...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233756",
@@ -556,11 +596,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233756/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"SHAFT,2000214160,WORTH\" — PR Material Text: Spare_parts Part name SHAFT Additional information WITH KEYS AND NUTS Manufacturer WORTHINGTON Manuf...\nItem02\"DEFLECTOR,4223606980,WORTH\" — PR Material Text: Spare_parts Part name DEFLECTOR Equipment name CENTRIFUGAL PUMP Equipment model 8-UZDL-21 Position n...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233753",
@@ -573,11 +621,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233753/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"SLEEVE,SHAFT,3.003995,DUCHTING\" — PR Material Text: Spare_parts Part name SLEEVE,SHAFT Material GRADE 1.4571 WR300 PEEK Equipment name BRINE FEED PUMP E...\nItem02\"O-RING,SLEEVE,5.100727,DUCHTING\" — PR Material Text: Spare_parts Part name O-RING,SLEEVE Material VITON 500 Equipment name BRINE FEED PUMP Equipment mode...\nItem03\"O-RING,SEAL GLAND,5.320621,DUCHTING\" — PR Material Text: Spare_parts Part name O-RING,SEAL GLAND PLATE Material VITON 500 Equipment name BRINE FEED PUMP Equi...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233752",
@@ -590,11 +646,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233752/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"PIN,40995-031,PCM\" — PR Material Text: Spare_parts Part name PIN Manufacturer PCM POMPES Manufacturer Part Number 40995-031\nItem02\"SHEATH,28725-209,PCM\" — PR Material Text: Spare_parts Part name SHEATH Manufacturer PCM POMPES Manufacturer Part Number 28725-209 Manufacturer...\nItem03\"BEARING,ROLLER,40874-000,PCM\" — PR Material Text: Spare_parts Pump parts Part name BEARING,ROLLER Equipment name SCREW DRAIN VESSEL PUMP Equipment mod...\nItem04\"REDUCER,METRIC,29999-043,PCM\" — PR Material Text: Spare_parts Part name REDUCER,METRIC Manufacturer PCM POMPES Manufacturer Part Number 29999-043\nItem05\"DRIVER,28364-014TS,PCM\" — PR Material Text: Spare_parts Part name DRIVER Manufacturer PCM POMPES Manufacturer Part Number 28364-014TS Parts for ...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233750",
@@ -607,11 +671,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233750/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"BUSHING,THROAT,847B0189106E21100,UNNPUMP\" — PR Material Text: Spare_parts Part name BUSHING,THROAT Equipment name PUMP Manufacturer UNION PUMPS Manufacturer Part ...\nItem02\"SHIM SET,001857,UNNPUMP\" — PR Material Text: Spare_parts Part name SHIM SET Additional information ARTUS Manufacturer UNION PUMPS Manufacturer Pa...\nItem03\"SLEEVE,BEARING,814C0384400R15500,UNNPUMP\" — PR Material Text: Spare_parts Part name SLEEVE,BEARING Typical Serial Number: The part must be identical and interchan...\nItem04\"GASKET,CASING,80in,93R94606060,UNNPUMP\" — PR Material Text: Spare_parts Part name GASKET,CASING Dimensions 80 in (INNER) Typical Serial Number: The part must be...\nItem05\"O-RING,END CAP,9410A25200G,UNNPUMP\" — PR Material Text: Spare_parts Part name O-RING,END CAP Typical Serial Number: The part must be identical and interchan...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "4000233749",
@@ -624,11 +696,19 @@
     "description": "",
     "estimated_value": "",
     "link": "",
-    "documents": [],
+    "documents": [
+      "documents/4000233749/notes.txt"
+    ],
     "source": "PDO SRM Portal",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares",
+    "doc_fetch_done": true,
+    "doc_fetch_note": "",
+    "scope_of_work": "Document Header — Tendering Header text: A. PROJECT SPECIFIC DETAILS: Project Code and Name : FCP 9441 & 10806 UPGRADE FOAM PROTECTION SYSTEM...\nDocument Header — Clauses: 1.0 Seller is invited to submit a quotation for the goods specified below: 1.1 Seller's quotation sh...\nItem01\"VPIMF,DN20,CL150,SBB,THD,316,SS/PTFE,1/2\" — PR Material Text: Monoflange process to instrument valves Nominal size DN 20 NPS 3/4 Size, outlet/bleed 1/2 in (F)BSP ...",
+    "sow_source": "notes.txt",
+    "sow_extraction": "notes-table"
   },
   {
     "reference_number": "Tender_36101",
@@ -1052,7 +1132,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-07-22",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Manpower & Professional Services"
   },
   {
     "reference_number": "Tender_37594",
@@ -1078,7 +1159,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37418",
@@ -1101,7 +1183,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Manpower & Professional Services"
   },
   {
     "reference_number": "Tender_37277",
@@ -1127,7 +1210,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37134",
@@ -1150,7 +1234,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-07-22",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "IT, Software & Digital Services"
   },
   {
     "reference_number": "Tender_37060",
@@ -1177,7 +1262,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Instrumentation & Controls"
   },
   {
     "reference_number": "Tender_36781",
@@ -1203,7 +1289,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37331",
@@ -1229,7 +1316,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_36930",
@@ -1252,7 +1340,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Manpower & Professional Services"
   },
   {
     "reference_number": "Tender_37636",
@@ -1273,12 +1362,13 @@
     "active": true,
     "doc_fetch_done": true,
     "doc_fetch_note": "",
-    "scope_of_work": "",
-    "sow_source": "",
-    "sow_extraction": "no-documents",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tMODULE;OEM:73024291S,EPC CARR\tMODULE; TYPE: EPC CARRIER, APPLICATION: GAS CHROMATOGRAPH (GC); OEM: HONEYWELL, OEM PART NO: 73024291S, EQUIPMENT MODEL NO: ENCAL 3000 PROCHAIN, EQUIPMENT TAG NO: 110-QI-127, 110-QI-128, 110-QI-131, 110-QI-132, 100-QT-046, 100-QT-047, 039-QI-076, 039-QI-077, 110-QR-011, 110-QR-301, 1001-AT-006, 1001-AT-007, 1001-AT-001, 1001-AT-003, 1003-AT-037\tEA(each)\t1\n00020\tMODULE;OEM:73024292S,EPC SAMPLE\tMODULE; TYPE: EPC SAMPLE, APPLICATION: GAS CHROMATOGRAPH (GC); OEM: HONEYWELL, OEM PART NO: 73024292S, EQUIPMENT MODEL NO: ENCAL 3000 PROCHAIN, EQUIPMENT TAG NO: 110-QI-127, 110-QI-128, 110-QI-131, 110-QI-132, 100-QT-046, 100-QT-047, 039-QI-076, 039-QI-077, 110-QR-011, 110-QR-301, 1001-AT-006, 1001-AT-007, 1001-AT-001, 1001-AT-003, 1003-AT-038\tEA(each)\t1\n00030\tMODULE;OEM:73025429,M:GCM1000\tMODULE; TYPE: CALIBRATION, NATURAL C6+ BASE, APPLICATION: GAS CHROMATOGRAPH (GC); OEM: HONEYWELL, OEM PART NO: 73025429, MODEL NO: GCM1000, EQUIPMENT MODEL NO: ENCAL 3000 PROCHAIN GC, EQUIPMENT TAG NO: 110-QI-127, 110-QI-128, 110-QI-131, 110-QI-132, 100-QT-046, 100-QT-047, 039-QI-076, 039-QI-077, 110-QR-011, 110-QR-301,",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match",
     "first_seen": "2026-08-05",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Instrumentation & Controls"
   },
   {
     "reference_number": "Tender_37596",
@@ -1304,7 +1394,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Electrical & Power Systems"
   },
   {
     "reference_number": "Tender_37284",
@@ -1327,7 +1418,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "IT, Software & Digital Services"
   },
   {
     "reference_number": "Tender_37536",
@@ -1354,7 +1446,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "IT, Software & Digital Services"
   },
   {
     "reference_number": "Tender_37549",
@@ -1380,7 +1473,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37250",
@@ -1403,7 +1497,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "IT, Software & Digital Services"
   },
   {
     "reference_number": "Tender_35786",
@@ -1426,7 +1521,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-07-22",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Instrumentation & Controls"
   },
   {
     "reference_number": "Tender_37692",
@@ -1452,7 +1548,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-05",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37641",
@@ -1478,7 +1575,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-05",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37413",
@@ -1503,7 +1601,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37412",
@@ -1529,7 +1628,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37715",
@@ -1546,7 +1646,13 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Civil, Construction & Facilities",
+    "doc_fetch_done": false,
+    "doc_fetch_note": "fetch failed — see scraper.log",
+    "scope_of_work": "",
+    "sow_source": "",
+    "sow_extraction": "no-documents"
   },
   {
     "reference_number": "Tender_37427",
@@ -1569,7 +1675,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Civil, Construction & Facilities"
   },
   {
     "reference_number": "Tender_37721",
@@ -1582,11 +1689,21 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1786011458193.839828-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37721/description.txt",
+      "documents/Tender_37721/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Civil, Construction & Facilities",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\n00010-terminal 11 Supply of furniture\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010.1\tterminal 11 Supply of furniture\t\tEA(each)\t1\nVAT Type\tPrice Inclusive of VAT\tVAT Amount\tService Duration (Days)\tService Location\tDelivery Date\n\t\t\t\t\t\nSection total included in total?\tYes\n\n\nZoom 75%\nZoom 50%\nZoom 25%",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37710",
@@ -1599,11 +1716,21 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1786011458193.839828-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37710/description.txt",
+      "documents/Tender_37710/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-08-06",
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": "",
+    "scope_of_work": "Scope of Work\nQuestion\tDescription\tQuestion Type\nTechnical offer\tKindly attach the official stamped technical offer\tAttachment\nCertificate of Conformity for Bearing, Gasket and/or Spare parts only\tif the requested item is Bearing, Gasket and/or Spare parts, bidder shall confirm to provide “Certificate of Conformity” along with delivery.\tOption List\nJSRS Details\nQuestion\tDescription\tQuestion Type\nJSRS Registration\tAre you registered with Joint Supplier Registration System (JSRS)?\tOption List\nJSRS Registration Number\tPlease provide the JSRS Registration Number.\n\n(JSRS Registration is a mandatory requirement prior engaging in business with Orpic)\tText\nJSRS Certificate\tPlease attach your JSRS Certificate\tAttachment\nConfidentiality and Copyright Undertaking\nQuestion\tDescription\tQuestion Type\nConfidentiality Declaration\tPlease confirm that you hereby accept all the terms of the 'Appendix 2 – Confidentiality Declaration' document\tOption List\nConfidentiality Declaration\tPlease attach a fully completed, signed and stamped copy of 'Appendix 2 – Confidentiality Declaration'. (The 'Appendix 2 - Confidentiality Declaration' document can be downloaded from the Instructional Attachments of this question)\tAttachment\nCommercial Envelope\nAllow general attachments in Supplier Submissions?\nAllowed\nRepeat Order\nQuestion\tDescription\tQuestion Type\nRepeat Order\tBidder shall confirm that the prices offered in this tender is valid for Six Months, OQ may issue repeat order for awardee under the same prices and Ts&CS.\tOption List\nCommercial offer\nQuestion\tDescription\tQuestion Type\nCommercial offer\tKindly attach an official signed and stamped Commercial Offer\tAttachment\nOffer Vaildity\tKindly select your offer Validity\tOption List\nTaxes\nQuestion\tDescription\nImportant Note\tTax means any and all net income, gross income, gross receipts, sales, use ad volorem, transfer, franchise, net worth, profits, license, lease,\nservice, service use, withholding, payroll, employment, excise, severance, stamp, occupation, premium, property, real property taxes and fees, customs,\nduties or other taxes, fees, assesments levies, charges or other impositions of any kind whatsover or obligatory charge of like or equivalent nature,\ntogether with any interest thereof and any and all penalties, additions to tax, or additional amounts with respect thereto, imposed by or on behalf of any\nGovernmental Authority\nQuestion\tDescription\tQuestion Type\nIncoterms\tKindly select your Incoterms\tOption List\nTaxes Justification\tKindly list any possible taxes along with the justification\tText\nVAT Registration\nQuestion\tDescription\tQuestion Type\nVAT\tAre you Oman VAT Registered?\tOption List\nVAT Details\nQuestion\tDescription\tQuestion Type\nVAT Certificate\tPlease attach the VAT Registration Certificate here\tAttachment\nVAT#\tPlease enter the VAT registration number here.\tText\nWithholding Tax Applicability (For Non-Omani Suppliers Only)\nQuestion\tDescription\tQuestion Type\nCompany Type\tPlease select the Company Type from the options\tOption List\nWithholding Tax Applicability\nQuestion\tDescription\tQuestion Type\nWithholding Tax Applicability (10% Deduction)\tThe WHT regime essentially imposes the tax (i.e. WHT) on the income generated in Oman by a foreign person (non-resident vendor) in case of any service delivery. This tax should be borne by the foreign supplier and the local taxpayer (i.e. OQ) is obliged by law to deduct 10% from the invoiced amounts (unless there is a double tax treaty that Oman has signed with the country of the foreign person that may lower the WHT rate). It’s the responsibility of the supplier to comply with the laws of Oman and take into account in its price the local taxes imposed on it. It’s prohibited by Omani law to transfer the burden of tax from the supplier to OQ.\nNote: WHT deduction is NOT applicable for material supply.\tOption List\nRIYADA Registration\nQuestion\tDescription\tQuestion Type\nRIYADA\tAre you registered on Public Authority for Small and Medium Enterprises Developemnt?\tOption List\nRIYADA Certificate\nQuestion\tDescription\tQuestion Type\nRIYADA Certificate\tPlease attach your RIYADA Certificate.\tAttachment\nTraining Levy Applicability\nQuestion\tDescription\tQuestion Type\nTraining Levy Applicability\tOQ is implementing a mandatory Training Levy across our procurement to support national workforce development initiatives and in line with our In-Country Value strategy and directives.\n\n• Levy Rate: The Training Levy is fixed at 1.2% of the total contract value (excluding VAT).\n• Application: The levy deduction applies to all material and services\n• Contractual Requirement: All commercial bids must explicitly acknowledge and incorporate this levy as part of the cost.\n• Mechanism: The levy (1.2%) will be deducted from net invoice amount.\n\nKindly confirm.\tOption List\nPrice\nCode\tDescription\tRemarks\tUnit of Measurement\tQuantity\n00010\tBELT CONVR;5640141;RBR CRPT,650MM,UN9270\tBELT, CONVEYOR; TYPE: RUBBER CARPET, LENGTH: 650 MM, STANDARD: UN9270, APPLICATION: INCLINED BELT CONVEYOR; MANUFACTURER PART NO: 5640141, EQUIPMENT SERIAL NO: 717293, 717294, 717295, 717296, 717297, 717298, EQUIPMENT TAG NO: ME-5921, ME-4921, ME -3921; DRAWING: 3911-FY-VD-GP004GEN038, POSITION NUMBER: 23\tEA(each)\t2\n00020\tSUPRT;3270000047\tSUPPORT; FFT: APPLICATION: MOTORIZED BEND WITH CONICAL ROLLERS-FIXED BRACKET; MANUFACTURER PART NO: 3270000047, EQUIPMENT MODEL NO: HF 2200, EQUIPMENT SERIAL NO: 717293, 717294, 717295, 717296, 717297, 717298, EQUIPMENT TAG NO: ME-3921-A-A-15, ME-3921-A-A-16, ME-3921-B-A-14, ME-3921-B-A-15, ME-4921-A-A-14,, ME-4921-A-A-15, ME-4921-B-A-14, ME-4921-B-A-15, ME-5921-A-A-14, ME-5921-A-A-15, ME-5921-B-A-14, ME-5921-B-A-15; DRAWING: 3911-FY-VD-GP004GEN038, POSITION NUMBER: 4\tEA(each)\t8\n00030\tTUBE;439434;ID30 ED37 WITH MTLLC SPRL\t. TUBE; TYPE: ID30 ED37 WITH METALLIC SPIRAL, COLOR: BLUE, APPLICATION: BAGGING MACHINE; MANUFACTURER PART NO: 439434, EQUIPMENT MANUFACTURER: BL MEDITERRANEO SRL, EQUIPMENT MODEL NO: COMPACTA 2000 , EQUIPMENT SERIAL NO: 745156, 7",
+    "sow_source": "description.txt",
+    "sow_extraction": "heading-match"
   },
   {
     "reference_number": "Tender_37610",
@@ -1626,7 +1753,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Civil, Construction & Facilities"
   },
   {
     "reference_number": "Tender_37440",
@@ -1653,7 +1781,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Manpower & Professional Services"
   },
   {
     "reference_number": "Tender_37619",
@@ -1679,7 +1808,8 @@
     "sow_extraction": "page-text",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "IT, Software & Digital Services"
   },
   {
     "reference_number": "Tender_37502",
@@ -1702,7 +1832,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Manpower & Professional Services"
   },
   {
     "reference_number": "Tender_37629",
@@ -1729,7 +1860,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-05",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_34871",
@@ -1752,7 +1884,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Civil, Construction & Facilities"
   },
   {
     "reference_number": "Tender_37684",
@@ -1778,7 +1911,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-05",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_36487",
@@ -1801,7 +1935,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Manpower & Professional Services"
   },
   {
     "reference_number": "Tender_37595",
@@ -1827,7 +1962,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-02",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Civil, Construction & Facilities"
   },
   {
     "reference_number": "Tender_36871",
@@ -1850,7 +1986,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Civil, Construction & Facilities"
   },
   {
     "reference_number": "Tender_37648",
@@ -1877,7 +2014,8 @@
     "sow_extraction": "heading-match",
     "first_seen": "2026-08-05",
     "purchase_required": false,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Valves, Fittings & Mechanical Spares"
   },
   {
     "reference_number": "Tender_37475",
@@ -1900,7 +2038,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-05",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_37474",
@@ -1923,7 +2062,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-05",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_37470",
@@ -1946,7 +2086,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-05",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_37469",
@@ -1969,7 +2110,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-05",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_37468",
@@ -1992,7 +2134,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-05",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_37466",
@@ -2015,7 +2158,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-05",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_37464",
@@ -2038,7 +2182,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-05",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_37461",
@@ -2061,7 +2206,8 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-05",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Other"
   },
   {
     "reference_number": "Tender_37029",
@@ -2084,6 +2230,7 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-02",
     "purchase_required": true,
-    "last_seen": "2026-08-06"
+    "last_seen": "2026-08-06",
+    "category": "Manpower & Professional Services"
   }
 ]
