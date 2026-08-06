@@ -32,6 +32,17 @@ _log_file = None
 _lock = threading.Lock()
 
 
+def _close_log_when_done(proc: subprocess.Popen) -> None:
+    proc.wait()
+    global _log_file
+    with _lock:
+        # Only close if this subprocess's own handle is still the current
+        # one — a newer /api/scrape call may already have replaced it.
+        if _proc is proc and _log_file:
+            _log_file.close()
+            _log_file = None
+
+
 def call_ai(t: dict) -> dict:
     """Score a tender's fit and summarize its scope of work in one call."""
     if not ANTHROPIC_API_KEY:
@@ -101,6 +112,17 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     stdout=_log_file,
                     stderr=subprocess.STDOUT,
                 )
+                # The handle above used to stay open indefinitely — only ever
+                # closed right before the *next* scrape started — which held
+                # a Windows file lock on scraper.log for the rest of this
+                # server's lifetime and silently blocked anything else (e.g.
+                # the scheduled task's run_scraper.bat) from writing to the
+                # same file. Confirmed live 2026-08-06: this is exactly what
+                # made the scheduled task fail with no diagnostic trail after
+                # a dashboard-triggered scrape had run. Close it as soon as
+                # the subprocess actually finishes instead.
+                proc_ref = _proc
+                threading.Thread(target=_close_log_when_done, args=(proc_ref,), daemon=True).start()
             self._json(200, {"status": "started"})
         elif self.path == "/api/ai":
             try:

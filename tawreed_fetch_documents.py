@@ -250,8 +250,13 @@ async def main() -> None:
     if not todo:
         log.info("Nothing to fetch — all OQ tenders already processed.")
         return
+    # Active (still-live) tenders always go first — see the same fix in
+    # fetch_documents.py (2026-08-06): MAX_DOCS_PER_RUN's budget must never
+    # be spent entirely on old/inactive tenders while a currently open one
+    # goes undocumented.
+    todo.sort(key=lambda t: t.get("active") is False)
     if not only and len(todo) > MAX_PER_RUN:
-        log.info("Limiting to %d of %d pending OQ tenders (MAX_DOCS_PER_RUN).",
+        log.info("Limiting to %d of %d pending OQ tenders (MAX_DOCS_PER_RUN, active tenders prioritized).",
                  MAX_PER_RUN, len(todo))
         todo = todo[:MAX_PER_RUN]
 
