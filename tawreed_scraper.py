@@ -284,21 +284,63 @@ async def click_pager_page(page: Page, n: int) -> bool:
     return False
 
 
+async def select_page_size(page: Page, size: int = 100) -> bool:
+    """
+    Switch the public list's "Show: 10/20/50/100" control to a larger value
+    — a genuine native <select id="...pagerComponent.numberOfDisplayedItem">,
+    found live 2026-08-06 via diagnostic inspection. This is a DIFFERENT
+    request/control than the page-number pager buttons (see
+    scrape_paginated_list's docstring for that mechanism's known bug) and
+    isn't known to share the same server-side defect — it loads everything
+    on one page instead of paging through it.
+    """
+    for f in page.frames:
+        try:
+            loc = f.locator("select[id*='numberOfDisplayedItem']").first
+            if not await loc.count():
+                continue
+            await loc.select_option(value=str(size))
+            await asyncio.sleep(3)
+            return True
+        except Exception:
+            continue
+    return False
+
+
 async def scrape_paginated_list(page: Page, label: str, max_pages: int = 30) -> list[dict]:
     """
-    Extract every page of the current list's table, deduping by reference_number.
+    Extract every row of the current list, deduping by reference_number.
 
-    KNOWN PORTAL LIMITATION (confirmed 2026-07-16 via direct network inspection):
-    clicking a page-number control (or the "Show: N" page-size dropdown) DOES
-    submit the right value server-side — the POST body correctly carries
-    pagerComponent.page=2 — but the server's list-async.si response still
-    renders page 1 regardless. This reproduces with a genuine Playwright
-    button click (not a synthetic/JS one), so it isn't a click-targeting bug
-    on our side; it looks like a defect in Tawreed's own pagination for this
-    list. The list sorts ascending by closing deadline by default, so the
-    first page (10 rows) is the 10 soonest-closing tenders — the most
-    actionable subset anyway. We detect the stall and stop rather than loop.
+    Tries switching to a large page size first (select_page_size) so
+    everything loads on one page — see that function's docstring. Falls
+    back to the page-number pager only if that doesn't yield more rows
+    than a single default page.
+
+    KNOWN PORTAL LIMITATION in the pager fallback (confirmed 2026-07-16 via
+    direct network inspection): clicking a page-number control DOES submit
+    the right value server-side — the POST body correctly carries
+    pagerComponent.page=2 — but the server's list-async.si response
+    sometimes still renders page 1 regardless. This reproduces with a
+    genuine Playwright button click (not a synthetic/JS one), so it isn't a
+    click-targeting bug on our side; it looks like an intermittent defect in
+    Tawreed's own pagination for this list (confirmed still present
+    2026-08-06, after having worked correctly on 2026-08-02/08-05 — treat it
+    as flaky, not permanently fixed or permanently broken). The list sorts
+    ascending by closing deadline by default, so the first page (10 rows) is
+    the 10 soonest-closing tenders — the most actionable subset anyway if
+    both mechanisms fail. We detect the stall and stop rather than loop.
     """
+    first_pass = await extract_rows(page)
+    if await select_page_size(page, 100):
+        bigger = await extract_rows(page)
+        if len(bigger) > len(first_pass):
+            log.info("  %r: switched to 100-per-page, got %d row(s) in one page (vs %d default)",
+                      label, len(bigger), len(first_pass))
+            by_ref = {t["reference_number"]: t for t in bigger if t.get("reference_number")}
+            return list(by_ref.values())
+        log.info("  %r: page-size switch didn't yield extra rows (%d vs %d) — falling back to pager",
+                  label, len(bigger), len(first_pass))
+
     by_ref: dict[str, dict] = {}
     page_num = 1
     while page_num <= max_pages:
