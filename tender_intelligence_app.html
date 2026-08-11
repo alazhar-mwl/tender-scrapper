@@ -706,10 +706,18 @@ async function loadTenders(){
 /* ── Stats ── */
 function daysUntil(d){
   if(!d)return 999;
-  return Math.ceil((new Date(d)-new Date())/86400000);
+  // Compare calendar dates, not exact timestamps — closing_date has no time
+  // component, so comparing it against "now" (which does) made a tender
+  // closing later TODAY look already expired the moment any time had
+  // passed since midnight (confirmed live 2026-08-11: hid 5 same-day
+  // tenders from the dashboard entirely). Strip time-of-day from both sides.
+  const now=new Date();now.setHours(0,0,0,0);
+  const dl=new Date(d);dl.setHours(0,0,0,0);
+  return Math.round((dl-now)/86400000);
 }
 function fmtDays(n){
-  if(n<=0)return'Expired';
+  if(n<0)return'Expired';
+  if(n===0)return'Closes today';
   if(n===1)return'1 day left';
   return n+' days left';
 }
@@ -721,7 +729,7 @@ function isNew(t){
   return age<=NEW_WINDOW_DAYS;
 }
 function isExpired(t){
-  return daysUntil(t.deadline)<=0;
+  return daysUntil(t.deadline)<0;
 }
 // Expired or withdrawn (active:false — dropped off the live portal listing,
 // e.g. cancelled before its deadline) tenders drop off the portal view —
@@ -742,7 +750,7 @@ function updateStats(){
   const tot=live.length;
   const newC=live.filter(isNew).length;
   const high=live.filter(t=>t.score>=75).length;
-  const soon=live.filter(t=>daysUntil(t.deadline)>0&&daysUntil(t.deadline)<=14&&t.status!=='tackled').length;
+  const soon=live.filter(t=>daysUntil(t.deadline)>=0&&daysUntil(t.deadline)<=14&&t.status!=='tackled').length;
   const tack=live.filter(t=>t.status==='tackled').length;
   set('s-total',tot);set('s-new',newC);set('s-high',high);
   set('s-soon',soon);set('s-tackled',tack);
@@ -758,7 +766,7 @@ function getFiltered(){
   const q=(document.getElementById('search-input')?.value||'').toLowerCase();
   let list=visibleTenders();
   if(filterState==='high')       list=list.filter(t=>t.score>=75);
-  else if(filterState==='soon')  list=list.filter(t=>daysUntil(t.deadline)>0&&daysUntil(t.deadline)<=14&&t.status!=='tackled');
+  else if(filterState==='soon')  list=list.filter(t=>daysUntil(t.deadline)>=0&&daysUntil(t.deadline)<=14&&t.status!=='tackled');
   else if(filterState==='src-pdo') list=list.filter(t=>t.portal==='pdo');
   else if(filterState==='src-oq')  list=list.filter(t=>t.portal==='oq');
   else if(filterState==='new')   list=list.filter(isNew);
@@ -796,7 +804,7 @@ function renderList(){
     const scorePill=t.score!==null
       ?`<span class="score-pill ${scoreClass(t.score)}">${t.score}</span>`
       :t.status==='scoring'?`<span class="score-pill sm">…</span>`:'';
-    const pulse=d>0&&d<=7&&t.status!=='tackled'?`<div class="pulse"></div>`:'';
+    const pulse=d>=0&&d<=7&&t.status!=='tackled'?`<div class="pulse"></div>`:'';
     return`<div class="tcard${selectedId===t.id?' selected':''}${t.status==='tackled'?' tackled':''}" onclick="selectTender(${t.id})">
       <div class="tc-top">
         <div class="tc-title">${t.title}</div>
