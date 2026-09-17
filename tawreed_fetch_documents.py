@@ -22,14 +22,19 @@ import sys
 from playwright.async_api import Page, async_playwright
 
 from tawreed_scraper import (
+    MY_TENDERS_LINK_TEXT,
+    MY_TENDERS_URL_MARKER,
     PORTAL_URL,
     STATE_FILE,
     click_href,
+    click_link_text,
     click_pager_page,
     close_notice_popup,
     ensure_logged_in,
     log,
     screenshot,
+    select_open_filter,
+    select_page_size,
 )
 from tender_scraper import DOCS_DIR, OUT_FILE
 
@@ -54,11 +59,57 @@ def save_tenders(tenders: list[dict]) -> None:
 PURCHASE_REQUIRED = "purchase_required"
 
 
+async def search_my_tenders_for(page: Page, ref: str, max_pages: int = 12) -> bool:
+    """
+    Fallback row search for a tender not on the public list — these are
+    invitation-only tenders that only ever appear in "My Tenders" (see
+    tawreed_scraper.MY_TENDERS_LINK_TEXT / scrape_my_tenders). Called while
+    already on some page of the public list, so the "My Tenders" tab
+    (click_link_text — its own href is unreliable, see that comment) is
+    reachable directly; the URL check afterwards guards against a silent
+    non-navigation landing us on the wrong table. Widens the page size
+    first, the same as the listing scrape does to scope itself — a tender
+    surfaced by that scrape should reappear within the first couple of
+    pages here too, rather than requiring a walk through the full
+    1,223-page archive.
+    """
+    if not await click_link_text(page, MY_TENDERS_LINK_TEXT, "My Tenders"):
+        return False
+    # click_link_text's own sleep isn't always enough for the SPA's route
+    # change to land — poll instead of checking page.url once (see the
+    # matching fix/comment in tawreed_scraper.main()).
+    for _ in range(10):
+        if MY_TENDERS_URL_MARKER in page.url:
+            break
+        await asyncio.sleep(1)
+    else:
+        log.warning("  Clicked 'My Tenders' but never saw %r in the URL (stuck at %s) — "
+                    "treating as not-found", MY_TENDERS_URL_MARKER, page.url[:90])
+        return False
+    await close_notice_popup(page)
+    await select_open_filter(page)
+    await select_page_size(page, 100)
+
+    row = page.locator(f"tr:has-text('{ref}')").first
+    if await row.count():
+        return True
+    for page_num in range(2, max_pages + 1):
+        if not await click_pager_page(page, page_num):
+            break
+        await asyncio.sleep(1)
+        row = page.locator(f"tr:has-text('{ref}')").first
+        if await row.count():
+            return True
+    return False
+
+
 async def fetch_tender_documents(page: Page, ref: str) -> "list[str] | None | str":
     """
     Click the tender's title link from its row on the public list (matched
     by ref = Tender Code, which is unique and lives in its own column),
     save the detail page's full text, and download any real attachments.
+    Falls back to searching "My Tenders" (search_my_tenders_for) if the ref
+    isn't on the public list — true for invitation-only tenders.
 
     Returns:
       - list[str]: paths relative to BASE_DIR, on success
@@ -95,8 +146,11 @@ async def fetch_tender_documents(page: Page, ref: str) -> "list[str] | None | st
                     found_on_page = True
                     break
             if not found_on_page:
-                log.warning("  Row for %s not found on any list page", ref)
-                return None
+                log.info("  %s not on the public list — trying 'My Tenders' (invited tender?)", ref)
+                if not await search_my_tenders_for(page, ref):
+                    log.warning("  Row for %s not found on either list", ref)
+                    return None
+                row = page.locator(f"tr:has-text('{ref}')").first
         # The title cell is the only real link in the row (JAGGAER's
         # javascript: contractPayment/... handler) — target it precisely
         # rather than the first <a>, in case the row grows other links later.
