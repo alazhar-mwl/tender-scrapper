@@ -107,7 +107,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 _log_file.write(f"\n[web] --- scrape triggered from dashboard ---\n")
                 _log_file.flush()
                 _proc = subprocess.Popen(
-                    ["python", str(BASE_DIR / "tender_scraper.py")],
+                    [sys.executable, str(BASE_DIR / "tender_scraper.py")],
                     cwd=str(BASE_DIR),
                     stdout=_log_file,
                     stderr=subprocess.STDOUT,
