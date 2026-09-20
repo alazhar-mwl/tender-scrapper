@@ -386,11 +386,9 @@ async def goto_tenders(page: Page) -> None:
 #   4 = RFX Status     5 = Start Date  6 = End Date          7 = Response Number
 #   8 = Response Status  9 = RFX Version  10 = Response Version  11 = Q&A Sender
 
-async def extract_page(page: Page) -> list[dict]:
-    frame = await content_frame(page)
-
+async def _read_rows(frame) -> list[dict]:
     # Use JS inside the frame so we cross any inner iframes too
-    rows_raw: list[dict] = await frame.evaluate("""() => {
+    return await frame.evaluate("""() => {
         const results = [];
         document.querySelectorAll('tr').forEach(tr => {
             const tds = Array.from(tr.querySelectorAll('td'));
@@ -403,6 +401,27 @@ async def extract_page(page: Page) -> list[dict]:
         });
         return results;
     }""")
+
+
+async def extract_page(page: Page) -> list[dict]:
+    frame = await content_frame(page)
+    rows_raw: list[dict] = await _read_rows(frame)
+
+    # SAP's async refresh can still be settling a moment after the earlier
+    # RFx-table wait gave up — confirmed live 2026-09-20: two separate
+    # extraction attempts both logged "No data rows found" here, yet a
+    # screenshot taken in the same instant showed a fully-rendered row.
+    # A single empty read isn't reliable evidence of a genuinely empty
+    # list; re-check a couple more times, a few seconds apart, before
+    # accepting it.
+    if not rows_raw:
+        for attempt in range(2):
+            await asyncio.sleep(4)
+            frame = await content_frame(page)
+            rows_raw = await _read_rows(frame)
+            if rows_raw:
+                log.info("  Rows appeared on retry %d — SAP's refresh was still settling.", attempt + 1)
+                break
 
     if not rows_raw:
         log.warning("  No data rows found in content frame.")
@@ -1003,6 +1022,26 @@ def merge_tenders(scraped: list[dict], source: str) -> list[dict]:
             "Scrape for %s returned 0 tenders but %d existed — treating as a "
             "failed scrape and keeping the existing entries untouched.",
             source, len(old_by_ref),
+        )
+        return existing
+
+    # A drastically-lower-but-nonzero count is just as likely to be a
+    # partial/incomplete scrape as a literal zero. Confirmed live
+    # 2026-09-20: a run that hit SAP's async-refresh race condition
+    # (extract_page could read the table before it finished rendering)
+    # returned exactly 1 real tender — not 0 — so the check above didn't
+    # catch it. That single result was accepted as the full truth and
+    # silently marked every other still-open PDO tender inactive, with
+    # no backup anywhere to recover the lost active state from. Treat a
+    # steep drop the same way as an empty result: keep the old data and
+    # let a human notice, rather than trust a suspiciously small result.
+    old_active_count = sum(1 for t in old_by_ref.values() if t.get("active"))
+    if scraped and old_active_count >= 3 and len(scraped) < old_active_count * 0.3:
+        log.warning(
+            "Scrape for %s returned only %d tender(s) but %d were active before "
+            "— too big a drop to trust as a complete result. Treating as a "
+            "failed/partial scrape and keeping the existing entries untouched.",
+            source, len(scraped), old_active_count,
         )
         return existing
 
