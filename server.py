@@ -101,9 +101,23 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 # own "check scraper.log" error message was pointing at a file
                 # that was never actually written to from this endpoint, so a
                 # failed scrape looked like it silently did nothing.
+                #
+                # Uses its OWN log file (scraper_web.log), separate from
+                # scraper.log — run_scraper.bat's scheduled pipeline holds
+                # scraper.log open via cmd.exe's ">>" redirection for the
+                # full duration of each step (confirmed live: hours at a
+                # time), and this endpoint opening the SAME file while that
+                # redirection holds it raised an unhandled
+                # PermissionError — killing this request with zero response
+                # bytes (client sees a bare connection failure) before any
+                # error could be reported. A 2026-08-06 fix already closes
+                # this handle promptly to stop the dashboard's scrape from
+                # blocking the scheduled one; a separate file removes the
+                # contention in both directions instead of narrowing the
+                # window one of them can block the other.
                 if _log_file:
                     _log_file.close()
-                _log_file = open(BASE_DIR / "scraper.log", "a", encoding="utf-8")
+                _log_file = open(BASE_DIR / "scraper_web.log", "a", encoding="utf-8")
                 _log_file.write(f"\n[web] --- scrape triggered from dashboard ---\n")
                 _log_file.flush()
                 _proc = subprocess.Popen(
@@ -114,13 +128,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 )
                 # The handle above used to stay open indefinitely — only ever
                 # closed right before the *next* scrape started — which held
-                # a Windows file lock on scraper.log for the rest of this
-                # server's lifetime and silently blocked anything else (e.g.
-                # the scheduled task's run_scraper.bat) from writing to the
-                # same file. Confirmed live 2026-08-06: this is exactly what
-                # made the scheduled task fail with no diagnostic trail after
-                # a dashboard-triggered scrape had run. Close it as soon as
-                # the subprocess actually finishes instead.
+                # a Windows file lock on this log for the rest of this
+                # server's lifetime. Close it as soon as the subprocess
+                # actually finishes instead.
                 proc_ref = _proc
                 threading.Thread(target=_close_log_when_done, args=(proc_ref,), daemon=True).start()
             self._json(200, {"status": "started"})

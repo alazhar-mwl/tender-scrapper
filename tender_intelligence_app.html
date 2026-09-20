@@ -1083,7 +1083,7 @@ async function startScrape(){
         setTimeout(()=>{closeModal();loadTenders();},800);
       } else if(d.status==='error'){
         clearInterval(iv);
-        lbl.textContent='Scraper exited with an error. Check scraper.log.';
+        lbl.textContent='Scraper exited with an error. Check scraper_web.log.';
         btn.disabled=false;btn.innerHTML='<i class="ti ti-refresh"></i> Retry';
       }
     }catch(_){}
