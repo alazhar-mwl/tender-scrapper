@@ -483,11 +483,44 @@ async def enrich_from_detail(page: Page, tender: dict) -> None:
 
 # ── Clear list filters ────────────────────────────────────────────────────────
 
-async def clear_list_filters(page: Page) -> None:
+async def clear_list_filters(page: Page) -> set[str]:
     """
     The portal sometimes lands with a previous search (e.g. a single RFX number)
     still active. Clear all quick-criteria fields and re-apply to get the full list.
+
+    Returns the set of non-empty values found in filter fields before
+    clearing. This account is shared with real employees (confirmed
+    2026-09-27) — a human filtering a specific tender at the same moment
+    this scrape runs can leave that filter active here too, and clearing
+    the visible form field doesn't reliably undo a SAP session-level
+    narrowing: confirmed live that a run's "cleared" RFX Number reappeared
+    as the ONLY tender found afterward. scrape_all() uses this return
+    value to detect that exact pattern and refuse to trust the result.
     """
+    # Read every filter field's value BEFORE anything touches them — the
+    # toolbar Clear button below wipes the "Current RFx" preset range too,
+    # so capturing this after that click would see everything already
+    # empty and silently defeat the contamination check (this is a read
+    # pass only; it must not be merged with the clearing loop further down).
+    pre_clear_values: set[str] = set()
+    try:
+        frame = await content_frame(page)
+        probe_inputs = frame.locator("input[type='text'], input[type='search']")
+        for i in range(await probe_inputs.count()):
+            inp = probe_inputs.nth(i)
+            try:
+                if not await inp.is_visible():
+                    continue
+                if (await inp.get_attribute("ct") or "I") != "I":
+                    continue   # skip SAP comboboxes like "[Standard View]"
+                val = await inp.input_value()
+                if val and val.strip():
+                    pre_clear_values.add(val.strip())
+            except Exception:
+                continue
+    except Exception:
+        pass
+
     # The "Current RFx" saved quick-criteria preset pins an RFX Number
     # select-option range that isn't a plain text input (SAP renders it as a
     # matchcode/range widget), so the manual per-field clear below can't see
@@ -549,6 +582,8 @@ async def clear_list_filters(page: Page) -> None:
         await asyncio.sleep(5)
         await _wait_for_rfx_table(page, max_wait=40)
         await screenshot(page, "05_filters_cleared")
+
+    return pre_clear_values
 
 
 # ── Download documents for one RFx ───────────────────────────────────────────
@@ -1082,7 +1117,7 @@ def _save_checkpoint(tenders: list[dict]) -> None:
 
 
 async def scrape_all(page: Page) -> list[dict]:
-    await clear_list_filters(page)   # goto_tenders() already selected the query
+    pre_clear_values = await clear_list_filters(page)   # goto_tenders() already selected the query
 
     if not SCRAPE_DOCUMENTS:
         log.info("Document scraping disabled (set SCRAPE_DOCUMENTS=true to enable) — listings only.")
@@ -1137,6 +1172,24 @@ async def scrape_all(page: Page) -> list[dict]:
         await next_loc.click()
         await _wait_after_nav(page, f"page_{window + 1:03d}_loading")
         window += 1
+
+    # This account is shared with real employees — if every tender we
+    # found is one whose number was sitting in a filter field before we
+    # cleared it, the clear didn't actually reset SAP's session-level
+    # query scope (confirmed live 2026-09-27: a cleared filter's number
+    # reappeared as the ONLY result). That's a contaminated read, not a
+    # real "this is the whole list" result — refuse it the same way a
+    # literal 0 is refused (merge_tenders keeps the existing data rather
+    # than trusting it).
+    found_refs = {t["reference_number"] for t in all_tenders}
+    if found_refs and pre_clear_values and found_refs <= pre_clear_values:
+        log.warning(
+            "All %d tender(s) found match a filter this scrape itself cleared "
+            "(%s) — likely a concurrent user's search leaking into this shared "
+            "account's session, not the real full list. Discarding this result.",
+            len(found_refs), ", ".join(sorted(found_refs)),
+        )
+        return []
 
     return all_tenders
 
