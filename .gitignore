@@ -1,6 +1,7 @@
 # Credentials & session — never commit
 password.env.txt
 ai.env.txt
+ldap.env.txt
 session_state.json
 tawreed_session.json
 
@@ -14,3 +15,6 @@ documents/
 *.log
 last_run.txt
 __pycache__/
+
+# Strix pentest run output — local scan artifacts, not project code
+strix_runs/

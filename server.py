@@ -10,12 +10,17 @@ import subprocess
 import sys
 import threading
 import urllib.error
+import urllib.parse
 import urllib.request
 import webbrowser
+from http.cookies import SimpleCookie
 from pathlib import Path
 
 from dotenv import load_dotenv
 import os
+
+import auth
+import credentials
 
 # Windows consoles default to cp1252, which can't encode → — degrade, don't crash
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
@@ -91,8 +96,71 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_OPTIONS(self):
         self._cors(200)
 
+    def _session_token(self) -> str | None:
+        raw = self.headers.get("Cookie")
+        if not raw:
+            return None
+        jar = SimpleCookie()
+        jar.load(raw)
+        morsel = jar.get(auth.COOKIE_NAME)
+        return morsel.value if morsel else None
+
+    def _current_user(self) -> str | None:
+        return auth.validate_session(self._session_token())
+
+    def _is_dotfile_path(self) -> bool:
+        # Defense-in-depth: this working directory is a git checkout, so
+        # .git/* sits inside the served folder. Nothing should ever be able
+        # to fetch a dotfile/dotdir (.git, .env, etc.) regardless of the
+        # auth check above — reject it outright rather than relying solely
+        # on that check never having a bypass.
+        path = urllib.parse.unquote(urllib.parse.urlsplit(self.path).path)
+        return any(part.startswith(".") for part in path.split("/") if part)
+
+    def _handle_login(self):
+        length = int(self.headers.get("Content-Length", 0))
+        try:
+            data = json.loads(self.rfile.read(length))
+            username = data.get("username", "").strip()
+            password = data.get("password", "")
+        except Exception:
+            return self._json(400, {"error": "Malformed request"})
+        try:
+            ok = auth.check_credentials(username, password)
+        except RuntimeError as exc:
+            return self._json(500, {"error": str(exc)})
+        if not ok:
+            return self._json(401, {"error": "Invalid username or password"})
+        token = auth.create_session(username)
+        body = json.dumps({"status": "ok", "user": username}).encode()
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header(
+            "Set-Cookie",
+            f"{auth.COOKIE_NAME}={token}; Path=/; HttpOnly; Max-Age={auth.SESSION_TTL_SECONDS}; SameSite=Lax",
+        )
+        self.end_headers()
+        self.wfile.write(body)
+
+    def _handle_logout(self):
+        auth.destroy_session(self._session_token())
+        body = b'{"status": "ok"}'
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Set-Cookie", f"{auth.COOKIE_NAME}=; Path=/; HttpOnly; Max-Age=0")
+        self.end_headers()
+        self.wfile.write(body)
+
     def do_POST(self):
         global _proc, _log_file
+        if self.path == "/api/login":
+            return self._handle_login()
+        if self.path == "/api/logout":
+            return self._handle_logout()
+        if not self._current_user():
+            return self._json(401, {"error": "Not authenticated"})
         if self.path == "/api/scrape":
             with _lock:
                 if _proc and _proc.poll() is None:
@@ -144,12 +212,39 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 self._json(502, {"error": f"Anthropic API error {exc.code}: {exc.read().decode(errors='replace')[:300]}"})
             except Exception as exc:
                 self._json(500, {"error": str(exc)})
+        elif self.path == "/api/credentials":
+            try:
+                length = int(self.headers.get("Content-Length", 0))
+                fields = json.loads(self.rfile.read(length))
+                changed = credentials.update(fields, self._current_user())
+                self._json(200, {"status": "ok", "changed": changed})
+            except Exception as exc:
+                self._json(500, {"error": str(exc)})
         else:
             self._json(404, {"error": "not found"})
 
+    PUBLIC_PATHS = ("/login", "/login.html")
+    PUBLIC_PREFIXES = ("/Logo/",)
+
     def do_GET(self):
         global _proc
+        if self._is_dotfile_path():
+            return self._json(404, {"error": "not found"})
+        if self.path in self.PUBLIC_PATHS:
+            self.path = "/login.html"
+            return super().do_GET()
+        if any(self.path.startswith(p) for p in self.PUBLIC_PREFIXES):
+            return super().do_GET()
+
+        if self.path == "/api/whoami":
+            user = self._current_user()
+            if not user:
+                return self._json(401, {"error": "Not authenticated"})
+            return self._json(200, {"user": user})
+
         if self.path == "/api/status":
+            if not self._current_user():
+                return self._json(401, {"error": "Not authenticated"})
             if _proc is None:
                 status = "idle"
             elif _proc.poll() is None:
@@ -157,7 +252,49 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             else:
                 status = "done" if _proc.returncode == 0 else "error"
             return self._json(200, {"status": status})
+
+        if self.path == "/api/credentials":
+            if not self._current_user():
+                return self._json(401, {"error": "Not authenticated"})
+            return self._json(200, credentials.get_status())
+
+        if self.path.startswith("/api/"):
+            if not self._current_user():
+                return self._json(401, {"error": "Not authenticated"})
+            return self._json(404, {"error": "not found"})
+
+        if not self._current_user():
+            self.send_response(302)
+            self.send_header("Location", "/login.html")
+            self.end_headers()
+            return
         super().do_GET()
+
+    def do_HEAD(self):
+        # BaseHTTPRequestHandler dispatches do_HEAD independently of do_GET —
+        # without this override, SimpleHTTPRequestHandler's default do_HEAD
+        # served file metadata (size, last-modified) for any path, including
+        # protected source files and .git/*, without ever checking for a
+        # session. Mirror do_GET's gating instead of falling through to it.
+        if self._is_dotfile_path():
+            self.send_response(404)
+            self.end_headers()
+            return
+        if self.path in self.PUBLIC_PATHS:
+            self.path = "/login.html"
+            return super().do_HEAD()
+        if any(self.path.startswith(p) for p in self.PUBLIC_PREFIXES):
+            return super().do_HEAD()
+        if self.path.startswith("/api/"):
+            self.send_response(200 if self._current_user() else 401)
+            self.end_headers()
+            return
+        if not self._current_user():
+            self.send_response(302)
+            self.send_header("Location", "/login.html")
+            self.end_headers()
+            return
+        super().do_HEAD()
 
     def _json(self, code, data):
         body = json.dumps(data).encode()
@@ -186,9 +323,17 @@ if __name__ == "__main__":
     # Confirmed live 2026-08-03: a PowerShell Invoke-RestMethod test request
     # hung waiting on an Expect:100-continue handshake this server never
     # answers, and took the whole dashboard down with it.
-    server = http.server.ThreadingHTTPServer(("localhost", PORT), Handler)
+    #
+    # Bind to all interfaces, not just localhost, so it's reachable from
+    # other machines on the network (e.g. tender.sspdomain.com) once deployed
+    # on a shared server rather than run from a laptop.
+    server = http.server.ThreadingHTTPServer(("0.0.0.0", PORT), Handler)
     print(f"TenderIQ running → {url}")
-    webbrowser.open(url)
+    # On a shared server this runs unattended (Task Scheduler at boot) —
+    # don't pop open a browser window each time. Opt in locally with
+    # TENDERIQ_OPEN_BROWSER=1, or just run as before on a laptop.
+    if os.getenv("TENDERIQ_OPEN_BROWSER", "1").strip() == "1":
+        webbrowser.open(url)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

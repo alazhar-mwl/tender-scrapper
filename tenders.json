@@ -3108,7 +3108,9 @@
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
-    "category": "Valves, Fittings & Mechanical Spares"
+    "category": "Valves, Fittings & Mechanical Spares",
+    "doc_fetch_done": false,
+    "doc_fetch_note": "fetch failed — see scraper.log"
   },
   {
     "reference_number": "Tender_37965",
@@ -3129,7 +3131,9 @@
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
-    "category": "Other"
+    "category": "Other",
+    "doc_fetch_done": false,
+    "doc_fetch_note": "fetch failed — see scraper.log"
   },
   {
     "reference_number": "Tender_37963",
@@ -3828,7 +3832,9 @@
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": false,
+    "doc_fetch_note": "fetch failed — see scraper.log"
   },
   {
     "reference_number": "Tender_38520",
@@ -3841,11 +3847,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38520/description.txt",
+      "documents/Tender_38520/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_37502",
@@ -3882,11 +3894,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38429/description.txt",
+      "documents/Tender_38429/Tender_38429 -  Once - Off PO for supply of material ( Honeywell Notifier).pdf",
+      "documents/Tender_38429/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38413",
@@ -3899,11 +3918,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38413/description.txt",
+      "documents/Tender_38413/Tender_38413-  Once - Off PO for supply of material (VESDA Filters).pdf",
+      "documents/Tender_38413/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38472",
@@ -3916,11 +3942,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38472/description.txt",
+      "documents/Tender_38472/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38410",
@@ -3933,11 +3965,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38410/description.txt",
+      "documents/Tender_38410/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38409",
@@ -3950,11 +3988,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38409/description.txt",
+      "documents/Tender_38409/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38407",
@@ -3967,11 +4011,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38407/description.txt",
+      "documents/Tender_38407/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38406",
@@ -3984,11 +4034,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38406/description.txt",
+      "documents/Tender_38406/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38403",
@@ -4001,11 +4057,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38403/description.txt",
+      "documents/Tender_38403/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38402",
@@ -4018,11 +4080,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38402/description.txt",
+      "documents/Tender_38402/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38400",
@@ -4035,11 +4103,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38400/description.txt",
+      "documents/Tender_38400/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38398",
@@ -4052,11 +4126,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38398/description.txt",
+      "documents/Tender_38398/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38397",
@@ -4069,11 +4149,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38397/description.txt",
+      "documents/Tender_38397/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38383",
@@ -4086,11 +4172,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38383/description.txt",
+      "documents/Tender_38383/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38382",
@@ -4103,11 +4195,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38382/description.txt",
+      "documents/Tender_38382/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38377",
@@ -4120,11 +4218,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38377/description.txt",
+      "documents/Tender_38377/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38329",
@@ -4137,14 +4241,21 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38329/description.txt",
+      "documents/Tender_38329/T1 - Invitation to Tender.pdf",
+      "documents/Tender_38329/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38490",
@@ -4157,11 +4268,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38490/description.txt",
+      "documents/Tender_38490/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38515",
@@ -4174,11 +4291,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38515/description.txt",
+      "documents/Tender_38515/Tender_38515- Once-Off procurement for supply of material (EDG Spares).pdf",
+      "documents/Tender_38515/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38485",
@@ -4191,11 +4315,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38485/description.txt",
+      "documents/Tender_38485/Tender_38485- Once-Off supply of material (Pressure transmitters ABB, PKGC).pdf",
+      "documents/Tender_38485/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38493",
@@ -4208,11 +4339,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38493/description.txt",
+      "documents/Tender_38493/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_37115",
@@ -4225,14 +4362,20 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_37115/description.txt",
+      "documents/Tender_37115/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38368",
@@ -4245,14 +4388,20 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38368/description.txt",
+      "documents/Tender_38368/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_37446",
@@ -4272,7 +4421,10 @@
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38358",
@@ -4285,14 +4437,20 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38358/description.txt",
+      "documents/Tender_38358/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38365",
@@ -4305,14 +4463,20 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38365/description.txt",
+      "documents/Tender_38365/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_37531",
@@ -4332,7 +4496,10 @@
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38316",
@@ -4352,7 +4519,10 @@
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38256",
@@ -4365,14 +4535,21 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38256/description.txt",
+      "documents/Tender_38256/Tender_38256- Once-Off supply of material (Switch gear spares).pdf",
+      "documents/Tender_38256/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38255",
@@ -4385,14 +4562,21 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38255/description.txt",
+      "documents/Tender_38255/Tender_38255- Once-Off supply of material (HVAC spares).pdf",
+      "documents/Tender_38255/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38513",
@@ -4405,11 +4589,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38513/description.txt",
+      "documents/Tender_38513/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38369",
@@ -4422,11 +4612,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38369/description.txt",
+      "documents/Tender_38369/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38327",
@@ -4439,14 +4635,20 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38327/description.txt",
+      "documents/Tender_38327/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_37306",
@@ -4467,7 +4669,10 @@
     "sow_extraction": "no-documents",
     "first_seen": "2026-08-19",
     "category": "Civil, Construction & Facilities",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38251",
@@ -4480,14 +4685,21 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38251/description.txt",
+      "documents/Tender_38251/T1 - Invitation to Tender.pdf",
+      "documents/Tender_38251/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_37983",
@@ -4507,7 +4719,10 @@
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38391",
@@ -4524,7 +4739,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_37134",
@@ -4592,7 +4810,10 @@
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38303",
@@ -4605,14 +4826,21 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38303/description.txt",
+      "documents/Tender_38303/Tender_38303-Once-off Procurement for supply of Honeywell Fire & Gas System spare parts.pdf",
+      "documents/Tender_38303/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38298",
@@ -4625,14 +4853,21 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38298/description.txt",
+      "documents/Tender_38298/T1 - Invitation to Tender.docx",
+      "documents/Tender_38298/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38503",
@@ -4645,11 +4880,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38503/description.txt",
+      "documents/Tender_38503/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38486",
@@ -4662,11 +4903,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38486/description.txt",
+      "documents/Tender_38486/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38447",
@@ -4679,11 +4926,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38447/description.txt",
+      "documents/Tender_38447/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38426",
@@ -4696,11 +4949,18 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38426/description.txt",
+      "documents/Tender_38426/T1 - Invitation to Tender.pdf",
+      "documents/Tender_38426/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38514",
@@ -4713,11 +4973,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38514/description.txt",
+      "documents/Tender_38514/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38217",
@@ -4730,14 +4996,20 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38217/description.txt",
+      "documents/Tender_38217/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "scope_of_work": "",
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_37475",
@@ -4949,7 +5221,10 @@
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38412",
@@ -4962,11 +5237,17 @@
     "description": "",
     "estimated_value": "",
     "link": "https://tawreed.oq.com/esop/toolkit/negotiation/pubRfq/list.si?reset=true&_ncp=1789626306523.34984-1",
-    "documents": [],
+    "documents": [
+      "documents/Tender_38412/description.txt",
+      "documents/Tender_38412/Tawreed ePayment T_Cs_2021_v0.pdf"
+    ],
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-16",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": false,
+    "doc_fetch_note": ""
   },
   {
     "reference_number": "Tender_38496",
@@ -4983,7 +5264,9 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": false,
+    "doc_fetch_note": "fetch failed — see scraper.log"
   },
   {
     "reference_number": "Tender_38495",
@@ -5000,7 +5283,9 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": false,
+    "doc_fetch_note": "fetch failed — see scraper.log"
   },
   {
     "reference_number": "Tender_38110",
@@ -5020,7 +5305,9 @@
     "sow_source": "",
     "sow_extraction": "no-documents",
     "first_seen": "2026-09-13",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": false,
+    "doc_fetch_note": "fetch failed — see scraper.log"
   },
   {
     "reference_number": "Tender_38450",
@@ -5037,7 +5324,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38436",
@@ -5054,7 +5344,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38185",
@@ -5071,7 +5364,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38384",
@@ -5088,7 +5384,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38375",
@@ -5105,7 +5404,9 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": false,
+    "doc_fetch_note": "fetch failed — see scraper.log"
   },
   {
     "reference_number": "Tender_37943",
@@ -5122,7 +5423,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38370",
@@ -5139,7 +5443,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38363",
@@ -5156,7 +5463,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38312",
@@ -5173,7 +5483,10 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   },
   {
     "reference_number": "Tender_38408",
@@ -5190,6 +5503,9 @@
     "source": "OQ Tawreed",
     "active": true,
     "first_seen": "2026-09-17",
-    "last_seen": "2026-09-17"
+    "last_seen": "2026-09-17",
+    "doc_fetch_done": true,
+    "purchase_required": true,
+    "doc_fetch_note": "Requires Express Interest / purchase to view full details"
   }
 ]

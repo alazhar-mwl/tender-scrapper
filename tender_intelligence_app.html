@@ -149,6 +149,58 @@ html,body{
 }
 .btn-accent:hover{background:var(--accent2);box-shadow:0 3px 14px rgba(217,119,87,0.4);color:#fff}
 
+.user-menu{position:relative}
+.user-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:500;font-family:inherit;
+  padding:5px 10px 5px 6px;
+  border-radius:var(--radius2);
+  border:1px solid var(--border2);
+  background:var(--bg3);
+  color:var(--text2);
+  cursor:pointer;
+  transition:all 0.15s;
+  white-space:nowrap;
+}
+.user-btn:hover{background:var(--bg4);color:var(--text)}
+.user-avatar{
+  width:22px;height:22px;border-radius:50%;
+  background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;flex-shrink:0;
+}
+#user-name{max-width:120px;overflow:hidden;text-overflow:ellipsis}
+
+.user-dropdown{
+  position:absolute;top:calc(100% + 8px);right:0;
+  width:220px;
+  background:var(--bg2);
+  border:1px solid var(--border2);
+  border-radius:12px;
+  box-shadow:0 16px 36px rgba(31,30,29,0.18);
+  padding:6px;
+  opacity:0;pointer-events:none;
+  transform:translateY(6px);
+  transition:opacity 0.15s,transform 0.15s;
+  z-index:100;
+}
+.user-dropdown.open{opacity:1;pointer-events:all;transform:translateY(0)}
+.user-dropdown-hdr{
+  font-size:11px;color:var(--text3);
+  padding:8px 10px 6px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.user-dropdown-item{
+  display:flex;align-items:center;gap:9px;width:100%;
+  font-size:13px;font-weight:500;font-family:inherit;
+  padding:8px 10px;border-radius:8px;
+  border:none;background:transparent;color:var(--text2);
+  cursor:pointer;text-align:left;transition:background 0.1s;
+}
+.user-dropdown-item:hover{background:var(--bg4);color:var(--text)}
+.user-dropdown-item.danger:hover{background:rgba(220,38,38,0.10);color:var(--red2)}
+.user-dropdown-sep{height:1px;background:var(--border);margin:6px 4px}
+
 /* ── Layout ── */
 .body{display:flex;flex:1;overflow:hidden;height:calc(100vh - 58px)}
 
@@ -548,9 +600,23 @@ html,body{
   <div class="header-right">
     <span class="last-sync" id="last-sync"></span>
     <button class="btn" id="market-toggle-btn" onclick="toggleMarketView()"><i class="ti ti-chart-bar"></i> Market Intel</button>
-    <button class="btn" onclick="openModal()"><i class="ti ti-cloud-download"></i> Scrape now</button>
     <button class="btn" onclick="loadTenders()"><i class="ti ti-refresh"></i> Refresh</button>
     <button class="btn btn-accent" onclick="scoreAll()"><i class="ti ti-sparkles"></i> Score all</button>
+
+    <div class="user-menu" id="user-menu">
+      <button class="user-btn" onclick="toggleUserMenu(event)">
+        <span class="user-avatar"><i class="ti ti-user"></i></span>
+        <span id="user-name">Account</span>
+        <i class="ti ti-chevron-down" style="font-size:11px"></i>
+      </button>
+      <div class="user-dropdown" id="user-dropdown">
+        <div class="user-dropdown-hdr" id="user-dropdown-hdr">Signed in</div>
+        <button class="user-dropdown-item" onclick="closeUserMenu();openModal()"><i class="ti ti-cloud-download"></i> Scrape now</button>
+        <button class="user-dropdown-item" onclick="closeUserMenu();openCredModal()"><i class="ti ti-key"></i> Credentials</button>
+        <div class="user-dropdown-sep"></div>
+        <button class="user-dropdown-item danger" onclick="logout()"><i class="ti ti-logout"></i> Sign out</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -635,6 +701,25 @@ html,body{
   </div>
 </div>
 
+<!-- Credentials modal -->
+<div class="overlay" id="cred-overlay" onclick="if(event.target===this)closeCredModal()">
+  <div class="modal" style="width:420px">
+    <div class="modal-hdr">
+      <div class="modal-ttl">Portal Credentials</div>
+      <button class="btn" onclick="closeCredModal()" style="padding:4px 9px;font-size:12px">✕</button>
+    </div>
+    <div style="font-size:12px;color:var(--text3);margin-bottom:16px;line-height:1.6">
+      Update login details the scraper uses for each portal. Leave a password field blank to keep it unchanged.
+    </div>
+    <div id="cred-fields"></div>
+    <div id="cred-msg" style="font-size:12px;margin-top:10px;min-height:16px"></div>
+    <div style="display:flex;gap:8px;margin-top:14px">
+      <button class="btn btn-accent" style="flex:1" id="cred-save-btn" onclick="saveCred()"><i class="ti ti-device-floppy"></i> Save changes</button>
+      <button class="btn" onclick="closeCredModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <script>
 const PORTALS=[
   {id:'pdo',name:'PDO SRM Portal',url:'srm.pdo.co.om',enabled:true},
@@ -682,6 +767,12 @@ let selectedId=null;
 let filterState='all';
 let sortState='deadline';
 let marketViewOpen=false;
+
+/* ── Auth ── */
+async function logout(){
+  await fetch('/api/logout',{method:'POST'});
+  window.location.href='/login.html';
+}
 
 /* ── Load ── */
 async function loadTenders(){
@@ -1036,6 +1127,85 @@ function openModal(){
 }
 
 function closeModal(){document.getElementById('overlay').classList.remove('open')}
+
+/* ── User menu ── */
+function toggleUserMenu(e){
+  e.stopPropagation();
+  document.getElementById('user-dropdown').classList.toggle('open');
+}
+function closeUserMenu(){document.getElementById('user-dropdown').classList.remove('open')}
+document.addEventListener('click',(e)=>{
+  const menu=document.getElementById('user-menu');
+  if(menu&&!menu.contains(e.target))closeUserMenu();
+});
+
+async function loadWhoAmI(){
+  try{
+    const r=await fetch('/api/whoami');
+    if(!r.ok)return;
+    const d=await r.json();
+    document.getElementById('user-name').textContent=d.user;
+    document.getElementById('user-dropdown-hdr').textContent=`Signed in as ${d.user}`;
+  }catch(e){}
+}
+loadWhoAmI();
+
+/* ── Credentials modal ── */
+const CRED_PORTALS=[
+  {label:'PDO SRM Portal',userKey:'SAP_USERNAME',passKey:'SAP_PASSWORD'},
+  {label:'OQ Tawreed',userKey:'TAWREED_USERNAME',passKey:'TAWREED_PASSWORD'},
+];
+let credStatus={};
+
+async function openCredModal(){
+  document.getElementById('cred-overlay').classList.add('open');
+  document.getElementById('cred-msg').textContent='';
+  document.getElementById('cred-fields').innerHTML='<div style="font-size:12px;color:var(--text3)">Loading…</div>';
+  try{
+    const r=await fetch('/api/credentials');
+    credStatus=await r.json();
+    document.getElementById('cred-fields').innerHTML=CRED_PORTALS.map(p=>`
+      <div style="margin-bottom:16px">
+        <div style="font-size:12px;font-weight:600;margin-bottom:8px">${p.label}</div>
+        <input class="search-input" style="margin-bottom:6px" id="cred-${p.userKey}" placeholder="Username" value="${(credStatus[p.userKey]&&credStatus[p.userKey].value)||''}">
+        <input class="search-input" type="password" id="cred-${p.passKey}" placeholder="${credStatus[p.passKey]&&credStatus[p.passKey].set?'•••••••• (set — leave blank to keep)':'Not set — enter a password'}">
+      </div>`).join('');
+  }catch(e){
+    document.getElementById('cred-fields').innerHTML='<div style="font-size:12px;color:var(--red2)">Could not load current credentials.</div>';
+  }
+}
+
+function closeCredModal(){document.getElementById('cred-overlay').classList.remove('open')}
+
+async function saveCred(){
+  const btn=document.getElementById('cred-save-btn');
+  const msg=document.getElementById('cred-msg');
+  const fields={};
+  for(const p of CRED_PORTALS){
+    const userVal=document.getElementById(`cred-${p.userKey}`).value.trim();
+    const origUser=(credStatus[p.userKey]&&credStatus[p.userKey].value)||'';
+    if(userVal!==origUser) fields[p.userKey]=userVal;
+    const passVal=document.getElementById(`cred-${p.passKey}`).value;
+    if(passVal) fields[p.passKey]=passVal;
+  }
+  btn.disabled=true;btn.innerHTML='<i class="ti ti-loader"></i> Saving…';
+  try{
+    const r=await fetch('/api/credentials',{method:'POST',body:JSON.stringify(fields)});
+    const data=await r.json();
+    if(data.status==='ok'){
+      msg.style.color='var(--green2)';
+      msg.textContent=data.changed.length?`Saved: ${data.changed.join(', ')}`:'No changes to save.';
+      setTimeout(closeCredModal,1200);
+    }else{
+      msg.style.color='var(--red2)';
+      msg.textContent=data.error||'Save failed.';
+    }
+  }catch(e){
+    msg.style.color='var(--red2)';
+    msg.textContent='Could not reach server.';
+  }
+  btn.disabled=false;btn.innerHTML='<i class="ti ti-device-floppy"></i> Save changes';
+}
 
 async function startScrape(){
   const btn=document.getElementById('scrape-btn');
