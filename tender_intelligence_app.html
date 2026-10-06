@@ -252,8 +252,8 @@ html,body{
   border-bottom:1px solid var(--border);
   background:var(--bg);
 }
+.filter-row-right{margin-left:auto;display:flex;align-items:center;gap:8px}
 .sort-sel{
-  margin-left:auto;
   font-size:11px;background:transparent;
   border:none;color:var(--text3);
   font-family:inherit;cursor:pointer;outline:none;
@@ -571,8 +571,6 @@ html,body{
     <button class="hpill" data-filter="new" onclick="applyFilter('new')" style="color:var(--accent2)"><b id="s-new" style="color:var(--accent2)">0</b>New</button>
     <button class="hpill" data-filter="high" onclick="applyFilter('high')" style="color:var(--green2)"><b id="s-high" style="color:var(--green2)">0</b>High match</button>
     <button class="hpill" data-filter="soon" onclick="applyFilter('soon')" style="color:var(--orange2)"><b id="s-soon" style="color:var(--orange2)">0</b>Closing soon</button>
-    <button class="hpill" data-filter="src-pdo" onclick="applyFilter('src-pdo')">PDO</button>
-    <button class="hpill" data-filter="src-oq" onclick="applyFilter('src-oq')">OQ</button>
   </div>
 
   <div class="header-right">
@@ -632,11 +630,23 @@ html,body{
     </div>
 
     <div class="filter-row">
-      <select class="sort-sel" onchange="setSort(this.value)">
-        <option value="deadline">Deadline ↑</option>
-        <option value="score">AI Score ↓</option>
-        <option value="title">Title A–Z</option>
-      </select>
+      <div class="filter-row-right">
+        <!-- Portal is its own filter dimension (AND'd with the header's
+             New/High match/Closing soon pills, not a replacement for them —
+             see setPortalFilter()). Options are built from whatever portals
+             are actually in the loaded data (populatePortalOptions()), not
+             hardcoded, so a future 3rd source shows up here with no code
+             change. -->
+        <select class="sort-sel" id="portal-sel" onchange="setPortalFilter(this.value)">
+          <option value="all">All portals</option>
+        </select>
+        <select class="sort-sel" onchange="setSort(this.value)">
+          <option value="floated">Newest first</option>
+          <option value="deadline">Deadline ↑</option>
+          <option value="score">AI Score ↓</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </div>
     </div>
 
     <div class="list" id="list">
@@ -738,7 +748,8 @@ function mapTender(t,i){
 let tenders=[];
 let selectedId=null;
 let filterState='all';
-let sortState='deadline';
+let portalFilter='all';
+let sortState='floated';
 let marketViewOpen=false;
 
 /* ── Auth ── */
@@ -819,8 +830,32 @@ function updateStats(){
   const sources=[...new Set(live.map(t=>t.portal))];
   const tagEl=document.getElementById('portal-tag');
   if(tagEl)tagEl.textContent=sources.length>1?`${sources.length} Portals`:(PORTALS.find(p=>p.id===sources[0])?.name||'Portal');
+  populatePortalOptions(sources);
 }
 function set(id,v){const el=document.getElementById(id);if(el)el.textContent=v;}
+
+/* ── Portal slicer (left-panel dropdown, independent of the header's
+   status/urgency pills — the two dimensions AND together in getFiltered()
+   rather than sharing one filterState, unlike the old PDO/OQ header pills
+   this replaced) ── */
+function portalLabel(id){
+  return (PORTALS.find(p=>p.id===id)?.name.split(' ')[0])||id.toUpperCase();
+}
+function populatePortalOptions(portalIds){
+  const sel=document.getElementById('portal-sel');
+  if(!sel)return;
+  const opts=['all',...portalIds];
+  // Rebuilding on every load only when the option set actually changed
+  // avoids clobbering the user's current selection mid-session.
+  const current=[...sel.options].map(o=>o.value);
+  if(current.length===opts.length&&current.every((v,i)=>v===opts[i]))return;
+  const prev=sel.value;
+  sel.innerHTML=`<option value="all">All portals</option>`+
+    portalIds.map(id=>`<option value="${id}">${portalLabel(id)}</option>`).join('');
+  sel.value=opts.includes(prev)?prev:'all';
+  portalFilter=sel.value;
+}
+function setPortalFilter(v){portalFilter=v;renderList();}
 
 /* ── Filter / sort ── */
 function getFiltered(){
@@ -828,9 +863,8 @@ function getFiltered(){
   let list=visibleTenders();
   if(filterState==='high')       list=list.filter(t=>t.score>=75);
   else if(filterState==='soon')  list=list.filter(t=>daysUntil(t.deadline)>=0&&daysUntil(t.deadline)<=14);
-  else if(filterState==='src-pdo') list=list.filter(t=>t.portal==='pdo');
-  else if(filterState==='src-oq')  list=list.filter(t=>t.portal==='oq');
   else if(filterState==='new')   list=list.filter(isNew);
+  if(portalFilter!=='all') list=list.filter(t=>t.portal===portalFilter);
   if(q) list=list.filter(t=>
     t.title.toLowerCase().includes(q)||
     t.ref.toLowerCase().includes(q)||
@@ -840,6 +874,10 @@ function getFiltered(){
   if(sortState==='score')    list.sort((a,b)=>(b.score||0)-(a.score||0));
   else if(sortState==='deadline') list.sort((a,b)=>daysUntil(a.deadline)-daysUntil(b.deadline));
   else if(sortState==='title')    list.sort((a,b)=>a.title.localeCompare(b.title));
+  // Newest-first default: tenders without a floated date (shouldn't happen
+  // post-scrape, but guards old/malformed records) sort to the bottom
+  // rather than floating to the top as a false "newest".
+  else if(sortState==='floated')  list.sort((a,b)=>(b.floated||'0000-00-00').localeCompare(a.floated||'0000-00-00'));
   return list;
 }
 
