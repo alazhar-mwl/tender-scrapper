@@ -19,9 +19,19 @@
   --border2:rgba(31,30,29,0.16);
   --text:   #1f1e1d;
   --text2:  #5e5b53;
-  --text3:  #8f8b80;
+  /* Impeccable audit (2026-09-27): #8f8b80 failed WCAG AA (2.8-3.4:1) against
+     every background it's used on. Darkened to pass 4.5:1+ everywhere while
+     staying in the same warm-gray family. */
+  --text3:  #6b665c;
   --accent: #d97757;
-  --accent2:#c96442;
+  /* Solid coral fill carrying white text (buttons, active chips) needs to be
+     meaningfully darker than --accent to pass 4.5:1 with white — #d97757
+     itself only reaches 3.1:1. */
+  --accent-solid: #b8542f;
+  /* Also darkened (was #c96442, 3.9:1 with white / as text on light bg) so
+     both the button-hover fill and every text-on-light use of this token
+     (AI label, "New" pill, scoring-error text) pass WCAG AA. */
+  --accent2:#9c4828;
   --green:  #188a50;
   --green2: #0f6b3e;
   --orange: #b45309;
@@ -142,7 +152,7 @@ html,body{
 .btn:hover{background:var(--bg4);color:var(--text)}
 
 .btn-accent{
-  background:var(--accent);
+  background:var(--accent-solid);
   color:#fff;
   border-color:transparent;
   box-shadow:0 2px 10px rgba(217,119,87,0.3);
@@ -242,16 +252,6 @@ html,body{
   border-bottom:1px solid var(--border);
   background:var(--bg);
 }
-.fchip{
-  font-size:11px;font-weight:500;font-family:inherit;
-  padding:4px 8px;border-radius:6px;
-  border:1px solid transparent;
-  background:transparent;color:var(--text3);
-  cursor:pointer;transition:all 0.15s;
-}
-.fchip:hover{color:var(--text2);background:var(--bg3)}
-.fchip.active{background:var(--accent);color:#fff;border-color:transparent}
-
 .sort-sel{
   margin-left:auto;
   font-size:11px;background:transparent;
@@ -271,20 +271,21 @@ html,body{
   position:relative;
 }
 .tcard:hover{background:var(--bg3)}
+.tcard:focus-visible{outline:none;box-shadow:inset 0 0 0 2px var(--accent)}
 .tcard.selected{
   background:rgba(217,119,87,0.10);
   box-shadow:inset 2px 0 0 var(--accent);
 }
-.tcard.tackled{opacity:0.4}
-
 .tc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:8px}
 .tc-title{font-size:13px;font-weight:500;color:var(--text);line-height:1.45;flex:1}
 
 .score-pill{
+  display:inline-flex;align-items:center;gap:3px;
   font-size:10px;font-weight:700;
   padding:2px 8px;border-radius:20px;
   flex-shrink:0;white-space:nowrap;
 }
+.score-pill i{font-size:10px}
 .sh{background:rgba(24,138,80,0.14);color:var(--green2)}
 .sm{background:rgba(180,83,9,0.14);color:var(--orange2)}
 .sl{background:rgba(220,38,38,0.12);color:var(--red2)}
@@ -304,11 +305,8 @@ html,body{
   padding:2px 8px;border-radius:4px;
 }
 .sp-new{background:rgba(217,119,87,0.14);color:var(--accent2)}
-.sp-tackled{background:rgba(24,138,80,0.12);color:var(--green2)}
-.sp-skipped{background:rgba(31,30,29,0.06);color:var(--text3)}
 .sp-scoring{background:rgba(180,83,9,0.12);color:var(--orange2)}
 .sp-open{background:rgba(31,30,29,0.06);color:var(--text3)}
-.sp-expired{background:rgba(220,38,38,0.08);color:var(--text3)}
 
 .pulse{
   width:5px;height:5px;border-radius:50%;
@@ -492,27 +490,6 @@ html,body{
   display:flex;gap:10px;align-items:center;
   flex-shrink:0;
 }
-.btn-tackle{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:13px;font-weight:600;font-family:inherit;
-  padding:10px 22px;border-radius:var(--radius2);
-  border:none;
-  background:linear-gradient(135deg,#188a50,#0f6b3e);
-  color:#fff;cursor:pointer;
-  transition:all 0.15s;
-  box-shadow:0 2px 10px rgba(24,138,80,0.25);
-}
-.btn-tackle:hover{box-shadow:0 3px 14px rgba(24,138,80,0.4);transform:translateY(-1px)}
-
-.btn-outline{
-  display:inline-flex;align-items:center;gap:6px;
-  font-size:13px;font-weight:500;font-family:inherit;
-  padding:10px 18px;border-radius:var(--radius2);
-  border:1px solid var(--border2);background:transparent;
-  color:var(--text2);cursor:pointer;transition:all 0.15s;
-}
-.btn-outline:hover{background:var(--bg3);color:var(--text)}
-
 .btn-ai{
   display:inline-flex;align-items:center;gap:6px;
   font-size:13px;font-weight:500;font-family:inherit;
@@ -590,11 +567,12 @@ html,body{
   </div>
 
   <div class="header-pills">
-    <button class="hpill active" id="pill-all" onclick="setFilter('all',this)"><b id="s-total">0</b>Total</button>
-    <button class="hpill" id="pill-new" onclick="setFilter('new',this)" style="color:var(--accent2)"><b id="s-new" style="color:var(--accent2)">0</b>New</button>
-    <button class="hpill" id="pill-high" onclick="setFilter('high',this)" style="color:var(--green2)"><b id="s-high" style="color:var(--green2)">0</b>High match</button>
-    <button class="hpill" id="pill-soon" onclick="setFilter('soon',this)" style="color:var(--orange2)"><b id="s-soon" style="color:var(--orange2)">0</b>Closing soon</button>
-    <button class="hpill" id="pill-tackled" onclick="setFilter('tackled',this)"><b id="s-tackled">0</b>Tackled</button>
+    <button class="hpill active" data-filter="all" onclick="applyFilter('all')"><b id="s-total">0</b>Total</button>
+    <button class="hpill" data-filter="new" onclick="applyFilter('new')" style="color:var(--accent2)"><b id="s-new" style="color:var(--accent2)">0</b>New</button>
+    <button class="hpill" data-filter="high" onclick="applyFilter('high')" style="color:var(--green2)"><b id="s-high" style="color:var(--green2)">0</b>High match</button>
+    <button class="hpill" data-filter="soon" onclick="applyFilter('soon')" style="color:var(--orange2)"><b id="s-soon" style="color:var(--orange2)">0</b>Closing soon</button>
+    <button class="hpill" data-filter="src-pdo" onclick="applyFilter('src-pdo')">PDO</button>
+    <button class="hpill" data-filter="src-oq" onclick="applyFilter('src-oq')">OQ</button>
   </div>
 
   <div class="header-right">
@@ -654,12 +632,6 @@ html,body{
     </div>
 
     <div class="filter-row">
-      <button class="fchip active" onclick="setChip('all',this)">All</button>
-      <button class="fchip" onclick="setChip('new',this)">New</button>
-      <button class="fchip" onclick="setChip('tackled',this)">Tackled</button>
-      <button class="fchip" onclick="setChip('skipped',this)">Skipped</button>
-      <button class="fchip" onclick="setChip('src-pdo',this)">PDO</button>
-      <button class="fchip" onclick="setChip('src-oq',this)">OQ</button>
       <select class="sort-sel" onchange="setSort(this.value)">
         <option value="deadline">Deadline ↑</option>
         <option value="score">AI Score ↓</option>
@@ -684,10 +656,10 @@ html,body{
 
 <!-- Modal -->
 <div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
-  <div class="modal">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-ttl-datasources">
     <div class="modal-hdr">
-      <div class="modal-ttl">Data Sources</div>
-      <button class="btn" onclick="closeModal()" style="padding:4px 9px;font-size:12px">✕</button>
+      <div class="modal-ttl" id="modal-ttl-datasources">Data Sources</div>
+      <button class="btn" onclick="closeModal()" style="padding:4px 9px;font-size:12px" aria-label="Close">✕</button>
     </div>
     <div id="modal-portals"></div>
     <div class="prog-wrap" id="prog-wrap">
@@ -703,13 +675,14 @@ html,body{
 
 <!-- Credentials modal -->
 <div class="overlay" id="cred-overlay" onclick="if(event.target===this)closeCredModal()">
-  <div class="modal" style="width:420px">
+  <div class="modal" style="width:420px" role="dialog" aria-modal="true" aria-labelledby="modal-ttl-credentials">
     <div class="modal-hdr">
-      <div class="modal-ttl">Portal Credentials</div>
-      <button class="btn" onclick="closeCredModal()" style="padding:4px 9px;font-size:12px">✕</button>
+      <div class="modal-ttl" id="modal-ttl-credentials">Portal Credentials</div>
+      <button class="btn" onclick="closeCredModal()" style="padding:4px 9px;font-size:12px" aria-label="Close">✕</button>
     </div>
     <div style="font-size:12px;color:var(--text3);margin-bottom:16px;line-height:1.6">
       Update login details the scraper uses for each portal. Leave a password field blank to keep it unchanged.
+      There's no live test on save — after changing a password, check <b>Data Sources</b> the next day to confirm new tenders are still arriving for that portal.
     </div>
     <div id="cred-fields"></div>
     <div id="cred-msg" style="font-size:12px;margin-top:10px;min-height:16px"></div>
@@ -823,14 +796,12 @@ function isExpired(t){
   return daysUntil(t.deadline)<0;
 }
 // Expired or withdrawn (active:false — dropped off the live portal listing,
-// e.g. cancelled before its deadline) tenders drop off the portal view —
-// unless the user explicitly tackled/skipped them, in which case they stay
-// visible under those filters as a historical record. Note: the underlying
-// record is never deleted (see merge_tenders() in tender_scraper.py) — this
-// only controls what's hidden from view, so Market Intelligence can still
-// see the full history via `tenders` directly.
+// e.g. cancelled before its deadline) tenders drop off the portal view.
+// Note: the underlying record is never deleted (see merge_tenders() in
+// tender_scraper.py) — this only controls what's hidden from view, so
+// Market Intelligence can still see the full history via `tenders` directly.
 function isHidden(t){
-  return (isExpired(t)||!t.active)&&t.status!=='tackled'&&t.status!=='skipped';
+  return isExpired(t)||!t.active;
 }
 function visibleTenders(){
   return tenders.filter(t=>!isHidden(t));
@@ -841,10 +812,9 @@ function updateStats(){
   const tot=live.length;
   const newC=live.filter(isNew).length;
   const high=live.filter(t=>t.score>=75).length;
-  const soon=live.filter(t=>daysUntil(t.deadline)>=0&&daysUntil(t.deadline)<=14&&t.status!=='tackled').length;
-  const tack=live.filter(t=>t.status==='tackled').length;
+  const soon=live.filter(t=>daysUntil(t.deadline)>=0&&daysUntil(t.deadline)<=14).length;
   set('s-total',tot);set('s-new',newC);set('s-high',high);
-  set('s-soon',soon);set('s-tackled',tack);
+  set('s-soon',soon);
 
   const sources=[...new Set(live.map(t=>t.portal))];
   const tagEl=document.getElementById('portal-tag');
@@ -857,11 +827,10 @@ function getFiltered(){
   const q=(document.getElementById('search-input')?.value||'').toLowerCase();
   let list=visibleTenders();
   if(filterState==='high')       list=list.filter(t=>t.score>=75);
-  else if(filterState==='soon')  list=list.filter(t=>daysUntil(t.deadline)>=0&&daysUntil(t.deadline)<=14&&t.status!=='tackled');
+  else if(filterState==='soon')  list=list.filter(t=>daysUntil(t.deadline)>=0&&daysUntil(t.deadline)<=14);
   else if(filterState==='src-pdo') list=list.filter(t=>t.portal==='pdo');
   else if(filterState==='src-oq')  list=list.filter(t=>t.portal==='oq');
   else if(filterState==='new')   list=list.filter(isNew);
-  else if(filterState!=='all')   list=list.filter(t=>t.status===filterState);
   if(q) list=list.filter(t=>
     t.title.toLowerCase().includes(q)||
     t.ref.toLowerCase().includes(q)||
@@ -877,6 +846,10 @@ function getFiltered(){
 /* ── Render list ── */
 function scoreClass(s){return s>=75?'sh':s>=50?'sm':'sl'}
 function scoreColor(s){return s>=75?'#188a50':s>=50?'#b45309':'#dc2626'}
+// Impeccable audit: score/urgency were color-only (fails for colorblind users).
+// Pair each band with a distinct glyph so meaning survives without color.
+function scoreIcon(s){return s>=75?'ti-arrow-narrow-up':s>=50?'ti-minus':'ti-arrow-narrow-down'}
+function urgencyIcon(urg){return urg==='danger'?'ti-alert-circle':urg==='urgent'?'ti-alert-triangle':'ti-calendar'}
 
 function renderList(){
   const col=document.getElementById('list');
@@ -888,15 +861,14 @@ function renderList(){
   col.innerHTML=list.map(t=>{
     const d=daysUntil(t.deadline);
     const urg=d<=3?'danger':d<=14?'urgent':'';
-    const expired=isExpired(t)&&t.status!=='tackled'&&t.status!=='skipped';
-    const showNew=!expired&&isNew(t);
-    const spCls=expired?'sp-expired':showNew?'sp-new':({tackled:'sp-tackled',skipped:'sp-skipped',scoring:'sp-scoring'}[t.status]||'sp-open');
-    const spLbl=expired?'Expired':showNew?'New':({tackled:'Tackled',skipped:'Skipped',scoring:'Scoring…'}[t.status]||'Open');
+    const showNew=isNew(t);
+    const spCls=showNew?'sp-new':t.status==='scoring'?'sp-scoring':'sp-open';
+    const spLbl=showNew?'New':t.status==='scoring'?'Scoring…':'Open';
     const scorePill=t.score!==null
-      ?`<span class="score-pill ${scoreClass(t.score)}">${t.score}</span>`
+      ?`<span class="score-pill ${scoreClass(t.score)}"><i class="ti ${scoreIcon(t.score)}"></i>${t.score}</span>`
       :t.status==='scoring'?`<span class="score-pill sm">…</span>`:'';
-    const pulse=d>=0&&d<=7&&t.status!=='tackled'?`<div class="pulse"></div>`:'';
-    return`<div class="tcard${selectedId===t.id?' selected':''}${t.status==='tackled'?' tackled':''}" onclick="selectTender(${t.id})">
+    const pulse=d>=0&&d<=7?`<div class="pulse"></div>`:'';
+    return`<div class="tcard${selectedId===t.id?' selected':''}" onclick="selectTender(${t.id})" tabindex="0" role="button" aria-pressed="${selectedId===t.id}" aria-label="${t.title}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectTender(${t.id})}">
       <div class="tc-top">
         <div class="tc-title">${t.title}</div>
         ${scorePill}
@@ -904,14 +876,14 @@ function renderList(){
       <div class="tc-meta">
         <span class="mtag"><i class="ti ti-building"></i>${t.portal==='oq'?'OQ':'PDO'}</span>
         <span class="mtag"><i class="ti ti-tag"></i>${t.sector}</span>
-        <span class="mtag ${urg}"><i class="ti ti-calendar"></i>${fmtDays(d)}</span>
+        <span class="mtag ${urg}"><i class="ti ${urgencyIcon(urg)}"></i>${fmtDays(d)}</span>
         ${t.floated?`<span class="mtag"><i class="ti ti-calendar-plus"></i>floated ${t.floated}</span>`:''}
         ${t.purchaseRequired?`<span class="mtag danger"><i class="ti ti-lock"></i>Purchase required</span>`:''}
         ${t.ref?`<span class="mtag"><span class="ref-mono">${t.ref}</span></span>`:''}
       </div>
       <div class="tc-foot">
         <span class="spill ${spCls}">${pulse}${spLbl}</span>
-        ${d<=7&&t.status!=='tackled'?`<span style="font-size:10px;color:var(--orange2)">closes ${t.deadline}</span>`:''}
+        ${d<=7?`<span style="font-size:10px;color:var(--orange2)">closes ${t.deadline}</span>`:''}
       </div>
     </div>`;
   }).join('');
@@ -923,6 +895,19 @@ function selectTender(id){
   renderList();
   renderDetail();
 }
+
+// Impeccable audit: .tcard had no keyboard path at all (P0 — the primary
+// task was unreachable without a mouse). Enter/Space activation lives on
+// each row; this adds Up/Down row-to-row movement within the list.
+document.getElementById('list')?.addEventListener('keydown',(e)=>{
+  if(e.key!=='ArrowDown'&&e.key!=='ArrowUp')return;
+  const cards=[...document.querySelectorAll('#list .tcard')];
+  const i=cards.indexOf(document.activeElement);
+  if(i===-1)return;
+  e.preventDefault();
+  const next=cards[i+(e.key==='ArrowDown'?1:-1)];
+  next?.focus();
+});
 
 function renderDetail(){
   const panel=document.getElementById('right');
@@ -981,11 +966,11 @@ function renderDetail(){
         </div>
         <div class="mcard">
           <div class="mcard-lbl">Closing Date</div>
-          <div class="mcard-val ${urg}">${t.deadline||'—'}</div>
+          <div class="mcard-val ${urg}">${urg?`<i class="ti ${urgencyIcon(urg)}" style="font-size:12px;margin-right:3px"></i>`:''}${t.deadline||'—'}</div>
         </div>
         <div class="mcard">
           <div class="mcard-lbl">Days Remaining</div>
-          <div class="mcard-val ${urg}">${fmtDays(d)}</div>
+          <div class="mcard-val ${urg}">${urg?`<i class="ti ${urgencyIcon(urg)}" style="font-size:12px;margin-right:3px"></i>`:''}${fmtDays(d)}</div>
         </div>
         <div class="mcard">
           <div class="mcard-lbl">Estimated Value</div>
@@ -1010,11 +995,17 @@ function renderDetail(){
         <div class="slabel">AI Summary</div>
         <div style="font-size:13px;color:var(--text3);padding:10px 0">Could not generate a summary: ${t.aiError}</div>
       </div>`:''}
-      ${t.scope&&t.scope!=='—'?`
+      ${t.scope&&t.scope!=='—'?(t.aiSummary?`
       <div class="section">
-        <div class="slabel">Scope of Work${t.aiSummary?' (Raw)':''}</div>
+        <details>
+          <summary class="slabel" style="cursor:pointer;user-select:none">Show original Scope of Work text</summary>
+          <div class="sbody" style="margin-top:10px">${t.scope}</div>
+        </details>
+      </div>`:`
+      <div class="section">
+        <div class="slabel">Scope of Work</div>
         <div class="sbody">${t.scope}</div>
-      </div>`:''}
+      </div>`):''}
 
       ${t.documents&&t.documents.length?`
       <div class="section">
@@ -1037,46 +1028,23 @@ function renderDetail(){
         <div style="font-size:13px;color:var(--text3);padding:10px 0">No documents downloaded yet. Run scrape to fetch attachments.</div>
       </div>`}
     </div>
+    ${t.score===null&&t.status!=='scoring'?`
     <div class="action-bar">
-      ${t.status!=='tackled'
-        ?`<button class="btn-tackle" onclick="setStatus(${t.id},'tackled')"><i class="ti ti-check"></i>Mark as Tackled</button>`
-        :`<span style="font-size:13px;color:var(--green2);display:flex;align-items:center;gap:6px"><i class="ti ti-circle-check"></i>Tackled</span>`}
-      ${t.status!=='skipped'
-        ?`<button class="btn-outline" onclick="setStatus(${t.id},'skipped')"><i class="ti ti-x"></i>Skip</button>`
-        :`<button class="btn-outline" onclick="setStatus(${t.id},'new')"><i class="ti ti-arrow-back-up"></i>Restore</button>`}
-      ${t.score===null&&t.status!=='scoring'
-        ?`<button class="btn-ai" onclick="scoreOne(${t.id})"><i class="ti ti-sparkles"></i>Get AI Score</button>`
-        :''}
-    </div>`;
+      <button class="btn-ai" onclick="scoreOne(${t.id})"><i class="ti ti-sparkles"></i>Get AI Score</button>
+    </div>`:''}`;
 }
 
-/* ── Status ── */
-function setStatus(id,status){
-  tenders=tenders.map(t=>t.id===id?{...t,status}:t);
-  updateStats();renderList();renderDetail();
-}
-
-/* ── Filters ── */
-function setChip(f,el){
+/* ── Filters (single row, header pills — the old sidebar chip row was a
+   redundant second filter UI with a partially-overlapping key set) ── */
+function applyFilter(f){
   filterState=f;
-  document.querySelectorAll('.fchip').forEach(c=>c.classList.remove('active'));
-  el.classList.add('active');
-  // sync header pills
-  document.querySelectorAll('.hpill').forEach(p=>p.classList.remove('active'));
-  const map={all:'pill-all',new:'pill-new',high:'pill-high',soon:'pill-soon',tackled:'pill-tackled'};
-  const pill=document.getElementById(map[f]);
-  if(pill)pill.classList.add('active');
+  syncFilterUI();
   renderList();
 }
-
-function setFilter(f,el){
-  filterState=f;
-  document.querySelectorAll('.hpill').forEach(p=>p.classList.remove('active'));
-  el.classList.add('active');
-  // sync chips
-  document.querySelectorAll('.fchip').forEach(c=>c.classList.remove('active'));
-  const first=document.querySelector('.fchip');if(first&&f==='all')first.classList.add('active');
-  renderList();
+function syncFilterUI(){
+  document.querySelectorAll('.hpill').forEach(el=>{
+    el.classList.toggle('active',el.dataset.filter===filterState);
+  });
 }
 
 function setSort(v){sortState=v;renderList();}
@@ -1110,23 +1078,67 @@ async function scoreAll(){
 }
 
 /* ── Modal ── */
+/* ── Modal accessibility (Impeccable audit: modals had no focus management
+   and no Escape handling — a keyboard user could open one but not reliably
+   know they were in it or close it without a mouse) ── */
+let _modalReturnFocus=null;
+function openOverlay(id){
+  _modalReturnFocus=document.activeElement;
+  const el=document.getElementById(id);
+  el.classList.add('open');
+  el.querySelector('.modal-hdr button')?.focus();
+}
+function closeOverlay(id){
+  document.getElementById(id).classList.remove('open');
+  _modalReturnFocus?.focus();
+  _modalReturnFocus=null;
+}
+document.addEventListener('keydown',(e)=>{
+  if(e.key!=='Escape')return;
+  const open=document.querySelector('.overlay.open');
+  if(open)closeOverlay(open.id);
+});
+
+// Impeccable audit: credential rotation had no way to notice a bad save
+// before the unattended scheduled scraper quietly went a day+ without new
+// tenders for a portal. A live "test login" was considered and rejected —
+// tender_scraper.py's ensure_logged_in() explicitly treats skipping login
+// on an existing valid session as lockout protection, so a test button
+// could (a) report success without ever checking the new credentials, and
+// (b) risk real portal lockouts if clicked repeatedly. This is the safe
+// alternative: a read-only "most recent tender seen" per portal, derived
+// from data already loaded, so a stalled portal is visible at a glance.
+function mostRecentByPortal(portalId){
+  const dates=tenders.filter(t=>t.portal===portalId&&t.floated).map(t=>t.floated);
+  return dates.length?dates.sort().at(-1):null;
+}
+
 function openModal(){
-  document.getElementById('overlay').classList.add('open');
-  document.getElementById('modal-portals').innerHTML=PORTALS.map(p=>`
+  document.getElementById('modal-portals').innerHTML=PORTALS.map(p=>{
+    const recent=mostRecentByPortal(p.id);
+    const daysAgo=recent?Math.floor((new Date()-new Date(recent))/86400000):null;
+    const staleness=daysAgo===null?'No tenders seen yet'
+      :daysAgo<=1?`Most recent tender: ${recent} (today)`
+      :`Most recent tender: ${recent} (${daysAgo}d ago)`;
+    const stale=daysAgo!==null&&daysAgo>3;
+    return`
     <div class="portal-row">
       <div style="display:flex;align-items:center;gap:10px">
         <div class="p-dot"></div>
         <div>
           <div style="font-size:13px;font-weight:500">${p.name}</div>
           <div style="font-size:11px;color:var(--text3)">${p.url}</div>
+          <div style="font-size:11px;color:${stale?'var(--orange2)':'var(--text3)'};margin-top:2px">${stale?`<i class="ti ti-alert-triangle" style="font-size:11px"></i> `:''}${staleness}</div>
         </div>
       </div>
       <span style="font-size:11px;color:var(--green2);background:rgba(24,138,80,0.10);padding:2px 8px;border-radius:4px;font-weight:500">Active</span>
-    </div>`).join('');
+    </div>`;
+  }).join('');
   document.getElementById('prog-wrap').style.display='none';
+  openOverlay('overlay');
 }
 
-function closeModal(){document.getElementById('overlay').classList.remove('open')}
+function closeModal(){closeOverlay('overlay')}
 
 /* ── User menu ── */
 function toggleUserMenu(e){
@@ -1158,7 +1170,7 @@ const CRED_PORTALS=[
 let credStatus={};
 
 async function openCredModal(){
-  document.getElementById('cred-overlay').classList.add('open');
+  openOverlay('cred-overlay');
   document.getElementById('cred-msg').textContent='';
   document.getElementById('cred-fields').innerHTML='<div style="font-size:12px;color:var(--text3)">Loading…</div>';
   try{
@@ -1175,7 +1187,7 @@ async function openCredModal(){
   }
 }
 
-function closeCredModal(){document.getElementById('cred-overlay').classList.remove('open')}
+function closeCredModal(){closeOverlay('cred-overlay')}
 
 async function saveCred(){
   const btn=document.getElementById('cred-save-btn');
