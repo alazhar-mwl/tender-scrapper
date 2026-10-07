@@ -1004,6 +1004,28 @@ async def _scroll_window(page: Page) -> bool | None:
     return None
 
 
+def save_tenders(merged: list[dict]) -> None:
+    """Write tenders.json atomically — write-to-temp then os.replace().
+
+    The deployed server's scheduled hourly scrape and a dashboard-triggered
+    "Scrape now" can overlap (confirmed live 2026-10-07: shared-PDO-account
+    session conflicts from two concurrent runs) and the previous plain
+    write_text() truncates the file before writing new content, so a reader
+    (the dashboard's own tenders.json fetch) could land mid-write and get a
+    truncated/invalid JSON read — confirmed live the same day ("Could not
+    load tenders.json" on a dashboard refresh, gone on retry). os.replace()
+    on the same volume is atomic on both Windows and POSIX: a concurrent
+    reader always sees either the fully-old or fully-new file, never a
+    partial one.
+    """
+    tmp = OUT_FILE.with_suffix(".json.tmp")
+    tmp.write_text(
+        json.dumps(merged, indent=2, ensure_ascii=False, default=str),
+        encoding="utf-8",
+    )
+    os.replace(tmp, OUT_FILE)
+
+
 SOURCE_PDO = "PDO SRM Portal"
 
 # Fields written by later pipeline phases (fetch_documents.py, extract_sow.py,
@@ -1257,10 +1279,7 @@ async def main(diagnose_only: bool = False) -> None:
     if tenders is not None:
         log.info("Total tenders scraped: %d", len(tenders))
         merged = merge_tenders(tenders, SOURCE_PDO)
-        OUT_FILE.write_text(
-            json.dumps(merged, indent=2, ensure_ascii=False, default=str),
-            encoding="utf-8",
-        )
+        save_tenders(merged)
         CHECKPOINT.unlink(missing_ok=True)
         log.info("Saved → %s (%d total across sources)", OUT_FILE, len(merged))
 

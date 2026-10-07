@@ -32,7 +32,7 @@ from dotenv import load_dotenv
 from playwright.async_api import Page, TimeoutError as PWTimeout, async_playwright
 
 # Reuse the shared pipeline pieces (merge-safe saving, logging setup)
-from tender_scraper import merge_tenders, log, OUT_FILE
+from tender_scraper import merge_tenders, log, OUT_FILE, save_tenders
 
 BASE_DIR   = Path(__file__).parent
 ENV_FILE   = BASE_DIR / "password.env.txt"
@@ -814,10 +814,7 @@ async def main(diagnose_only: bool = False) -> None:
             log.info("Scraped %d unique Tawreed tender(s) total", len(tenders))
             if tenders:
                 merged = merge_tenders(tenders, SOURCE_OQ)
-                OUT_FILE.write_text(
-                    json.dumps(merged, indent=2, ensure_ascii=False, default=str),
-                    encoding="utf-8",
-                )
+                save_tenders(merged)
                 log.info("Saved → %s (%d total across sources)", OUT_FILE.name, len(merged))
             else:
                 log.warning("No rows mapped from any list — run --diagnose and inspect.")

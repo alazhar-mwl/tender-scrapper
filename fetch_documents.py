@@ -35,6 +35,7 @@ from tender_scraper import (
     launch_context,
     log,
     release_app_session,
+    save_tenders,
 )
 
 MAX_PER_RUN = int(os.getenv("MAX_DOCS_PER_RUN", "10"))
@@ -45,13 +46,6 @@ def load_tenders() -> list[dict]:
     if not OUT_FILE.exists():
         sys.exit("tenders.json not found — run tender_scraper.py first.")
     return json.loads(OUT_FILE.read_text(encoding="utf-8"))
-
-
-def save_tenders(tenders: list[dict]) -> None:
-    OUT_FILE.write_text(
-        json.dumps(tenders, indent=2, ensure_ascii=False, default=str),
-        encoding="utf-8",
-    )
 
 
 async def main() -> None:

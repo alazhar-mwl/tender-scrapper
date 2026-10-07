@@ -16,6 +16,7 @@ Run:    python extract_sow.py          # only tenders not yet extracted
 """
 
 import json
+import os
 import re
 import sys
 import zipfile
@@ -217,10 +218,15 @@ def main() -> None:
     for tender in todo:
         process_tender(tender)
 
-    OUT_FILE.write_text(
+    # Atomic write (temp file + os.replace) — see classify_tenders.py's
+    # save_tenders() for why: a concurrent reader must never see a
+    # truncated/partial tenders.json mid-write.
+    tmp = OUT_FILE.with_suffix(".json.tmp")
+    tmp.write_text(
         json.dumps(tenders, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
+    os.replace(tmp, OUT_FILE)
     counts: dict[str, int] = {}
     for t in tenders:
         key = t.get("sow_extraction", "not-run")

@@ -59,10 +59,17 @@ def load_tenders() -> list[dict]:
 
 
 def save_tenders(tenders: list[dict]) -> None:
-    OUT_FILE.write_text(
+    # Atomic write (temp file + os.replace) — a concurrent reader (the
+    # dashboard's tenders.json fetch, or another pipeline phase) must never
+    # be able to see a truncated/partial file mid-write. Confirmed live
+    # 2026-10-07: a plain write_text() here caused "Could not load
+    # tenders.json" on the dashboard when a read landed during a write.
+    tmp = OUT_FILE.with_suffix(".json.tmp")
+    tmp.write_text(
         json.dumps(tenders, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
+    os.replace(tmp, OUT_FILE)
 
 
 def classify(title: str, scope: str) -> str:
