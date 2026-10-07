@@ -1092,7 +1092,7 @@ async function scoreOne(id){
   const t=tenders.find(x=>x.id===id);
   if(!t||t.status==='scoring')return;
   tenders=tenders.map(x=>x.id===id?{...x,status:'scoring'}:x);
-  renderList();renderDetail();
+  renderList();if(selectedId===id)renderDetail();
   try{
     // Calls our own server, not Anthropic directly — the API key lives in
     // ai.env.txt server-side (see server.py's call_ai()), never in the browser.
@@ -1111,7 +1111,12 @@ async function scoreOne(id){
 }
 
 async function scoreAll(){
-  const unscored=tenders.filter(t=>t.score===null&&t.status!=='scoring');
+  // Scope to visible (non-expired/active) tenders, not the full historical
+  // dataset — confirmed live 2026-10-08: scoring ran against all 700+
+  // loaded tenders (most expired, not shown anywhere), which both looked
+  // broken (minutes of sequential API calls with no progress indicator)
+  // and burned API calls on tenders nobody could see.
+  const unscored=visibleTenders().filter(t=>t.score===null&&t.status!=='scoring');
   for(const t of unscored)await scoreOne(t.id);
 }
 
