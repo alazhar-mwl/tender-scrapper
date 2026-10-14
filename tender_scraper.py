@@ -858,6 +858,31 @@ async def list_powl_queries(page: Page) -> list[str]:
     return [x for x in labels if not (x in seen or seen.add(x))]
 
 
+async def _wait_for_query_refresh(page: Page, max_wait: int = 25) -> None:
+    """
+    Poll until SAP's "Refresh is running" status clears from the POWL query
+    tabs. Selecting a tab kicks off an async reload; reading the table while
+    this status is still showing is what caused the 2026-10-14 incident where
+    a partial read (1-10 rows instead of 100+) only got caught by the
+    steep-drop guard in merge_tenders() instead of being avoided outright.
+    """
+    for _ in range(0, max_wait, 2):
+        await asyncio.sleep(2)
+        still_running = False
+        for f in page.frames:
+            try:
+                if await f.evaluate(
+                    "() => !!document.body && document.body.innerText.includes('Refresh is running')"
+                ):
+                    still_running = True
+                    break
+            except Exception:
+                continue
+        if not still_running:
+            return
+    log.warning("  POWL still showing 'Refresh is running' after %ds — proceeding anyway", max_wait)
+
+
 async def select_powl_query(page: Page, name: str) -> bool:
     """Click the query tab whose label starts with `name`, e.g. 'All (37)'."""
     for f in page.frames:
@@ -877,7 +902,7 @@ async def select_powl_query(page: Page, name: str) -> bool:
             }""", name)
             if clicked:
                 log.info("  Selected POWL query: %s", clicked)
-                await asyncio.sleep(5)
+                await _wait_for_query_refresh(page)
                 return True
         except Exception:
             continue
