@@ -226,6 +226,21 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     PUBLIC_PATHS = ("/login", "/login.html")
     PUBLIC_PREFIXES = ("/Logo/",)
 
+    # Allowlist of what a signed-in user may fetch from BASE_DIR. The served
+    # directory is the whole project folder, so without this any AD user
+    # could download ai.env.txt, password.env.txt, ldap.env.txt, the portal
+    # session files, scraper.log and the source code — the dotfile check
+    # only covers .git/.env-style names.
+    STATIC_FILES = ("/", "/index.html", "/tender_intelligence_app.html", "/tenders.json")
+    STATIC_PREFIXES = ("/Logo/", "/documents/")
+
+    def _is_allowed_static_path(self) -> bool:
+        path = urllib.parse.unquote(urllib.parse.urlsplit(self.path).path)
+        if path in self.STATIC_FILES:
+            return True
+        # Files only — a trailing "/" would get a directory listing.
+        return any(path.startswith(p) for p in self.STATIC_PREFIXES) and not path.endswith("/")
+
     def do_GET(self):
         global _proc
         if self._is_dotfile_path():
@@ -268,6 +283,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Location", "/login.html")
             self.end_headers()
             return
+        if not self._is_allowed_static_path():
+            return self._json(404, {"error": "not found"})
         super().do_GET()
 
     def do_HEAD(self):
@@ -292,6 +309,10 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if not self._current_user():
             self.send_response(302)
             self.send_header("Location", "/login.html")
+            self.end_headers()
+            return
+        if not self._is_allowed_static_path():
+            self.send_response(404)
             self.end_headers()
             return
         super().do_HEAD()
