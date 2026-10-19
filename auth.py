@@ -5,6 +5,7 @@ verified against Active Directory over LDAP. A successful LDAP "bind" IS the
 credential check (AD itself rejects a wrong password), so no password is ever
 stored here, only a random session token per logged-in browser.
 """
+import datetime
 import os
 import secrets
 import time
@@ -15,6 +16,20 @@ from ldap3 import Server, Connection, SIMPLE
 
 BASE_DIR = Path(__file__).parent
 load_dotenv(BASE_DIR / "ldap.env.txt")
+
+AUTH_LOG = BASE_DIR / "auth.log"
+
+
+def _log_failed_bind(username: str, reason: str) -> None:
+    """Record why an AD bind failed — never the password — so logins that
+    fail with the same generic "Invalid username or password" message to
+    the user can still be told apart after the fact."""
+    try:
+        with open(AUTH_LOG, "a", encoding="utf-8") as f:
+            ts = datetime.datetime.now().isoformat(timespec="seconds")
+            f.write(f"{ts}  login failed  user={username!r}  reason={reason}\n")
+    except Exception:
+        pass
 
 LDAP_SERVER = os.getenv("LDAP_SERVER", "").strip()
 LDAP_PORT = int(os.getenv("LDAP_PORT", "389").strip() or "389")
@@ -46,8 +61,15 @@ def check_credentials(username: str, password: str) -> bool:
         ok = conn.bind()
         if ok:
             conn.unbind()
+        else:
+            # conn.result carries AD's actual rejection reason (wrong
+            # password vs. locked/disabled/expired account vs. no such
+            # user) — the caller only ever sees a generic failure, so log
+            # the real reason here to tell those cases apart later.
+            _log_failed_bind(username, f"bind_as={user_principal!r} result={conn.result}")
         return ok
-    except Exception:
+    except Exception as exc:
+        _log_failed_bind(username, f"bind_as={user_principal!r} exception={exc!r}")
         return False
 
 
